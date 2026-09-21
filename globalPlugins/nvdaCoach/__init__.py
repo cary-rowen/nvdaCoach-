@@ -4,6 +4,7 @@
 # info@tonygebhard.me  |  https://tonygebhard.me/nvdacoach/
 
 import os
+import re
 import json
 import ctypes
 import ctypes.wintypes
@@ -190,6 +191,8 @@ class CertificateDialog(wx.Dialog):
 # reduces that to "zh", and there is no lessons/zh/ - so before this map a
 # Hong Kong reader fell all the way to English while a complete Traditional
 # Chinese set sat in the add-on unused. Same shape for pt_PT.
+_LOCALE_NAME = re.compile(r"^[A-Za-z0-9_-]{1,32}$")
+
 _LANGUAGE_ALIASES = {
 	"zh_HK": "zh_TW",   # Hong Kong reads Traditional Chinese
 	"zh_MO": "zh_TW",   # Macau likewise
@@ -220,9 +223,19 @@ def _languageCandidates():
 	seen = set()
 	ordered = []
 	for c in candidates:
+		# These become path components. NVDA supplies the language from its
+		# own configuration, so a separator or a .. in here is not a realistic
+		# attack - but it would walk out of the add-on and read whatever it
+		# found, and rejecting anything that is not a plain locale code costs
+		# one line.
+		if not _LOCALE_NAME.match(c):
+			log.warning("NVDA Coach: ignoring implausible language code %r" % (c,))
+			continue
 		if c not in seen:
 			seen.add(c)
 			ordered.append(c)
+	if not ordered:
+		ordered = ["en"]
 	return ordered
 
 
