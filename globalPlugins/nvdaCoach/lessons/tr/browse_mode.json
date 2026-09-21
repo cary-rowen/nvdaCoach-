@@ -39,7 +39,7 @@
                         "Tarayıcıya girdiğinizde NVDA, bir web sayfasında olduğunuzu size bildirmek için sayfa başlığını ve 'Tarama Kipini' seslendirmelidir."
                     ],
                     "expectedGestures": [
-                        "kb:alt+sekme"
+                        "kb:alt+tab"
                     ],
                     "successMessage": "Pencereleri değiştirdiniz. Artık tarayıcınızda pratik sayfasında olmalısınız.",
                     "allowExecution": true,
@@ -55,7 +55,7 @@
                         "NVDA sessizse tarayıcı penceresine odaklandığınızdan emin olun. Hangi pencerenin etkin olduğunu doğrulamak için NVDA artı T tuşuna basmayı deneyin."
                     ],
                     "expectedGestures": [
-                        "kb:aşağı Ok"
+                        "kb:downArrow"
                     ],
                     "successMessage": "Uygulama sayfasında Tarama Kipinde dolaşıyorsunuz. Ok tuşları tıpkı bir metin belgesini okumak gibi çalışır. Tebrikler.",
                     "allowExecution": true,
@@ -87,7 +87,7 @@
                         "Hiçbir şey olmazsa tarayıcıda Tarama Kipinde olduğunuzdan emin olun. Gerekirse Eğitmen'e dönmek için NVDA artı Shift artı C tuşlarına basın."
                     ],
                     "expectedGestures": [
-                        "kb:H"
+                        "kb:h"
                     ],
                     "successMessage": "Bir sonraki başlığa atladınız. NVDA başlık metnini ve seviyesini açıkladı.",
                     "allowExecution": true,
@@ -103,7 +103,7 @@
                         "NVDA 'sonraki başlık yok' diyorsa sayfadaki son başlığa ulaştınız demektir."
                     ],
                     "expectedGestures": [
-                        "kb:H"
+                        "kb:h"
                     ],
                     "successMessage": "Güzel. Bir sayfadaki tüm başlıkları çok hızlı bir şekilde taramak için H tuşuna art arda basabilirsiniz.",
                     "allowExecution": true,
@@ -119,7 +119,7 @@
                         "Shift artı bir gezinme harfi, Tarama Kipinde her zaman geriye doğru hareket eder. H ve Shift artı H, herhangi bir sayfanın başlığını her iki yönde de taramanıza olanak tanır."
                     ],
                     "expectedGestures": [
-                        "kb:Shift+h"
+                        "kb:shift+h"
                     ],
                     "successMessage": "Bir başlık geriye atladınız. Shift artı bir dolaşım tuşu her zaman geriye doğru hareket eder. H ve Shift+H herhangi bir sayfanın yapısını saniyeler içinde taramanızı sağlar.",
                     "allowExecution": true,
@@ -247,7 +247,7 @@
                         "K ve Shift artı K birlikte, bir sayfadaki tüm bağlantıları her iki yönde de serbestçe taramanıza olanak tanır."
                     ],
                     "expectedGestures": [
-                        "kb:Shift+k"
+                        "kb:shift+k"
                     ],
                     "successMessage": "Önceki bağlantıya başarıyla gittiniz. K ve Shift+K, bir sayfadaki tüm bağlantıları hızlı bir şekilde gözden geçirmenizi sağlar.",
                     "allowExecution": true,
@@ -263,7 +263,7 @@
                         "Sekme tuşu klavyenin en solunda, Caps Lock'un üzerindedir. Kendi başına basın; hiçbir değiştiriciye gerek yoktur."
                     ],
                     "expectedGestures": [
-                        "kb:sekme"
+                        "kb:tab"
                     ],
                     "successMessage": "Sekme sizi bir sonraki etkileşimli öğeye taşıdı. Sekme, formlardaki kontroller arasında geçiş yapmak ve menülerde dolaşmak için idealdir.",
                     "allowExecution": true,
@@ -353,7 +353,7 @@
                     "type": "info",
                     "instruction": "Şimdi deneyin. NVDA tuşunu basılı tutun ve Boşluk çubuğuna basın. NVDA, hangisine geçiş yaptığınızı size bildirmek için 'odak Kipi' veya 'Tarama Kipi'ni anons edecektir. Odak kipinde, harf tuşları sayfada dolaşmak yerine karakterleri bir alana yazar. Tarama Kipinde harf tuşları dolaşım kısayollarıdır. Bir metin alanına Sekme tuşuyla girdiğinizde NVDA genellikle otomatik olarak geçiş yapar, ancak NVDA+Aralık ile manuel olarak nasıl geçiş yapacağınızı bilmek size istediğiniz zaman tam kontrol sağlar. Devam etmek için burada Enter tuşuna basın.",
                     "monitorGestures": [
-                        "kb:nvda+Aralık"
+                        "kb:nvda+space"
                     ],
                     "hints": [
                         "NVDA Tuşunu (Insert veya Caps Lock) basılı tutun ve Boşluk çubuğuna basın. Boşluk çubuğu klavyenin alt orta kısmındaki uzun düz tuştur.",
@@ -365,7 +365,7 @@
                     "type": "info",
                     "instruction": "Diğer kipe geri dönmek için NVDA+Aralık tuşuna bir kez daha basın. NVDA tuşunu basılı tutun ve Aralık tuşuna basın ve NVDA'nın kip adını duyurmasını dinleyin. Bu kısayolu hatırlamak, klavyenizin herhangi bir web sayfasında nasıl davranacağını her zaman kontrol edebileceğiniz anlamına gelir. Devam etmek için burada Enter tuşuna basın.",
                     "monitorGestures": [
-                        "kb:nvda+Aralık"
+                        "kb:nvda+space"
                     ],
                     "hints": [
                         "Geriye dönmek için NVDA'yı basılı tutun ve Boşluk çubuğuna tekrar basın. NVDA, her geçiş yaptığınızda modun adını duyurur.",
@@ -494,7 +494,7 @@
                     "type": "info",
                     "instruction": "Şimdi deneyin. NVDA tuşunu, ardından Kontrol tuşunu basılı tutun ve ardından da F tuşuna basın. Bul iletişim kutusu açılacaktır. Alıştırma sayfasında görünen 'başlık' veya 'bağlantı' gibi bir kelimeyi yazın ve ardından ilk eşleşmeye atlamak için Enter tuşuna basın. NVDA sonuçla ilgili metni duyuracaktır. Arama yapmadan iletişim kutusunu kapatmak için Escape tuşuna basın. İşiniz bittiğinde buraya dönmek için NVDA+Shift+C tuşlarına basın, ardından devam etmek için Enter tuşuna basın.",
                     "monitorGestures": [
-                        "kb:nvda+kontrol+f"
+                        "kb:nvda+control+f"
                     ],
                     "hints": [
                         "NVDA tuşunu, Kontrol tuşunu  basılı tutun ve F'ye basın; üçü de aynı anda. Kontrol tuşu sol alt köşededir; F harflerin orta satırındadır.",
@@ -541,10 +541,10 @@
                     "type": "info",
                     "instruction": "Şimdi pratik sayfasında deneyin. Tablolar etiketli bölümü bulmak için H veya Aşağı Ok'u kullanarak bir tabloya gidin. Tablonun içine girdiğinizde, sonraki hücreye geçmek için Ctrl+Alt+Sağ Ok tuşlarına, ardından bir satır aşağı gitmek için Ctrl+Alt+Aşağı Ok tuşlarına basmayı deneyin. Siz hareket ettikçe NVDA hücre içeriğini ve konumunu duyuracaktır. Devam etmeye hazır olduğunuzda NVDA+Shift+C tuşlarına basarak buraya dönün ve Enter tuşuna basın.",
                     "monitorGestures": [
-                        "kb:kontrol+alt+sağ ok",
-                        "kb:kontrol+alt+sol Ok",
-                        "kb:kontrol+alt+aşağı Ok",
-                        "kb:kontrol+alt+yukarı ok"
+                        "kb:control+alt+rightArrow",
+                        "kb:control+alt+leftArrow",
+                        "kb:control+alt+downArrow",
+                        "kb:control+alt+upArrow"
                     ],
                     "hints": [
                         "Sol elinizle Ctrl ve Alt tuşlarını aynı anda basılı tutun, ardından satırdaki bir sonraki hücreye geçmek için Sağ Ok tuşuna basın.",

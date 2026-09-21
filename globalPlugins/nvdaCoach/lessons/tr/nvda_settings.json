@@ -74,8 +74,8 @@
                     "type": "info",
                     "instruction": "Halkadaki bir sonraki ayara geçmek için masaüstü düzeninde NVDA+Kontrol+Sağ Ok tuşlarına veya dizüstü düzende NVDA+Shift+Kontrol+Sağ Ok tuşlarına basın. Önceki ayara geçmek için masaüstünde NVDA+Kontrol+Sol Ok tuşlarına veya dizüstü bilgisayarda NVDA+Shift+Kontrol+Sol Ok tuşlarına basın. NVDA, 'Hız' veya 'Perde' gibi, geldiğiniz ayarın adını anons edecektir. Devam etmek için Enter'a basın.",
                     "monitorGestures": [
-                        "kb:nvda+kontrol+sağ ok",
-                        "kb:nvda+shift+kontrol+sağ ok"
+                        "kb:nvda+control+rightArrow",
+                        "kb:nvda+shift+control+rightArrow"
                     ],
                     "hints": [
                         "Masaüstü düzeni: NVDA ve Kontrol'e birlikte basın, ardından bir sonraki ayara geçmek için Sağ Ok tuşuna basın. Sol Ok önceki ayara gider.",
@@ -87,10 +87,10 @@
                     "type": "info",
                     "instruction": "Değiştirmek istediğiniz ayara geldiğinizde, değeri artırmak için NVDA+Kontrol+Yukarı Ok (masaüstü) veya NVDA+Shift+Kontrol+Yukarı Ok (dizüstü bilgisayar) tuşlarına basın. Azaltmak için NVDA+Kontrol+Aşağı Ok (masaüstü) veya NVDA+Shift+Kontrol+Aşağı Ok (dizüstü bilgisayar) tuşlarına basın. NVDA, siz ayarlama yaptıkça yeni değeri duyurur. Örneğin Hız'daysanız ve artırma tuşuna basarsanız 'Hız 60' gibi bir ses duyacaksınız. Devam etmek için Enter'a basın.",
                     "monitorGestures": [
-                        "kb:nvda+kontrol+yukarı ok",
-                        "kb:nvda+shift+kontrol+yukarı ok",
-                        "kb:nvda+kontrol+aşağı ok",
-                        "kb:nvda+shift+kontrol+aşağı Ok"
+                        "kb:nvda+control+upArrow",
+                        "kb:nvda+shift+control+upArrow",
+                        "kb:nvda+control+downArrow",
+                        "kb:nvda+shift+control+downArrow"
                     ],
                     "hints": [
                         "Masaüstü düzeni: NVDA ve Kontrol tuşlarını basılı tutun, ardından geçerli ayarın değerini artırmak için Yukarı Ok tuşuna basın. Aşağı Ok bunu azaltır.",
@@ -111,8 +111,8 @@
                     "type": "info",
                     "instruction": "Şimdi deneyin. Kullanılabilir ayarlar arasında geçiş yapmak için NVDA+Kontrol+Sağ Ok (masaüstü) veya NVDA+Shift+Kontrol+Sağ Ok (dizüstü bilgisayar) tuşlarına birkaç kez basın; hareket ettikçe Hız, Ses Perdesi, Ses Düzeyi, Ses ve Değişken'in anons edildiğini duyacaksınız. Daha sonra Hız üzerinde durun ve değiştirmek için artırma veya azaltma tuşlarına basın. NVDA'nın yeni hızda gerçek zamanlı olarak nasıl konuştuğuna dikkat edin. Devam etmeye hazır olduğunuzda Enter tuşuna basın.",
                     "monitorGestures": [
-                        "kb:nvda+kontrol+sağ ok",
-                        "kb:nvda+shift+kontrol+sağ ok"
+                        "kb:nvda+control+rightArrow",
+                        "kb:nvda+shift+control+rightArrow"
                     ],
                     "hints": [
                         "Mevcut tüm ayarlar arasında geçiş yapmak için Sağ ok tuşuna birkaç kez basın. Sırasıyla Hız, Perde, Ses Düzeyi, Ses ve Değişken'i duyacaksınız.",

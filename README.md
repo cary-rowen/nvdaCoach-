@@ -5,11 +5,11 @@ taught step by step — no videos, no PDFs, no switching windows.
 
 Free. GPL v2. By Tony Gebhard, Assistive Technology Instructor.
 
-**Current version:** 1.5.7
+**Current version:** 1.6.0
 
 ## Install
 
-**[Download NVDA Coach v1.5.7](https://github.com/tonygeb23/nvdaCoach-/releases/download/v1.5.7/nvdaCoach-1.5.7.nvda-addon)**
+**[Download NVDA Coach v1.6.0](https://github.com/tonygeb23/nvdaCoach-/releases/download/v1.6.0/nvdaCoach-1.6.0.nvda-addon)**
 — or get it from the NVDA Add-on Store (Tools → Add-on Store).
 
 Open the `.nvda-addon` file; NVDA installs it and asks you to confirm. Then
@@ -17,17 +17,24 @@ press **NVDA+Shift+C**.
 
 Needs NVDA 2024.1 or later. Tested through 2026.1.1.
 
-## What's new in 1.5.7
+## What's new in 1.6.0
 
-- **Chinese (Simplified)** — all six chapters, every interface string, the
-  documentation and the store listing.
-- **Chinese (Traditional)** — a full translation using Taiwan NVDA terminology,
-  not a character swap.
-- **Practice-window labels are now translatable**, including the field names
-  NVDA announces, so students hear the names the lessons tell them to find.
-- Fixed the wrong next-chapter hint at the end of Getting Started, and
-  regenerated a translation template stale since 1.5.1 — recovering about 95
-  strings that had been falling back to English.
+- **Japanese and Polish**, both complete — six chapters, every interface
+  string, the documentation and the store listing.
+- **Brazilian Portuguese is a real translation for the first time.** The
+  folder has existed since 1.5.1 but shipped as an English copy: the lessons
+  were byte-identical to English and not one interface string was translated.
+- **Ten commands the Coach taught that NVDA does not have.** The worst: the
+  laptop command for reading the current object was `NVDA+Shift+Comma`, which
+  is bound to nothing in NVDA. The real key is `NVDA+Shift+O`. Every
+  translator had faithfully translated the error, so it was wrong in all nine
+  languages. See [the changelog](CHANGELOG.md) for all ten.
+- **NVDA Coach no longer takes `NVDA+Shift+C` away from NVDA.** NVDA binds
+  that key in Word and Excel to mark column headers, and a global plugin wins
+  the resolution — so the add-on was quietly removing an NVDA command. It now
+  hands the key back where NVDA wants it.
+- **Hong Kong, Macau and European Portuguese** no longer fall back to English
+  when a perfectly good translation is sitting in the add-on.
 
 [Full history](CHANGELOG.md).
 
@@ -109,7 +116,8 @@ For custom lesson development, email
 cd nvdaCoach-source
 python -c "
 import zipfile, os
-output = 'nvdaCoach-1.5.7.nvda-addon'
+version = next(l.split('=')[1].strip() for l in open('manifest.ini', encoding='utf-8') if l.startswith('version'))
+output = f'nvdaCoach-{version}.nvda-addon'
 if os.path.exists(output): os.remove(output)
 with zipfile.ZipFile(output, 'w', zipfile.ZIP_DEFLATED) as zf:
     zf.write('manifest.ini', 'manifest.ini')
@@ -147,7 +155,10 @@ or email [info@tonygebhard.me](mailto:info@tonygebhard.me).
 - **Darrell Hilliker** — accessibility review
 - **Rui Fontes** — NVDA Portuguese translation team
 - **Umut KORKMAZ** — Turkish translation
-- **Edson Miranda** — Brazilian Portuguese translation (in progress)
+- **Edson Miranda** — Brazilian Portuguese store listing, and the start of
+  the translation
+- **Katsutoshi Tsuji** — Japanese translation
+- **Michał Dziwisz** — Polish translation
 - **Mateo Quintela** — Spanish localization testing and practice text
 - **Chris, Mike, Kevin, Julie, Larry, Jim, McKayla and Skyler** — AT
   specialists, from the April 2026 training sessions

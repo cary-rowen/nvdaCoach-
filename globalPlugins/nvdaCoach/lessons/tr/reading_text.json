@@ -28,7 +28,7 @@
                         "Önce, alanın alanına tıklayın veya odak noktasına gitmek için Sekme tuşuna basın, ardından Sağ Ok tuşuna basmaya başlayın."
                     ],
                     "expectedGestures": [
-                        "kb:sağ tamam"
+                        "kb:rightArrow"
                     ],
                     "successMessage": "Bir karakter ileri gittiniz. NVDA, hangi karakterin üzerine geldiğini seslendirdi.",
                     "allowExecution": true,
@@ -45,7 +45,7 @@
                         "Sağ ve Sol Ok, herhangi bir kelimeyi veya satırda tek seferde bir karakter olarak okuma konusunda boyut tam kontrolü sağlar; Düzeltme yapmak veya yazmayı onaylamak için kullanışlıdır."
                     ],
                     "expectedGestures": [
-                        "kb:sol tamam"
+                        "kb:leftArrow"
                     ],
                     "successMessage": "Bir karakter geri gittiniz. Sağ ve Sol Ok, herhangi bir anda tek seferde karakter karakter okumanızı sağlar.",
                     "allowExecution": true,
@@ -78,7 +78,7 @@
                         "Kontrol ve Sağ Ok tuşlarına basarak tutarsanız imleciniz hızla kelime kelime atlamaya devam edecek. Durdurmak için bırakın."
                     ],
                     "expectedGestures": [
-                        "kb:kontrol+sağ tamam"
+                        "kb:control+rightArrow"
                     ],
                     "successMessage": "Bir kelime ileri atladınız. NVDA imlecinizin geldiği kelimeyi seslendirdi.",
                     "allowExecution": true,
@@ -95,7 +95,7 @@
                         "Kontrol artı Sol ve Sağ Ok birlikte, herhangi bir belgeyi hızlı bir şekilde taramanızı sağlar; Aynı anda bir karakter hareket eden öğrencilerden çok daha hızlıdır."
                     ],
                     "expectedGestures": [
-                        "kb:kontrol+sol Tamam"
+                        "kb:control+leftArrow"
                     ],
                     "successMessage": "Bir kelime geri atladınız. Kontrol artı oklar, herhangi bir belgede hızlı bir şekilde kelime kelime dolaşmanızı sağlar.",
                     "allowExecution": true,
@@ -128,7 +128,7 @@
                         "Birkaç satır aşağıya doğru ilerleyin, ardından Yukarı Ok ile tekrar yukarıya çıkmayı deneyin. NVDA her iki yönde de hareket ettiğinde her satırda okur."
                     ],
                     "expectedGestures": [
-                        "kb:aşağı Tamam"
+                        "kb:downArrow"
                     ],
                     "successMessage": "Bir satır aşağı gittiniz. NVDA sizin için bölümünün tamamını inceledi.",
                     "allowExecution": true,
@@ -145,7 +145,7 @@
                         "Yukarı ve Aşağı Ok, herhangi bir belge için ana okuma araçlarınızdır. Çoğu ekran okuyucu kullanıcısı, zamanlarının çoğunu yalnızca bu iki tuşu kullanarak geçirir."
                     ],
                     "expectedGestures": [
-                        "kb:yukarı tamam"
+                        "kb:upArrow"
                     ],
                     "successMessage": "Bir satır yukarı çıktınız. Yukarı ve Aşağı Ok, herhangi bir belgeyi satır satır okumak için ana araçlarınızdır.",
                     "allowExecution": true,
@@ -178,7 +178,7 @@
                         "Kontrol artı Ana sayfa belgelerinde, web sayfalarında, listelerde ve diğer birçok metin alanında çalışır. Sizi her zaman en üst düzeyde taşır."
                     ],
                     "expectedGestures": [
-                        "kb:kontrol+Ana Sayfa"
+                        "kb:control+home"
                     ],
                     "successMessage": "En üste atladınız. NVDA ilk satırını okudu.",
                     "allowExecution": true,
@@ -195,7 +195,7 @@
                         "Kontrol artı Home ve Kontrol artı End birlikte, herhangi bir belgenin tüm kapsamını hızlı bir şekilde elden izin verir tanır; en işi yapmak için Hom tuşuna basın, en sona gitmek için End tuşuna basın."
                     ],
                     "expectedGestures": [
-                        "kb:kontrol+Son"
+                        "kb:control+end"
                     ],
                     "successMessage": "En sona gittiniz. Kontrol artı Ana Sayfa veya Son, sizi anında herhangi bir belgenin her iki ucuna da götürebilir.",
                     "allowExecution": true,
@@ -222,7 +222,7 @@
                     "type": "info",
                     "instruction": "Aşağıdaki belgenin alanını okla kaydırın ve imlecinizi ortada bir yere konumlandırın. Ayrıca Tümünü Oku'yu başlatın: Kullanıcı düzeni Kullanıcı NVDA artı Aşağı Ok tuşlarına basın; dizüstü bilgisayar düzeni NVDA artı A tuşlarına basarlar. NVDA, imlecinizden sonuna kadar durmadan her şeyi okumaya başlayacak. Belirli zaman dilimleri için Kontrol tuşuna basın. İşiniz bittiğinde devam etmek için Enter tuşuna basın.",
                     "monitorGestures": [
-                        "kb:nvda+aşağı tamam",
+                        "kb:nvda+downArrow",
                         "kb:nvda+a"
                     ],
                     "practiceText": "Hızlı kahverengi tilki yavrusunun üzerinden atlıyor.\nEkran okuyucuları dijital dünyanın herkese açılıyor.\nNVDA ücretsiz ve açık kaynaklı bir yazılımdır.\nAlıştırma, ekran okuyucuda dolaşım alışkanlığını geliştirir.\nOk tuşları metninde karakter karakter ilerlemenizi sağlar.\nKontrol artı oklar kelime kelime atları.\nEv ve Son bir satır sınırına taşınmak.\nKontrol artı Home veya End, Bir belgenin en uç noktalara atlar..\nBölünebilirliğin son bölümüdür.",
@@ -258,7 +258,7 @@
                         "Daha fazla karakteri birer birer seçmek için Shift'i basılı tutun ve Sağ Ok tuşuna basmaya devam edin. Seçmeyi tamamladığınızda Shift tuşunu bırakın."
                     ],
                     "expectedGestures": [
-                        "kb:shift+sağ ok"
+                        "kb:shift+rightArrow"
                     ],
                     "successMessage": "Bir karakter seçtiniz. NVDA seçildiğini duyurdu.",
                     "allowExecution": true,
@@ -275,7 +275,7 @@
                         "Bu kombinasyon (Kontrol artı Shift artı Sağ Ok) metni seçmenin en hızlı yollarından biridir. Hızlı bir şekilde çok kelimeli bir seçim oluşturabilirsiniz."
                     ],
                     "expectedGestures": [
-                        "kb:kontrol+Shift+sağ ok"
+                        "kb:control+shift+rightArrow"
                     ],
                     "successMessage": "Tam bir kelime seçtiniz. Shift tuşunu herhangi bir dolaşım tuşuyla basılı tutmak, seçimi bu miktarda genişletir.",
                     "allowExecution": true,
@@ -292,7 +292,7 @@
                         "Shift artı Aşağı Ok, tam satırları seçmenin en hızlı yoludur. Her ilave basış, seçime başka bir satır ekler."
                     ],
                     "expectedGestures": [
-                        "kb:shift+aşağı Ok"
+                        "kb:shift+downArrow"
                     ],
                     "successMessage": "Bir satır seçtiniz. Shift artı Aşağı Ok, tüm satırları hızlı bir şekilde seçmek için mükemmeldir.",
                     "allowExecution": true,
@@ -352,7 +352,7 @@
                         "Bazı uygulamalarda Ctrl+Aşağı Ok, bir sonrakine geçmeden önce geçerli paragrafın sonuna atlayabilir. Davranış programa göre biraz değişir."
                     ],
                     "expectedGestures": [
-                        "kb:kontrol+aşağı ok"
+                        "kb:control+downArrow"
                     ],
                     "successMessage": "Bir sonraki paragrafa atladınız. NVDA, imlecinizin geldiği metni okur.",
                     "allowExecution": true,
@@ -369,7 +369,7 @@
                         "Kontrol artı Yukarı ve Kontrol artı Aşağı, her türlü uzun belgede hızlı, paragraf düzeyinde tarama yapmanızı sağlar."
                     ],
                     "expectedGestures": [
-                        "kb:kontrol+yukarı ok"
+                        "kb:control+upArrow"
                     ],
                     "successMessage": "Önceki paragrafa geri döndünüz. Kontrol artı Yukarı ve Aşağı Ok, uzun belgeleri hızlı bir şekilde taramak için mükemmeldir.",
                     "allowExecution": true,
@@ -395,7 +395,7 @@
                         "Uzun bir web makalesinde veya çok sayfalı bir belgede Sayfa Aşağı, Aşağı Ok tuşuna art arda basmaktan çok daha hızlıdır."
                     ],
                     "expectedGestures": [
-                        "kb:sayfaAşağı"
+                        "kb:pageDown"
                     ],
                     "successMessage": "Sayfa Aşağı'ya bastınız. Daha uzun belgelerde bu sizi her seferinde yaklaşık bir ekran ileri götürür.",
                     "allowExecution": true,
@@ -412,7 +412,7 @@
                         "Sayfa Yukarı ve Sayfa Aşağı birlikte, belgeler arasında hızlı, büyük ölçekli hareket olanağı sağlar; farklı hızlarda dolaşmak için bunları Kontrol artı Home/End'den sonra kullanın."
                     ],
                     "expectedGestures": [
-                        "kb:sayfaYukarı"
+                        "kb:pageUp"
                     ],
                     "successMessage": "Sayfa Yukarı'ya bastınız. Sayfa Yukarı ve Sayfa Aşağı birlikte uzun belgelerde büyük atlamalarla ilerlemenize olanak sağlar.",
                     "allowExecution": true,

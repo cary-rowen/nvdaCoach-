@@ -143,7 +143,7 @@
                 },
                 {
                     "type": "info",
-                    "instruction": "Komutlar düzenler arasında farklılık gösterdiğinde, NVDA Eğitmeni daima her ikisini de gösterir. Örneğin: 'NVDA+NumPad5 (masaüstü) veya NVDA+Shift+Virgül (dizüstü bilgisayar) tuşlarına basın.' Mevcut düzen ayarınıza hangisi uyuyorsa onu kullanın. Bir komut beklendiği gibi çalışmıyorsa bunun en yaygın nedeni, NVDA düzen ayarlarınızla bastığınız tuşlar arasındaki uyumsuzluktur. Diğer sorun giderme adımlarını denemeden önce ilk olarak düzen ayarlarınızı kontrol edin. Devam etmek için Enter'a basın.",
+                    "instruction": "Komutlar düzenler arasında farklılık gösterdiğinde, NVDA Eğitmeni daima her ikisini de gösterir. Örneğin: 'NVDA+NumPad5 (masaüstü) veya NVDA+Shift+O (dizüstü bilgisayar) tuşlarına basın.' Mevcut düzen ayarınıza hangisi uyuyorsa onu kullanın. Bir komut beklendiği gibi çalışmıyorsa bunun en yaygın nedeni, NVDA düzen ayarlarınızla bastığınız tuşlar arasındaki uyumsuzluktur. Diğer sorun giderme adımlarını denemeden önce ilk olarak düzen ayarlarınızı kontrol edin. Devam etmek için Enter'a basın.",
                     "hints": [
                         "Masaüstü düzeni komutu ilk olarak listelenir; dizüstü düzeni parantez içinde veya 'veya'dan sonra gösterilir. NVDA düzen ayarınıza uygun sürümü kullanın.",
                         "Düzen ayarı ile basılan tuşlar arasındaki uyumsuzluk, bir komutun çalışmamasının en yaygın nedenidir. Komutlar yanlış görünüyorsa NVDA Ayarları'nı açın ve Klavye düzeninizi doğrulayın.",

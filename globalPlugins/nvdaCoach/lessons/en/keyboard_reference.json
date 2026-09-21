@@ -15,7 +15,7 @@
           "hints": [
             "Modifier keys are always held down while you press another key. Releasing them first — or pressing them in the wrong order — can prevent a command from working.",
             "Most keyboards have duplicate modifier keys on both sides: Ctrl on the left and right, Shift on the left and right, Alt on the left and right. Either side works for most commands.",
-            "The Windows key and the Menu key (if present) are usually only on the left side or only on one side of the keyboard."
+            "The Menu key, also called the Applications key, sits on the right of the bottom row next to the right Control key. Many laptops leave it out altogether."
           ]
         },
         {
@@ -47,16 +47,16 @@
         },
         {
           "type": "info",
-          "instruction": "The Windows key has the Windows logo printed on it and lives in the bottom row. On standard desktop keyboards it sits between the left Ctrl and the left Alt keys. On most laptops the Fn key takes the position immediately next to Ctrl, so the Windows key sits between Fn and Alt instead. Either way, it is always somewhere in the bottom row. The Windows key opens the Start menu when pressed alone. Windows+Up Arrow (Windows command) maximizes a window. Windows+D (Windows command) shows the desktop. Windows+L (Windows command) locks the screen. Press Enter to continue.",
+          "instruction": "The Windows key lives in the bottom row. Most keyboards emboss the Windows logo on it, so you can often feel a raised shape where the other keys are smooth. On standard desktop keyboards it sits between the left Ctrl and the left Alt keys. On most laptops the Fn key takes the position immediately next to Ctrl, so the Windows key sits between Fn and Alt instead. Either way, it is always somewhere in the bottom row. The Windows key opens the Start menu when pressed alone. Windows+Up Arrow (Windows command) maximizes a window. Windows+D (Windows command) shows the desktop. Windows+L (Windows command) locks the screen. Press Enter to continue.",
           "hints": [
-            "Desktop keyboards: Windows key sits between left Ctrl and left Alt. Laptops: Fn is between Ctrl and Windows, so the order is Ctrl, Fn, Windows, Alt. The Windows key has the Windows logo — four colored squares arranged in a grid — printed on it.",
+            "Desktop keyboards: Windows key sits between left Ctrl and left Alt. Laptops: Fn is between Ctrl and Windows, so the order is Ctrl, Fn, Windows, Alt. On most keyboards the Windows logo is embossed rather than flat, so the key often feels different under your fingertip.",
             "Windows plus Up Arrow maximizes the current window to full screen. This is useful before using object navigation — a maximized window shows all objects.",
             "Windows key alone opens the Start menu. Press Escape to close it without selecting anything."
           ]
         },
         {
           "type": "info",
-          "instruction": "Your NVDA key is one of two options: Insert or Caps Lock. Insert is in the cluster of keys above the arrow keys on most keyboards, near Home, Delete, Page Up, and Page Down. Caps Lock is on the far left side of the keyboard, just above the left Shift key. Both can serve as your NVDA key at the same time — NVDA accepts either. Many laptop users prefer Caps Lock because Insert may be harder to reach. You can choose your preferred NVDA key in NVDA Settings under Keyboard. Press Enter to finish this lesson.",
+          "instruction": "Your NVDA key can be Insert or Caps Lock. NVDA actually offers three choices in its Keyboard settings - Caps Lock, the Insert key in the cluster above the arrows, and the Insert on the numeric keypad - and any combination of them can be switched on. Insert is in the cluster of keys above the arrow keys on most keyboards, near Home, Delete, Page Up, and Page Down. Caps Lock is on the far left side of the keyboard, just above the left Shift key. Both can serve as your NVDA key at the same time — NVDA accepts either. Many laptop users prefer Caps Lock because Insert may be harder to reach. You can choose your preferred NVDA key in NVDA Settings under Keyboard. Press Enter to finish this lesson.",
           "hints": [
             "Insert is in the cluster above the arrow keys — near Home, Delete, End, Page Up, and Page Down. It is not a modifier by itself; it only becomes the NVDA key because NVDA assigns it that role.",
             "Caps Lock is on the far left, just above Shift. Using Caps Lock as your NVDA key means Caps Lock no longer toggles uppercase — press NVDA plus F2 and then Caps Lock to actually toggle it when needed.",
@@ -83,7 +83,7 @@
           "type": "info",
           "instruction": "On many laptops, the function key row has two modes. In one mode, the keys act as F1 through F12 for software commands. In the other mode, the same keys control hardware functions — adjusting screen brightness, speaker volume, keyboard backlight, and media playback. These hardware functions are often shown as icons printed on the keys. Which mode is active by default depends on your laptop model. Press Enter to continue.",
           "hints": [
-            "Look at your F1 through F12 keys. If they have small icons printed on them — a sun for brightness, a speaker for volume, a musical note for media — those are the hardware function actions.",
+            "Rather than reading the key caps, test one. Press F3 on its own. If you hear a hint or nothing at all, the F keys are acting as F keys. If the volume or brightness changes, your laptop is in multimedia mode and the F keys need Fn held down.",
             "On some laptops, the hardware icons (multimedia) are primary and you press Fn plus the key to get F1 through F12. On others, F1 through F12 are primary and you press Fn for hardware functions.",
             "The Fn key is not a standard Windows modifier — it is processed by the keyboard firmware before Windows sees it. This means NVDA and Windows do not know about Fn presses."
           ]
@@ -92,7 +92,7 @@
           "type": "info",
           "instruction": "The Fn key is typically in the bottom-left corner of a laptop keyboard, or to the right of the left Ctrl key. When you hold Fn and press an arrow key, many laptops produce Home, End, Page Up, or Page Down — because compact keyboards often do not have those as dedicated keys. Fn plus Left Arrow is typically Home. Fn plus Right Arrow is End. Fn plus Up Arrow is Page Up. Fn plus Down Arrow is Page Down. Check the labels on your arrow keys for these secondary symbols. Press Enter to continue.",
           "hints": [
-            "Look at your arrow keys for small secondary labels — a horizontal line with arrow for Home/End, or up-arrow-with-bar for Page Up/Down.",
+            "Test rather than read. In any document, hold Fn and press the Left Arrow. If NVDA reads from the start of the line, Fn plus Left Arrow is Home on your keyboard. Fn plus Up Arrow is usually Page Up.",
             "Fn plus Left Arrow is Home on most compact laptops. Fn plus Right Arrow is End. Fn plus Up Arrow is Page Up. Fn plus Down Arrow is Page Down.",
             "These Fn combinations are keyboard firmware functions — they are invisible to Windows and NVDA. They produce the same result as dedicated Home, End, Page Up, and Page Down keys."
           ]
@@ -102,7 +102,7 @@
           "instruction": "Many laptop keyboards have an Fn Lock feature. When Fn Lock is active, you do not need to hold Fn — the secondary functions are active all the time. This is useful if you need F1 through F12 constantly and do not want to hold Fn each time. Fn Lock is often toggled by pressing Fn plus Escape, Fn plus Caps Lock, or a dedicated key with a padlock icon. Check your laptop's documentation to find the Fn Lock key and how to toggle it. Different manufacturers place it differently and may use different key combinations. Press Enter to continue.",
           "hints": [
             "Look for a key with a padlock icon combined with Fn, or check your laptop's manual for the Fn Lock combination. Common options are Fn plus Escape or Fn plus Caps Lock.",
-            "Some laptops indicate the current Fn Lock state with a small indicator light. Others make a sound or show an on-screen display when you toggle it.",
+            "Some laptops signal Fn Lock with a light or an on-screen display, neither of which helps you. A few make a sound. The reliable way to know is to press F3 on its own and listen: a hint means the F keys are primary, a volume change means they are not.",
             "If pressing F2 in NVDA Coach gives you a hint — rather than changing screen brightness — then either Fn Lock is active or your laptop defaults to F-key mode."
           ]
         },
@@ -143,7 +143,7 @@
         },
         {
           "type": "info",
-          "instruction": "When commands differ between layouts, NVDA Coach always shows both. For example: 'Press NVDA+NumPad5 (desktop) or NVDA+Shift+Comma (laptop).' Use whichever matches your current layout setting. If a command is not working as expected, the most common cause is a mismatch between your NVDA layout setting and the keys you are pressing. Check your layout setting first before trying other troubleshooting steps. Press Enter to continue.",
+          "instruction": "When commands differ between layouts, NVDA Coach always shows both. For example: 'Press NVDA+NumPad5 (desktop) or NVDA+Shift+O (laptop).' Use whichever matches your current layout setting. If a command is not working as expected, the most common cause is a mismatch between your NVDA layout setting and the keys you are pressing. Check your layout setting first before trying other troubleshooting steps. Press Enter to continue.",
           "hints": [
             "Desktop layout command listed first, laptop layout in parentheses or after 'or'. Use the version that matches your NVDA layout setting.",
             "A mismatch between layout setting and keys pressed is the most common reason a command does not work. Open NVDA Settings and verify your Keyboard layout if commands seem wrong.",

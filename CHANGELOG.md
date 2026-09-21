@@ -1,5 +1,59 @@
 # NVDA Coach — Changelog
 
+## v1.6.0 (2026-09-20)
+
+### Localization
+- **Japanese (ja):** A complete Japanese localization — all six chapters and 45 lessons, every interface string, and the Add-on Store description. Terminology follows NVDA's own Japanese translation, including 音声エンジン for the synthesizer and 簡単音声設定 for the settings ring rather than transliterations. The user guide page (`doc/ja/readme.html`) and the store listing (`locale/ja/manifest.ini`) were assembled from the translator's own wording in the lessons and interface strings rather than translated afresh from English.
+- **Polish (pl):** A complete Polish localization — six chapters, interface strings and documentation. The store listing was expanded from a single sentence to the full description the other languages carry, built from the translator's own documentation page; his summary line and opening sentence are unchanged.
+- **Traditional Chinese (zh_TW) revised** throughout the lessons, documentation and interface.
+- **Brazilian Portuguese (pt_BR) is a real translation for the first time.** The folder has existed since 1.5.1 and shipped as an English copy: lesson content 98.9% byte-identical to English, and not one of the 204 interface strings translated. Two of its chapters were copies of an *older* English revision, and the audio output and audio ducking lessons had never been carried over at all, leaving it at 44 lessons. It is now the full 45, in Portuguese, with terminology taken from NVDA's own Brazilian Portuguese translation. The existing store listing by Edson Miranda is unchanged; the completion is machine-assisted and marked as pending his review.
+- **Every translation catalogue resynced.** All nine now carry exactly the same 204 message ids as the regenerated template, with existing translations preserved byte for byte and new strings added as empty entries.
+- **Translator worksheets** in `translators/`. When an English string is edited rather than added, gettext treats it as new and orphans the old translation, so the translator opens the file and finds an empty box with no sign they already translated nine tenths of that sentence. Each worksheet now pairs every owed string with that translator's own earlier version and marks what changed in the English.
+
+### Corrections — commands NVDA Coach taught that NVDA does not have
+Every item below was checked against NVDA's own Commands Quick Reference and user guide. All ten are corrected in English and written up for translators in `translators/FACTUAL-CORRECTIONS-1.6.0.md`; items 1 and 2 are corrected in every language.
+
+1. **The laptop command for reading the current object was a key that does not exist.** The lessons taught `NVDA+Shift+Comma`; NVDA binds `NVDA+Shift+O`. `NVDA+shift+comma` appears nowhere in NVDA and is bound to nothing. A student on a laptop pressed it, nothing happened, and nothing told them why — in the lesson whose whole purpose is teaching that laptop layout differs from desktop. Every translator had faithfully translated the error, so it was wrong in all nine languages, in the lessons and in six documentation pages. The sentences that existed only to say where the comma key was have been rewritten to describe the O key.
+2. **`NVDA+Ctrl+U` was described as an audio output device picker** that opened "without opening the Settings dialog". It opens the Audio category *of* the NVDA Settings dialog, and has since 2024.1 — the add-on's own minimum version.
+3. **A "Reset to defaults" button in the Speech settings category.** No such button exists; the dialog has OK, Cancel and Apply. Resetting is `NVDA+Ctrl+R`.
+4. **Heading quick navigation was taught as 1 to 6.** NVDA supports levels 1 to 9.
+5. **The audio ducking option was named "Duck While Speaking".** NVDA's option is Audio Ducking Mode.
+6. **A lesson 7 of 8 was announced as the last in its chapter.** The following lesson then correctly said one more remained.
+7. **A practice checkbox was named "Show practice hints"** in the lesson; the control says "Show practice hints during lessons". For a student matching what they hear against what they were told to find, a partial match is a dead end.
+8. **The Menu key was placed "on the left side".** The Applications key is on the right, next to the right Control key.
+9. **The NVDA key was described as "one of two options".** NVDA offers three: Caps Lock, Insert, and numpad Insert.
+10. **Two cross-references to a "Moving Between Controls" lesson** that does not exist. The lesson is "Move Between Controls with Tab".
+
+### Caught in review, before release
+Two adversarial passes over the built package found these. They are listed because they were real and are fixed, not because they shipped.
+
+- **Finishing one chapter announced the whole course complete.** The check looked only at the Customizing NVDA chapter, because that chapter is last. Several earlier lessons point students into it mid-course, so somebody following the add-on's own advice finished four lessons out of forty-five and was told "you have finished every lesson in NVDA Coach" — with a certificate saying the same. A student who cannot see the lesson picker has no way to notice it disagreeing with the speech. Now gated on every chapter.
+- **One malformed lesson file took out all nine languages.** The sort that orders chapters read `.get("order")` outside the per-file error handling, so a chapter whose top level was a list, or two chapters whose `order` values were a string and an int, raised out of the plugin's constructor. NVDA only logs that, so the add-on silently failed to load for everybody with nothing spoken. A translator hand-editing one JSON file is the obvious way in, and this release added two languages by hand.
+- **A locked or truncated progress file silently destroyed a student's history.** The loader caught everything and returned an empty result, which cannot tell "no file yet" from "the file is there and I could not read it", and the next completed lesson wrote an almost empty file over the top. Saving also truncated the real file before writing it. Progress is the only thing in this add-on that cannot be rebuilt: it is now written beside the original and moved into place in one step, a file that will not parse is moved aside rather than overwritten, and a file that is valid JSON but not an object no longer stops the add-on loading.
+- **A bulk text pass had rewritten a lesson identifier in Turkish.** `activate_controls` became `activate_Kontrols`. The practice-window registry is keyed on the identifier, so it never matched: Turkish students on that lesson were told to go to the practice area and no window opened, with nothing spoken. Present since before 1.5.7.
+- **NVDA could not reach any of the nine manuals we ship.** Without `docFileName` in the manifest, the Add-on Store's Help button is disabled outright. Added.
+- **The welcome screen every new user reads pointed at a 404.** `github.com/tonygeb23/nvdacoach` does not exist; the repository is `nvdaCoach-`.
+- **Turkish gesture identifiers had been machine translated** — 44 of them, `kb:sag tamam` in place of `kb:rightArrow` and the like. Those fields are not read by any code today, so nothing was broken; they are fixed because the day gesture checking is wired up, every Turkish lesson would fail silently.
+- **Three of the ten corrections above were only half applied** when first made: the heading-level instruction still said 1 to 6 while its own hint said 1 to 9, the audio ducking modes still used names NVDA does not speak, and the `NVDA+Ctrl+U` step still described the picker dialog its own instruction had just stopped describing. All finished, and the release checks now sweep for the concept rather than for the one string that was replaced.
+- **The audio output lesson never warned that it can silence NVDA.** Choosing a device that makes no sound leaves a blind student with no speech and no way to hear their way back. The lesson now says so, tells them to note the working device first, and gives them `Ctrl+Alt+N`.
+- **The audio ducking lesson blamed the sound card for something else entirely.** `isAudioDuckingSupported()` returns `config.isInstalledCopy()`, so on a portable copy of NVDA the command does nothing at all — common in a training centre or a library. The lesson sent those students off to suspect their audio driver.
+
+### Accessibility
+- **NVDA Coach no longer takes `NVDA+Shift+C` away from NVDA in Excel.** NVDA binds that key to "set column headers", and scripts on a global plugin are resolved before scripts on the focused object — so installing NVDA Coach silently removed an NVDA command, inside a table, which is exactly where the add-on's own table lesson sends the student. The Coach now hands the gesture back in Excel, where `ExcelCell.script_setColumnHeader` does real work.
+
+  **Word is deliberately not included.** The first version of this fix handed the key over anywhere the focused object had a `script_setColumnHeader` attribute. Word has one that looks identical from the outside and is a stub whose entire body speaks "Command not supported in this type of document" — and it lives on `WordDocument`, not on a table cell, so it answers everywhere in every Word document and every Outlook message body. That version would have cost the student the only way into the Coach and handed them a refusal in exchange, which is worse than the conflict it was meant to fix. Caught in review before release.
+
+  Input Help now carries the exception too, since the course teaches Input Help as the thing to trust when you are lost. If the hand-off fails for any reason it falls through to opening the Coach, because this gesture is the add-on's only way in.
+- **Hong Kong, Macau and European Portuguese no longer fall back to English.** NVDA supplies a full locale such as `zh_HK`; the base-language step reduced it to `zh`, no `zh` folder exists, and the reader dropped to English while a complete Traditional Chinese set sat unused in the add-on. `zh_HK` and `zh_MO` now resolve to Traditional Chinese, `pt_PT` and a bare `pt` to Brazilian Portuguese. The lesson loader and the documentation lookup now share one resolver so they cannot disagree about which language a user is getting.
+- **The untranslated lesson-title fallback** in `lessonRunner.py` is now translatable. The same fallback two hundred lines further down already was.
+
+### Internal
+- Translation template regenerated from source: 204 strings, up from 203.
+- Every `.mo` recompiled from its `.po`.
+- Version stated in the add-on manifest, the build script and seven documentation pages, all of which had drifted — the English page still said 1.5.4, Spanish and Polish 1.5.1, Russian 1.5.
+
+---
+
 ## v1.5.7 (2026-07-12)
 
 ### Localization

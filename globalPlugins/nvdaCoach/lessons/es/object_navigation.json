@@ -112,24 +112,24 @@
       "steps": [
         {
           "type": "info",
-          "instruction": "Cuando hayas navegado a un objeto, puedes hacer que NVDA lo lea. Presiona NVDA+NumPad5 (distribución de escritorio) o NVDA+Shift+Coma (distribución portátil) para escuchar la descripción completa del objeto navegador actual. Estos son comandos de NVDA. La tecla de coma está en la fila inferior de letras, entre M y el punto. Presiona el comando dos veces rápidamente para deletrear el nombre del objeto carácter por carácter. Esto es útil cuando el nombre no es familiar o está abreviado. Presiona Enter para continuar.",
+          "instruction": "Cuando hayas navegado a un objeto, puedes hacer que NVDA lo lea. Presiona NVDA+NumPad5 (distribución de escritorio) o NVDA+Shift+O (distribución portátil) para escuchar la descripción completa del objeto navegador actual. Estos son comandos de NVDA. La tecla O está en la fila superior de letras, entre I y P. Presiona el comando dos veces rápidamente para deletrear el nombre del objeto carácter por carácter. Esto es útil cuando el nombre no es familiar o está abreviado. Presiona Enter para continuar.",
           "hints": [
             "Distribución de escritorio: mantén NVDA y presiona NumPad5 — la tecla central del teclado numérico — para leer el objeto navegador actual.",
-            "Distribución portátil: mantén NVDA y Shift, luego presiona la tecla de coma. La coma está en la fila inferior de letras, entre M y el punto.",
+            "Distribución portátil: mantén NVDA y Shift, luego presiona la tecla O. La O está en la fila superior de letras, entre I y P.",
             "Presiona el comando dos veces rápidamente para deletrear el nombre del objeto un carácter a la vez. Útil cuando el nombre no es familiar o está abreviado."
           ]
         },
         {
           "type": "info",
-          "instruction": "Pruébalo ahora. Navega a cualquier objeto usando NVDA+NumPad6 (escritorio) o NVDA+Shift+Flecha Derecha (portátil). Luego presiona NVDA+NumPad5 (escritorio) o NVDA+Shift+Coma (portátil) para escuchar la descripción completa de ese objeto. Presiona el comando dos veces rápidamente para deletrear el nombre. Cuando estés listo, presiona Enter para continuar.",
+          "instruction": "Pruébalo ahora. Navega a cualquier objeto usando NVDA+NumPad6 (escritorio) o NVDA+Shift+Flecha Derecha (portátil). Luego presiona NVDA+NumPad5 (escritorio) o NVDA+Shift+O (portátil) para escuchar la descripción completa de ese objeto. Presiona el comando dos veces rápidamente para deletrear el nombre. Cuando estés listo, presiona Enter para continuar.",
           "monitorGestures": [
             "kb:nvda+numpad5",
-            "kb:nvda+shift+,"
+            "kb:nvda+shift+o"
           ],
           "hints": [
-            "Primero navega a un objeto usando el comando de objeto siguiente, luego léelo con NVDA+NumPad5 (escritorio) o NVDA+Shift+Coma (portátil).",
+            "Primero navega a un objeto usando el comando de objeto siguiente, luego léelo con NVDA+NumPad5 (escritorio) o NVDA+Shift+O (portátil).",
             "Presionar el comando de lectura dos veces rápidamente deletrea el nombre del objeto un carácter a la vez — muy útil para nombres o abreviaturas desconocidos.",
-            "La tecla de coma para la distribución portátil está en la fila inferior del teclado, entre M y la tecla de punto."
+            "La tecla O para la distribución portátil está en la fila superior del teclado, entre la tecla I y la tecla P."
           ]
         }
       ]
@@ -197,7 +197,7 @@
           "chapterComplete": true,
           "hints": [
             "El siguiente capítulo es Personalización de NVDA. Cubre cómo ajustar la velocidad de voz, el tono, la voz y la distribución del teclado — todo sin abrir menús de configuración si lo prefieres.",
-            "Referencia rápida de navegación por objetos — escritorio: NumPad4/6 en el mismo nivel, NumPad8/2 arriba y abajo en los niveles, NumPad5 para leer. Portátil: NVDA+Shift+Flecha, NVDA+Shift+Coma para leer.",
+            "Referencia rápida de navegación por objetos — escritorio: NumPad4/6 en el mismo nivel, NumPad8/2 arriba y abajo en los niveles, NumPad5 para leer. Portátil: NVDA+Shift+Flecha, NVDA+Shift+O para leer.",
             "NVDA Coach guarda tu progreso automáticamente. Todas las lecciones completadas están marcadas cuando regresas."
           ]
         }
