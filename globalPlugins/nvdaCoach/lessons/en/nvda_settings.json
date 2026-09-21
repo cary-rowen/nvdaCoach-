@@ -29,7 +29,7 @@
         },
         {
           "type": "info",
-          "instruction": "Inside the Keyboard settings, you will find a combo box labeled 'Keyboard layout' with two options: Desktop and Laptop. Use the Up and Down Arrow keys (Windows commands) to choose the layout that matches your keyboard. Use Tab (Windows command) to move to the OK button and press Enter to save — the same Tab navigation you practiced in the Moving Between Controls lesson in the Getting Started chapter. Your new layout takes effect immediately without restarting NVDA. Press Enter to continue.",
+          "instruction": "Inside the Keyboard settings, you will find a combo box labeled 'Keyboard layout' with two options: Desktop and Laptop. Use the Up and Down Arrow keys (Windows commands) to choose the layout that matches your keyboard. Use Tab (Windows command) to move to the OK button and press Enter to save — the same Tab navigation you practiced in the Move Between Controls with Tab lesson in the Getting Started chapter. Your new layout takes effect immediately without restarting NVDA. Press Enter to continue.",
           "hints": [
             "Once in the Keyboard category, press Tab to move to the Keyboard layout combo box. Use Up and Down Arrow to choose Desktop or Laptop.",
             "After choosing your layout, press Tab to reach the OK button and press Enter to save. This is the same Tab navigation from the Getting Started chapter.",
@@ -122,7 +122,7 @@
         },
         {
           "type": "info",
-          "instruction": "For more precise control, you can adjust speech settings inside the NVDA Settings dialog. Press NVDA+N to open the NVDA menu, then P for Preferences, then S for Settings. The Settings dialog opens with a category list on the left. You can move through categories with the Up and Down Arrow keys, or use first-letter navigation — just press the first letter of the category name to jump to it. For example, press S to jump straight to Speech. Once you are in the Speech category, press Tab to move forward through sliders and combo boxes for rate, pitch, volume, inflection, voice, and synthesizer. Press Shift+Tab to move backward. If you need a refresher on Tab navigation, that was covered in the Moving Between Controls lesson in the Getting Started chapter. Changes made here are saved when you press OK or Apply. Press Enter to continue.",
+          "instruction": "For more precise control, you can adjust speech settings inside the NVDA Settings dialog. Press NVDA+N to open the NVDA menu, then P for Preferences, then S for Settings. The Settings dialog opens with a category list on the left. You can move through categories with the Up and Down Arrow keys, or use first-letter navigation — just press the first letter of the category name to jump to it. For example, press S to jump straight to Speech. Once you are in the Speech category, press Tab to move forward through sliders and combo boxes for rate, pitch, volume, inflection, voice, and synthesizer. Press Shift+Tab to move backward. If you need a refresher on Tab navigation, that was covered in the Move Between Controls with Tab lesson in the Getting Started chapter. Changes made here are saved when you press OK or Apply. Press Enter to continue.",
           "hints": [
             "Open Settings with NVDA plus N, P for Preferences, S for Settings. Then press S in the category list to jump straight to the Speech category using first-letter navigation.",
             "Inside the Speech category, Tab moves forward through controls: rate slider, pitch slider, volume slider, voice combo box, and more. Shift plus Tab moves backward.",
@@ -140,10 +140,10 @@
         },
         {
           "type": "info",
-          "instruction": "Once you have found speech settings you are happy with, NVDA saves them automatically when you close the settings dialog with OK. Your preferred rate, voice, and pitch will be active every time NVDA starts. If you ever want to experiment and return to a known state, note your settings before changing them, or use the Reset to defaults button in the Speech settings panel. Press Enter to finish this lesson.",
+          "instruction": "Once you have found speech settings you are happy with, NVDA saves them automatically when you close the settings dialog with OK. Your preferred rate, voice, and pitch will be active every time NVDA starts. If you ever want to experiment and return to a known state, note your settings before changing them, or press NVDA+Ctrl+R once to revert to your last saved configuration. Press Enter to finish this lesson.",
           "hints": [
             "NVDA saves all speech settings when you press OK in the Settings dialog. Your preferences are restored every time NVDA starts.",
-            "The Reset to defaults button in the Speech category restores all speech settings to their factory values. Use it if you have made changes you want to undo.",
+            "The Speech category has no reset button. To put every NVDA setting back to how it shipped, press NVDA+Ctrl+R three times: once reverts to your last saved configuration, and three times restores factory defaults.",
             "You can combine the synth settings ring for quick on-the-fly adjustments with the Settings dialog for precise fine-tuning. Both methods save your preferences."
           ]
         }
@@ -156,9 +156,9 @@
       "steps": [
         {
           "type": "info",
-          "instruction": "When you connect headphones, external speakers, or an HDMI monitor, Windows may not automatically route NVDA speech to the device you want. NVDA+Ctrl+U opens the audio output device picker, letting you choose which audio device NVDA uses for speech without opening the Settings dialog. This is especially useful when switching between headphones and speakers while in the middle of a task. Press Enter to continue.",
+          "instruction": "When you connect headphones, external speakers, or an HDMI monitor, Windows may not automatically route NVDA speech to the device you want. NVDA+Ctrl+U opens the Audio category of the NVDA Settings dialog, where the output device is one of the settings you can change. This is especially useful when switching between headphones and speakers while in the middle of a task. Press Enter to continue.",
           "hints": [
-            "NVDA plus Control plus U is an NVDA command that opens a small dialog listing all available audio output devices.",
+            "NVDA plus Control plus U is an NVDA command that opens the Audio category of the NVDA Settings dialog, where Output device is one of the settings.",
             "Use the Up and Down Arrow keys to move through the list of audio devices, then press Enter to select the one you want NVDA to use for speech.",
             "The change takes effect immediately — you will hear NVDA begin speaking through the selected device right away. No restart is needed."
           ]
@@ -170,7 +170,7 @@
             "kb:nvda+control+u"
           ],
           "hints": [
-            "Hold NVDA and Control together, then press U. The audio output dialog opens immediately.",
+            "Hold NVDA and Control together, then press U. The Audio category of NVDA Settings opens immediately.",
             "Arrow keys move through the device list. NVDA announces the device name as you land on each one. Press Enter to confirm your selection.",
             "If you only have one audio device, the list may show only one entry. Press Escape to close the dialog if there is nothing you want to change."
           ]

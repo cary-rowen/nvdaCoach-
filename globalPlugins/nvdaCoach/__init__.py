@@ -18,6 +18,7 @@ from logHandler import log
 import tones
 import config
 import languageHandler
+import api
 import addonHandler
 addonHandler.initTranslation()
 
@@ -183,6 +184,48 @@ class CertificateDialog(wx.Dialog):
 		evt.Skip()
 
 
+# Locales with no folder of their own that read correctly in another one.
+#
+# NVDA hands us a full locale such as "zh_HK". The base-language step below
+# reduces that to "zh", and there is no lessons/zh/ - so before this map a
+# Hong Kong reader fell all the way to English while a complete Traditional
+# Chinese set sat in the add-on unused. Same shape for pt_PT.
+_LANGUAGE_ALIASES = {
+	"zh_HK": "zh_TW",   # Hong Kong reads Traditional Chinese
+	"zh_MO": "zh_TW",   # Macau likewise
+	"zh": "zh_CN",      # a bare "zh" is Simplified by convention
+	"pt": "pt_BR",      # Brazilian is the only Portuguese here
+	"pt_PT": "pt_BR",   # far closer for a European reader than English
+}
+
+
+def _languageCandidates():
+	"""Folder names to try, best first, for the current NVDA language.
+
+	Shared by the lesson loader and the documentation lookup so the two can
+	never disagree about which language a user is getting.
+	"""
+	lang = languageHandler.getLanguage()  # e.g. "fr_BE", "pt_BR", "en", "Windows"
+	candidates = []
+	if lang and lang != "Windows":
+		candidates.append(lang)
+		if lang in _LANGUAGE_ALIASES:
+			candidates.append(_LANGUAGE_ALIASES[lang])
+		baseLang = lang.split("_")[0]
+		if baseLang != lang:
+			candidates.append(baseLang)
+			if baseLang in _LANGUAGE_ALIASES:
+				candidates.append(_LANGUAGE_ALIASES[baseLang])
+	candidates.append("en")  # always present
+	seen = set()
+	ordered = []
+	for c in candidates:
+		if c not in seen:
+			seen.add(c)
+			ordered.append(c)
+	return ordered
+
+
 def _loadLessonCategories():
 	"""Load all lesson category JSON files from the lessons directory.
 
@@ -196,13 +239,7 @@ def _loadLessonCategories():
 
 	# Build a prioritized list of candidate directories.
 	lang = languageHandler.getLanguage()  # e.g. "fr_BE", "pt_BR", "en", "Windows"
-	candidates = []
-	if lang and lang != "Windows":
-		candidates.append(os.path.join(baseDir, lang))        # e.g. lessons/fr_BE/
-		baseLang = lang.split("_")[0]
-		if baseLang != lang:
-			candidates.append(os.path.join(baseDir, baseLang))  # e.g. lessons/fr/
-	candidates.append(os.path.join(baseDir, "en"))             # Always-present fallback.
+	candidates = [os.path.join(baseDir, name) for name in _languageCandidates()]
 
 	lessonsDir = None
 	for candidate in candidates:
@@ -240,14 +277,10 @@ def _localizedDocPath(filename):
 	tries doc/{lang}/, then doc/{baseLang}/, then doc/en/.
 	"""
 	addonRoot = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-	lang = languageHandler.getLanguage()
-	candidates = []
-	if lang and lang != "Windows":
-		candidates.append(os.path.join(addonRoot, "doc", lang, filename))
-		baseLang = lang.split("_")[0]
-		if baseLang != lang:
-			candidates.append(os.path.join(addonRoot, "doc", baseLang, filename))
-	candidates.append(os.path.join(addonRoot, "doc", "en", filename))
+	candidates = [
+		os.path.join(addonRoot, "doc", name, filename)
+		for name in _languageCandidates()
+	]
 	for candidate in candidates:
 		if os.path.isfile(candidate):
 			return candidate
@@ -1331,7 +1364,7 @@ class PracticeFrame(wx.Frame):
 		)
 		choiceSizer.Add(wx.Choice(
 			self._scroll,
-			choices=[_("United States"), _("Canada"), _("United Kingdom"), _("Australia"), _("Other")],
+			choices=[_("United States"), _("Japan"), _("Canada"), _("United Kingdom"), _("Australia"), _("Other")],
 		))
 		self._scrollSizer.Add(choiceSizer, 0, wx.LEFT | wx.TOP, 12)
 
@@ -1768,8 +1801,54 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		During a lesson: brings CoachWindow to the foreground so the student
 		can press Enter to advance after trying a command in another window.
 		Between lessons: opens the lesson picker.
+
+		Except in Word and Excel, where this key is NVDA's own - see
+		_handOffToNVDA below.
 		"""
+		if self._handOffToNVDA(gesture):
+			return
 		self._activateCoach()
+
+	def _handOffToNVDA(self, gesture):
+		"""Give NVDA+shift+c back to NVDA where NVDA itself binds it.
+
+		NVDA binds NVDA+shift+c in Word and Excel to mark the row holding
+		column headers (NVDA+shift+r does the same for row headers). Scripts
+		on a global plugin are resolved before scripts on the focused object,
+		so NVDA Coach wins - and an add-on whose whole purpose is teaching
+		NVDA commands silently removes one, inside a table, which is exactly
+		where its own table lesson sends the student.
+
+		So: if whatever currently has focus knows how to set column headers,
+		that is NVDA's command and it gets it.
+
+		Any failure here deliberately falls through to opening the Coach.
+		This gesture is the add-on's only way in, and a user left pressing a
+		key that does nothing at all would be worse off than one who has to
+		set column headers from the Word menu.
+
+		Returns True when NVDA's own script ran.
+		"""
+		try:
+			focus = api.getFocusObject()
+			holders = (
+				focus,
+				getattr(focus, "treeInterceptor", None),
+				getattr(focus, "appModule", None),
+			)
+			for holder in holders:
+				if holder is None:
+					continue
+				handler = getattr(holder, "script_setColumnHeader", None)
+				if handler is not None:
+					handler(gesture)
+					return True
+		except Exception:
+			log.exception(
+				"NVDA Coach: could not hand NVDA+shift+c back to NVDA; "
+				"opening the Coach instead"
+			)
+		return False
 
 	def _showLessonPicker(self):
 		"""Show the lesson selection dialog and wire up the selection callback."""

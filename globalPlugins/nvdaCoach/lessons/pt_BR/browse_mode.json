@@ -1,63 +1,63 @@
 {
   "id": "browse_mode",
-  "title": "Browse Mode and Web Navigation",
-  "description": "Learn how to navigate web pages and HTML documents using NVDA's browse mode. A practice web page will open automatically when you start a lesson.",
+  "title": "Modo de Navegação e Navegação Web",
+  "description": "Aprenda a percorrer páginas web e documentos HTML usando o modo de navegação do NVDA. Uma página web de prática abre automaticamente quando você começa uma lição.",
   "order": 4,
   "practicePage": true,
   "lessons": [
     {
       "id": "intro_browse_mode",
-      "title": "About Browse Mode",
+      "title": "Sobre o Modo de Navegação",
       "order": 1,
       "steps": [
         {
           "type": "info",
-          "instruction": "Browse mode is how NVDA helps you read web pages. Sighted users can see a web page laid out visually. NVDA creates a virtual text copy of the page that you can navigate with arrow keys and single-letter shortcuts, as if it were a document. When you press Enter, a practice web page will open in your browser in a separate window. Stay here and finish reading these instructions first. NVDA Coach will remain focused so you can read the next step. When you are ready, press Alt+Tab to switch to your browser. Press Enter to open the practice page and continue.",
+          "instruction": "O modo de navegação é como o NVDA te ajuda a ler páginas web. Quem enxerga consegue ver a página web disposta visualmente. O NVDA cria uma cópia virtual da página em forma de texto, que você percorre com as teclas de seta e com atalhos de uma letra só, como se fosse um documento. Quando você pressionar Enter, uma página web de prática vai abrir no seu navegador, em uma janela separada. Fique aqui e termine de ler estas instruções primeiro. O NVDA Coach vai continuar em foco, para você poder ler a próxima etapa. Quando estiver pronto, pressione Alt+Tab para ir até o seu navegador. Pressione Enter para abrir a página de prática e continuar.",
           "openPracticePageAfter": true,
           "hints": [
-            "Browse mode creates a virtual copy of the web page as a text document. Arrow keys move through it just like a regular document.",
-            "Single-letter shortcuts like H for heading and K for link only work in browse mode — not in forms or text fields where you need to type.",
-            "NVDA switches to browse mode automatically when you open a web page. You will hear 'browse mode' announced when it activates."
+            "O modo de navegação cria uma cópia virtual da página web como um documento de texto. As teclas de seta percorrem essa cópia igual a um documento comum.",
+            "Atalhos de uma letra só, como H para título e K para link, funcionam apenas no modo de navegação — não em formulários ou campos de texto, onde você precisa digitar.",
+            "O NVDA muda para o modo de navegação automaticamente quando você abre uma página web. Você vai ouvir 'modo de navegação' quando ele for ativado."
           ]
         },
         {
           "type": "info",
-          "instruction": "The practice page is now open in your browser. Press Alt+Tab to switch to it. Once you are there, press Down Arrow to begin reading the page. Press NVDA+Shift+C at any time to return here and continue your lesson. Press Enter when you are ready.",
+          "instruction": "A página de prática já está aberta no seu navegador. Pressione Alt+Tab para ir até ela. Quando estiver lá, pressione Seta para Baixo para começar a ler a página. Pressione NVDA+Shift+C a qualquer momento para voltar para cá e continuar a sua lição. Pressione Enter quando estiver pronto.",
           "hints": [
-            "Press Alt plus Tab to switch to your browser. Hold Alt and tap Tab once to move to the next open window.",
-            "Once in the browser, just press Down Arrow to start reading the page line by line — the same way you read a document.",
-            "Press NVDA plus Shift plus C at any time to return to the Coach window and continue your lesson."
+            "Pressione Alt mais Tab para alternar para o seu navegador. Segure o Alt e toque Tab uma vez para ir até a próxima janela aberta.",
+            "Já no navegador, é só pressionar a Seta para Baixo para começar a ler a página linha a linha — do mesmo jeito que você lê um documento.",
+            "Pressione NVDA mais Shift mais C a qualquer momento para voltar à janela do Coach e continuar a sua lição."
           ]
         },
         {
           "type": "gesture",
-          "instruction": "Press Alt+Tab to switch to your browser.",
-          "hint": "Hold the Alt key and press Tab. This cycles through your open windows. Release both keys when your browser is announced.",
+          "instruction": "Pressione Alt+Tab para alternar para o seu navegador.",
+          "hint": "Segure a tecla Alt e pressione Tab. Isso percorre as suas janelas abertas. Solte as duas teclas quando o navegador for anunciado.",
           "hints": [
-            "Hold the Alt key — to the left of the Space bar — and press Tab once. Release both keys when you hear your browser announced.",
-            "If you cycle past the browser, keep holding Alt and press Tab again to continue cycling through open windows.",
-            "Once in the browser, NVDA should announce the page title and 'browse mode' to let you know you are in a web page."
+            "Segure a tecla Alt — à esquerda da barra de espaço — e pressione Tab uma vez. Solte as duas teclas quando ouvir o nome do seu navegador.",
+            "Se você passar do navegador, continue segurando o Alt e pressione Tab de novo para seguir percorrendo as janelas abertas.",
+            "Já no navegador, o NVDA deve anunciar o título da página e 'modo de navegação', para avisar que você está dentro de uma página web."
           ],
           "expectedGestures": [
             "kb:alt+tab"
           ],
-          "successMessage": "You switched windows. You should now be in your browser on the practice page.",
+          "successMessage": "Você trocou de janela. Agora você deve estar no seu navegador, na página de prática.",
           "allowExecution": true,
           "feedbackDelay": 1500
         },
         {
           "type": "gesture",
-          "instruction": "You are in the browser. Press Down Arrow to start reading the page line by line.",
-          "hint": "Just press the Down Arrow key. In browse mode, NVDA reads each line as you move down.",
+          "instruction": "Você está no navegador. Pressione Seta para Baixo para começar a ler a página linha a linha.",
+          "hint": "É só pressionar a tecla Seta para Baixo. No modo de navegação, o NVDA lê cada linha conforme você desce.",
           "hints": [
-            "Press the Down Arrow key — the downward-pointing key in the arrow cluster. In browse mode it moves through the page one line at a time.",
-            "NVDA reads each line as you move down, just like reading a document. The page content flows top to bottom.",
-            "If NVDA is silent, make sure you are focused on the browser window. Try pressing NVDA plus T to confirm which window is active."
+            "Pressione a tecla Seta para Baixo — a tecla que aponta para baixo no bloco de setas. No modo de navegação, ela percorre a página uma linha por vez.",
+            "O NVDA lê cada linha conforme você desce, igual à leitura de um documento. O conteúdo da página flui de cima para baixo.",
+            "Se o NVDA ficar em silêncio, confirme que o foco está na janela do navegador. Experimente pressionar NVDA mais T para saber qual janela está ativa."
           ],
           "expectedGestures": [
             "kb:downArrow"
           ],
-          "successMessage": "You are navigating the practice page in browse mode. Arrow keys work just like reading a text document. Well done.",
+          "successMessage": "Você está navegando pela página de prática no modo de navegação. As teclas de seta funcionam igual à leitura de um documento de texto. Muito bem.",
           "allowExecution": true,
           "feedbackDelay": 1000
         }
@@ -65,63 +65,63 @@
     },
     {
       "id": "browse_headings",
-      "title": "Navigate by Heading",
+      "title": "Navegue por Títulos",
       "order": 2,
       "steps": [
         {
           "type": "info",
-          "instruction": "Web pages are structured with headings, like chapters in a book. Sighted users see headings visually — they are larger or bold. NVDA announces the heading text and its level. In browse mode, press H to jump to the next heading. Shift plus H goes back to the previous heading. Make sure you are in your browser on the practice page. Press Enter to continue.",
+          "instruction": "As páginas web são estruturadas com títulos, como os capítulos de um livro. Quem enxerga vê os títulos visualmente — eles são maiores ou estão em negrito. O NVDA anuncia o texto do título e o nível dele. No modo de navegação, pressione H para saltar para o próximo título. Shift mais H volta para o título anterior. Confirme que você está no seu navegador, na página de prática. Pressione Enter para continuar.",
           "hints": [
-            "Press H by itself — just the letter H with no modifier key. In browse mode, single letters are shortcuts, not typed text.",
-            "NVDA announces the heading text and its level, for example 'level 2 heading: Getting Started'. The level tells you where it sits in the page structure.",
-            "Shift plus H goes backward to the previous heading. The pattern of pressing a key to go forward and Shift plus that key to go backward applies to most browse mode shortcuts."
+            "Pressione H sozinho — só a letra H, sem nenhuma tecla modificadora. No modo de navegação, as letras isoladas são atalhos, não texto digitado.",
+            "O NVDA anuncia o texto do título e o nível dele, por exemplo 'título de nível 2: Primeiros Passos'. O nível diz onde ele se encaixa na estrutura da página.",
+            "Shift mais H volta para o título anterior. Esse padrão de pressionar uma tecla para avançar e Shift mais essa tecla para voltar vale para a maioria dos atalhos do modo de navegação."
           ]
         },
         {
           "type": "gesture",
-          "instruction": "Press H to jump to the next heading on the page.",
-          "hint": "Just press the letter H by itself. In browse mode, single letters are navigation shortcuts, not typed characters.",
+          "instruction": "Pressione H para saltar para o próximo título da página.",
+          "hint": "É só pressionar a letra H sozinha. No modo de navegação, as letras isoladas são atalhos de navegação, não caracteres digitados.",
           "hints": [
-            "Press H by itself — just the letter key, no modifier. In browse mode, letter keys jump to page elements, not type characters.",
-            "NVDA announces the heading text and its level number. Level 1 is the main title; level 2 is a section; level 3 is a sub-section.",
-            "If nothing happens, make sure you are in browse mode in the browser. Press NVDA plus Shift plus C to return to Coach if needed."
+            "Pressione H sozinho — só a tecla da letra, sem modificador. No modo de navegação, as teclas de letra saltam para elementos da página em vez de digitar caracteres.",
+            "O NVDA anuncia o texto do título e o número do nível. O nível 1 é o título principal; o nível 2 é uma seção; o nível 3 é uma subseção.",
+            "Se nada acontecer, confirme que você está no modo de navegação, dentro do navegador. Pressione NVDA mais Shift mais C para voltar ao Coach, se precisar."
           ],
           "expectedGestures": [
             "kb:h"
           ],
-          "successMessage": "You jumped to the next heading. NVDA announced the heading text and its level.",
+          "successMessage": "Você saltou para o próximo título. O NVDA anunciou o texto do título e o nível dele.",
           "allowExecution": true,
           "feedbackDelay": 1500
         },
         {
           "type": "gesture",
-          "instruction": "Press H again to move to the next heading.",
-          "hint": "Keep pressing H to move forward through headings on the page.",
+          "instruction": "Pressione H de novo para ir até o próximo título.",
+          "hint": "Continue pressionando H para avançar pelos títulos da página.",
           "hints": [
-            "Keep pressing H to move forward through all the headings on the page. Each press jumps to the next one.",
-            "Scanning headings with H is the fastest way to get an overview of a web page's structure — like reading a table of contents.",
-            "If NVDA says 'no next heading', you have reached the last heading on the page."
+            "Continue pressionando H para avançar por todos os títulos da página. Cada toque salta para o próximo.",
+            "Percorrer os títulos com o H é a forma mais rápida de ter uma visão geral da estrutura de uma página web — como ler um sumário.",
+            "Se o NVDA disser 'sem título seguinte', você chegou ao último título da página."
           ],
           "expectedGestures": [
             "kb:h"
           ],
-          "successMessage": "Good. You can press H repeatedly to scan all the headings on a page very quickly.",
+          "successMessage": "Isso. Você pode pressionar H repetidamente para percorrer todos os títulos de uma página bem rápido.",
           "allowExecution": true,
           "feedbackDelay": 1500
         },
         {
           "type": "gesture",
-          "instruction": "Now press Shift+H to go back to the previous heading.",
-          "hint": "Hold the Shift key and press H to move backwards through headings.",
+          "instruction": "Agora pressione Shift+H para voltar ao título anterior.",
+          "hint": "Segure a tecla Shift e pressione H para andar para trás pelos títulos.",
           "hints": [
-            "Hold Shift and press H. This is the backward version of the H shortcut — the same pattern applies to most browse mode navigation keys.",
-            "NVDA announces the heading you jump back to, including its level and text.",
-            "Shift plus a navigation letter always moves backward in browse mode. H and Shift plus H let you scan any page's headings in either direction."
+            "Segure o Shift e pressione H. Esta é a versão para trás do atalho H — o mesmo padrão vale para a maioria das teclas de navegação do modo de navegação.",
+            "O NVDA anuncia o título para o qual você voltou, incluindo o nível e o texto dele.",
+            "Shift mais uma letra de navegação sempre anda para trás no modo de navegação. H e Shift mais H deixam você percorrer os títulos de qualquer página nos dois sentidos."
           ],
           "expectedGestures": [
             "kb:shift+h"
           ],
-          "successMessage": "You jumped back one heading. Shift plus a navigation key always moves backward. H and Shift+H let you scan any page's structure in seconds.",
+          "successMessage": "Você voltou um título. Shift mais uma tecla de navegação sempre anda para trás. H e Shift+H deixam você mapear a estrutura de qualquer página em segundos.",
           "allowExecution": true,
           "feedbackDelay": 1500
         }
@@ -129,63 +129,63 @@
     },
     {
       "id": "heading_levels",
-      "title": "Jump to Heading Levels",
+      "title": "Salte por Níveis de Título",
       "order": 3,
       "steps": [
         {
           "type": "info",
-          "instruction": "Web pages use different heading levels for structure — level 1 is the main title, level 2 is a major section, level 3 is a sub-section. Sighted users can see this hierarchy by the size of the text. In browse mode, you can press a number from 1 to 6 to jump directly to a heading of that level. Press Enter to continue.",
+          "instruction": "As páginas web usam níveis de título diferentes para se estruturar — o nível 1 é o título principal, o nível 2 é uma seção importante, o nível 3 é uma subseção. Quem enxerga percebe essa hierarquia pelo tamanho do texto. No modo de navegação, você pode pressionar um número de 1 a 6 para saltar direto para um título daquele nível. Pressione Enter para continuar.",
           "hints": [
-            "Press 1 to jump to level 1 headings, 2 for level 2, and so on up to 6. Use the number row at the top of the keyboard, not the numpad.",
-            "Shift plus a number jumps backward to the previous heading of that level — the same forward and backward pattern as other browse mode keys.",
-            "Most well-structured pages have one level 1 heading (the main title) and several level 2 headings (main sections). Level 3 headings are sub-sections within those."
+            "Pressione 1 para saltar para títulos de nível 1, 2 para nível 2, e assim por diante até 6. Use a fileira de números no topo do teclado, não o teclado numérico.",
+            "Shift mais um número volta para o título anterior daquele nível — o mesmo padrão de ida e volta das outras teclas do modo de navegação.",
+            "A maioria das páginas bem estruturadas tem um título de nível 1 (o título principal) e vários títulos de nível 2 (as seções principais). Os títulos de nível 3 são subseções dentro dessas seções."
           ]
         },
         {
           "type": "gesture",
-          "instruction": "Press 1 to jump to the next level 1 heading on the page.",
-          "hint": "Press the number 1 from the top row of your keyboard, not the numpad.",
+          "instruction": "Pressione 1 para saltar para o próximo título de nível 1 da página.",
+          "hint": "Pressione o número 1 da fileira de cima do seu teclado, não o do teclado numérico.",
           "hints": [
-            "Press the number 1 from the top row of the keyboard — the row above the letter keys. Do not use the numpad.",
-            "NVDA announces the level 1 heading text. Level 1 is usually the main title of the page.",
-            "If NVDA says 'no next heading at level 1', the page only has one level 1 heading or none at all."
+            "Pressione o número 1 da fileira de cima do teclado — a fileira acima das letras. Não use o teclado numérico.",
+            "O NVDA anuncia o texto do título de nível 1. O nível 1 costuma ser o título principal da página.",
+            "Se o NVDA disser 'Nenhum título seguinte de nível 1', a página só tem um título de nível 1 ou nenhum."
           ],
           "expectedGestures": [
             "kb:1"
           ],
-          "successMessage": "You jumped to a level 1 heading. This is usually the main title of the page.",
+          "successMessage": "Você saltou para um título de nível 1. Esse costuma ser o título principal da página.",
           "allowExecution": true,
           "feedbackDelay": 1500
         },
         {
           "type": "gesture",
-          "instruction": "Press 2 to jump to the next level 2 heading.",
-          "hint": "Press the number 2 from the top row of your keyboard.",
+          "instruction": "Pressione 2 para saltar para o próximo título de nível 2.",
+          "hint": "Pressione o número 2 da fileira de cima do seu teclado.",
           "hints": [
-            "Press the number 2 from the top row of the keyboard. Level 2 headings are the main sections of a page.",
-            "NVDA announces the level 2 heading text. Keep pressing 2 to move through all level 2 headings in order.",
-            "Level 2 headings on a news site might be article titles. On a help page they might be topic names."
+            "Pressione o número 2 da fileira de cima do teclado. Os títulos de nível 2 são as seções principais de uma página.",
+            "O NVDA anuncia o texto do título de nível 2. Continue pressionando 2 para percorrer todos os títulos de nível 2 em ordem.",
+            "Em um site de notícias, os títulos de nível 2 podem ser os nomes das matérias. Em uma página de ajuda, podem ser os nomes dos tópicos."
           ],
           "expectedGestures": [
             "kb:2"
           ],
-          "successMessage": "You jumped to a level 2 heading. These are the main section headings.",
+          "successMessage": "Você saltou para um título de nível 2. Esses são os títulos das seções principais.",
           "allowExecution": true,
           "feedbackDelay": 1500
         },
         {
           "type": "gesture",
-          "instruction": "Press 3 to jump to the next level 3 heading.",
-          "hint": "Press the number 3 from the top row.",
+          "instruction": "Pressione 3 para saltar para o próximo título de nível 3.",
+          "hint": "Pressione o número 3 da fileira de cima.",
           "hints": [
-            "Press the number 3 from the top row. Level 3 headings are sub-sections within a level 2 section.",
-            "NVDA announces the level 3 heading text. Level 3 headings provide more detailed structure within major sections.",
-            "Heading-level navigation is one of the most powerful tools for quickly scanning a web page. Combine H for all headings with numbers for specific levels."
+            "Pressione o número 3 da fileira de cima. Os títulos de nível 3 são subseções dentro de uma seção de nível 2.",
+            "O NVDA anuncia o texto do título de nível 3. Os títulos de nível 3 dão uma estrutura mais detalhada dentro das seções principais.",
+            "A navegação por nível de título é uma das ferramentas mais poderosas para percorrer uma página web rapidamente. Combine o H, para todos os títulos, com os números, para níveis específicos."
           ],
           "expectedGestures": [
             "kb:3"
           ],
-          "successMessage": "You jumped to a level 3 heading. Heading-level navigation is one of the most powerful tools for quickly scanning a web page.",
+          "successMessage": "Você saltou para um título de nível 3. A navegação por nível de título é uma das ferramentas mais poderosas para percorrer uma página web rapidamente.",
           "allowExecution": true,
           "feedbackDelay": 1500
         }
@@ -193,79 +193,79 @@
     },
     {
       "id": "navigate_links",
-      "title": "Navigate by Link",
+      "title": "Navegue por Links",
       "order": 4,
       "steps": [
         {
           "type": "info",
-          "instruction": "Links are what you activate to move between web pages. Sighted users can see links as underlined or colored text. In browse mode, press K to jump to the next link — NVDA announces the link text so you know where it goes. Shift plus K goes to the previous link. Tab also moves you forward between links and other interactive elements. Press Enter to continue.",
+          "instruction": "Os links são o que você ativa para ir de uma página web a outra. Quem enxerga vê os links como texto sublinhado ou colorido. No modo de navegação, pressione K para saltar para o próximo link — o NVDA anuncia o texto do link, para você saber aonde ele leva. Shift mais K vai para o link anterior. O Tab também avança entre links e outros elementos interativos. Pressione Enter para continuar.",
           "hints": [
-            "Press K by itself to jump to the next link. NVDA announces the link text — this tells you where the link goes before you follow it.",
-            "Shift plus K goes to the previous link. The forward and backward pattern applies here just like with headings.",
-            "Tab also moves between links and interactive elements, but it skips plain text. K moves through links only, while Tab includes buttons and form fields too."
+            "Pressione K sozinho para saltar para o próximo link. O NVDA anuncia o texto do link — isso te diz aonde ele leva antes de você segui-lo.",
+            "Shift mais K vai para o link anterior. O padrão de ida e volta vale aqui igual ao dos títulos.",
+            "O Tab também se move entre links e elementos interativos, mas pula o texto comum. O K percorre só os links, enquanto o Tab inclui também botões e campos de formulário."
           ]
         },
         {
           "type": "gesture",
-          "instruction": "Press K to jump to the next link on the page.",
-          "hint": "Press the letter K by itself. NVDA will announce the link text.",
+          "instruction": "Pressione K para saltar para o próximo link da página.",
+          "hint": "Pressione a letra K sozinha. O NVDA vai anunciar o texto do link.",
           "hints": [
-            "Press K by itself — just the letter key with no modifier. NVDA announces the link text so you know where it leads.",
-            "The link text is the descriptive name of the link. Good link text tells you the destination; vague text like 'click here' does not.",
-            "To follow a link, press Enter. To continue scanning without following it, just press K again to move to the next link."
+            "Pressione K sozinho — só a tecla da letra, sem modificador. O NVDA anuncia o texto do link, para você saber aonde ele leva.",
+            "O texto do link é o nome descritivo dele. Um bom texto de link diz o destino; um texto vago como 'clique aqui' não diz.",
+            "Para seguir um link, pressione Enter. Para continuar percorrendo sem segui-lo, é só pressionar K de novo e ir para o próximo link."
           ],
           "expectedGestures": [
             "kb:k"
           ],
-          "successMessage": "You jumped to a link. NVDA announced the link text. To follow a link in browse mode, press Enter.",
+          "successMessage": "Você saltou para um link. O NVDA anunciou o texto do link. Para seguir um link no modo de navegação, pressione Enter.",
           "allowExecution": true,
           "feedbackDelay": 1500
         },
         {
           "type": "gesture",
-          "instruction": "Press K again to jump to the next link.",
-          "hint": "Keep pressing K to move through all links on the page.",
+          "instruction": "Pressione K de novo para saltar para o próximo link.",
+          "hint": "Continue pressionando K para percorrer todos os links da página.",
           "hints": [
-            "Press K again to jump to the next link. Keep pressing K to scan all links on the page in order.",
-            "NVDA announces each link's text as you land on it. This lets you quickly scan all the navigation options on a page.",
-            "If NVDA says 'no next link', you have reached the last link on the page."
+            "Pressione K de novo para saltar para o próximo link. Continue pressionando K para percorrer todos os links da página em ordem.",
+            "O NVDA anuncia o texto de cada link conforme você chega nele. Isso deixa você passar os olhos rapidamente por todas as opções de navegação de uma página.",
+            "Se o NVDA disser 'sem link seguinte', você chegou ao último link da página."
           ],
           "expectedGestures": [
             "kb:k"
           ],
-          "successMessage": "Good. You can scan all links on a page very quickly with K.",
+          "successMessage": "Isso. Você consegue percorrer todos os links de uma página bem rápido com o K.",
           "allowExecution": true,
           "feedbackDelay": 1500
         },
         {
           "type": "gesture",
-          "instruction": "Now press Shift+K to go back to the previous link.",
-          "hint": "Hold Shift and press K to move backward through links.",
+          "instruction": "Agora pressione Shift+K para voltar ao link anterior.",
+          "hint": "Segure o Shift e pressione K para andar para trás pelos links.",
           "hints": [
-            "Hold Shift and press K to move backward. This follows the same pattern as Shift plus H for headings.",
-            "NVDA announces the previous link's text as you jump back to it.",
-            "K and Shift plus K together let you freely scan all links on a page in either direction."
+            "Segure o Shift e pressione K para andar para trás. Isso segue o mesmo padrão do Shift mais H para os títulos.",
+            "O NVDA anuncia o texto do link anterior conforme você volta até ele.",
+            "K e Shift mais K, juntos, deixam você percorrer livremente todos os links de uma página nos dois sentidos."
           ],
           "expectedGestures": [
             "kb:shift+k"
           ],
-          "successMessage": "You moved back one link. K and Shift+K let you quickly review all the links on a page.",
+          "successMessage": "Você voltou um link. K e Shift+K deixam você revisar rapidamente todos os links de uma página.",
           "allowExecution": true,
           "feedbackDelay": 1500
         },
         {
           "type": "gesture",
-          "instruction": "Press Tab to move to the next interactive element on the page.",
-          "hint": "Tab moves you between links, buttons, and form fields. It only visits interactive elements, not plain text.",
+          "instruction": "Pressione Tab para ir até o próximo elemento interativo da página.",
+          "hint": "O Tab move você entre links, botões e campos de formulário. Ele só visita elementos interativos, não o texto comum.",
           "hints": [
-            "Tab moves between all interactive elements — links, buttons, and form fields — skipping over plain text content.",
-            "Tab is useful when you want to move through only the actionable parts of a page without reading the surrounding content.",
-            "The Tab key is on the far left of the keyboard above Caps Lock. Press it by itself — no modifier needed."
+            "O Tab se move entre todos os elementos interativos — links, botões e campos de formulário — pulando o conteúdo de texto comum.",
+            "O Tab é útil quando você quer percorrer só as partes acionáveis de uma página, sem ler o conteúdo em volta.",
+            "A tecla Tab fica na extremidade esquerda do teclado, acima do Caps Lock. Pressione sozinha — não precisa de modificador."
           ],
           "expectedGestures": [
             "kb:tab"
           ],
-          "successMessage": "Tab moved you to the next interactive element. Tab is great for moving between controls in forms and navigating menus.",
+          "successMessage": "O Tab levou você ao próximo elemento interativo. O Tab é ótimo para circular entre controles em formulários e para navegar por menus.",
           "allowExecution": true,
           "feedbackDelay": 1500
         }
@@ -273,63 +273,63 @@
     },
     {
       "id": "navigate_forms",
-      "title": "Interact with Forms",
+      "title": "Interaja com Formulários",
       "order": 5,
       "steps": [
         {
           "type": "info",
-          "instruction": "Web pages often have forms with text boxes, buttons, and checkboxes. Sighted users can see these visually; NVDA announces what type of field you land on. In browse mode, press F to jump to the next form field. Press E to jump to the next edit field, which is a text box you can type in. Press B to jump to the next button. Press Enter to continue.",
+          "instruction": "As páginas web costumam ter formulários com caixas de texto, botões e caixas de seleção. Quem enxerga vê tudo isso visualmente; o NVDA anuncia em que tipo de campo você chegou. No modo de navegação, pressione F para saltar para o próximo campo de formulário. Pressione E para saltar para o próximo campo de edição, que é uma caixa de texto onde você pode digitar. Pressione B para saltar para o próximo botão. Pressione Enter para continuar.",
           "hints": [
-            "F jumps to the next form field of any type. E jumps specifically to text input fields. B jumps to buttons. All use the same forward and backward pattern — Shift plus the letter goes backward.",
-            "NVDA announces the field type and label when you land on it — for example 'Search edit' or 'Submit button'.",
-            "To type in an edit field, you first need to switch to focus mode. NVDA often does this automatically, or you can press Enter or NVDA plus Space to switch manually."
+            "O F salta para o próximo campo de formulário de qualquer tipo. O E salta especificamente para campos de entrada de texto. O B salta para botões. Todos usam o mesmo padrão de ida e volta — Shift mais a letra anda para trás.",
+            "O NVDA anuncia o tipo e o rótulo do campo quando você chega nele — por exemplo, 'Pesquisar edição' ou 'Enviar botão'.",
+            "Para digitar em um campo de edição, você precisa primeiro mudar para o modo de foco. O NVDA costuma fazer isso automaticamente, ou você pode pressionar Enter ou NVDA mais Espaço para mudar manualmente."
           ]
         },
         {
           "type": "gesture",
-          "instruction": "Press F to jump to the next form field on the page.",
-          "hint": "Press the letter F by itself. This includes text boxes, checkboxes, radio buttons, and more.",
+          "instruction": "Pressione F para saltar para o próximo campo de formulário da página.",
+          "hint": "Pressione a letra F sozinha. Isso inclui caixas de texto, caixas de seleção, botões de opção e mais.",
           "hints": [
-            "Press F by itself — just the letter key. This jumps to the next form field of any type on the page.",
-            "NVDA announces the field type — 'edit', 'checkbox', 'radio button', 'combo box' — so you know what kind of control it is.",
-            "Shift plus F goes to the previous form field. The same forward and backward pattern applies here."
+            "Pressione F sozinho — só a tecla da letra. Isso salta para o próximo campo de formulário de qualquer tipo na página.",
+            "O NVDA anuncia o tipo do campo — 'edição', 'caixa de seleção', 'botão de opção', 'caixa de combinação' — para você saber que tipo de controle é.",
+            "Shift mais F vai para o campo de formulário anterior. O mesmo padrão de ida e volta vale aqui."
           ],
           "expectedGestures": [
             "kb:f"
           ],
-          "successMessage": "You jumped to a form field. NVDA announced what type of field it is.",
+          "successMessage": "Você saltou para um campo de formulário. O NVDA anunciou de que tipo de campo se trata.",
           "allowExecution": true,
           "feedbackDelay": 1500
         },
         {
           "type": "gesture",
-          "instruction": "Press E to jump to the next text input field.",
-          "hint": "Press the letter E. Edit fields are text boxes where you type information.",
+          "instruction": "Pressione E para saltar para o próximo campo de entrada de texto.",
+          "hint": "Pressione a letra E. Campos de edição são caixas de texto onde você digita informações.",
           "hints": [
-            "Press E by itself to jump to the next edit field — a text box where you can type.",
-            "NVDA announces the field label and the word 'edit' to identify it as a text input.",
-            "To type in an edit field, press Enter to switch to focus mode, type your text, then press Escape to return to browse mode."
+            "Pressione E sozinho para saltar para o próximo campo de edição — uma caixa de texto onde você pode digitar.",
+            "O NVDA anuncia o rótulo do campo e a palavra 'edição', para identificá-lo como uma entrada de texto.",
+            "Para digitar em um campo de edição, pressione Enter para mudar para o modo de foco, digite o seu texto e depois pressione Escape para voltar ao modo de navegação."
           ],
           "expectedGestures": [
             "kb:e"
           ],
-          "successMessage": "You landed on an edit field. To type in it, you would first press Enter or NVDA+Space to switch to focus mode.",
+          "successMessage": "Você chegou em um campo de edição. Para digitar nele, você primeiro pressionaria Enter ou NVDA+Espaço para mudar para o modo de foco.",
           "allowExecution": true,
           "feedbackDelay": 1500
         },
         {
           "type": "gesture",
-          "instruction": "Press B to jump to the next button.",
-          "hint": "Press the letter B. Buttons are controls you activate with Enter or Space.",
+          "instruction": "Pressione B para saltar para o próximo botão.",
+          "hint": "Pressione a letra B. Botões são controles que você ativa com Enter ou Espaço.",
           "hints": [
-            "Press B by itself to jump to the next button on the page.",
-            "NVDA announces the button's label. Activate any button by pressing Enter or Space while focused on it.",
-            "B is the quickest way to find action buttons — like Submit, Search, or Log In — on any web page."
+            "Pressione B sozinho para saltar para o próximo botão da página.",
+            "O NVDA anuncia o rótulo do botão. Ative qualquer botão pressionando Enter ou Espaço enquanto estiver focado nele.",
+            "O B é a forma mais rápida de achar botões de ação — como Enviar, Pesquisar ou Entrar — em qualquer página web."
           ],
           "expectedGestures": [
             "kb:b"
           ],
-          "successMessage": "You found a button. Buttons are activated by pressing Enter or Space. B is the quickest way to find buttons on any page.",
+          "successMessage": "Você encontrou um botão. Botões são ativados pressionando Enter ou Espaço. O B é a forma mais rápida de achar botões em qualquer página.",
           "allowExecution": true,
           "feedbackDelay": 1500
         }
@@ -337,103 +337,103 @@
     },
     {
       "id": "focus_mode",
-      "title": "Focus Mode vs Browse Mode",
+      "title": "Modo de Foco e Modo de Navegação",
       "order": 6,
       "steps": [
         {
           "type": "info",
-          "instruction": "Browse mode lets you read and navigate pages. But when you need to type into a text box, you need to switch to focus mode. When focus mode activates, your cursor is placed inside the edit box and you can type directly — this is intentional. Focus mode puts the cursor in the edit box so you can interact with form fields. Your keypresses go directly to the application instead of being used as navigation shortcuts. NVDA often switches to focus mode automatically when you Tab into a text field. You can also toggle manually with NVDA+Space (NVDA command). Press Enter to continue.",
+          "instruction": "O modo de navegação deixa você ler e percorrer páginas. Mas, quando precisa digitar em uma caixa de texto, você tem que mudar para o modo de foco. Quando o modo de foco é ativado, o seu cursor é colocado dentro da caixa de edição e você pode digitar direto — isso é intencional. O modo de foco põe o cursor na caixa de edição para você interagir com os campos do formulário. As suas teclas vão direto para o aplicativo, em vez de serem usadas como atalhos de navegação. O NVDA costuma mudar para o modo de foco automaticamente quando você chega com o Tab em um campo de texto. Você também pode alternar manualmente com NVDA+Espaço (comando do NVDA). Pressione Enter para continuar.",
           "hints": [
-            "Browse mode: letter keys are navigation shortcuts. Focus mode: letter keys type characters into a field — your cursor is in the edit box. NVDA plus Space toggles between them.",
-            "NVDA usually switches to focus mode automatically when you enter a text field. You will hear 'focus mode' announced, and your cursor lands in the edit box ready to type.",
-            "If you are trying to type and letters are jumping around the page instead of appearing in a field, you are in browse mode. Press NVDA plus Space to switch to focus mode and place the cursor in the edit box."
+            "Modo de navegação: as teclas de letra são atalhos de navegação. Modo de foco: as teclas de letra digitam caracteres em um campo — o seu cursor está na caixa de edição. NVDA mais Espaço alterna entre os dois.",
+            "O NVDA normalmente muda para o modo de foco automaticamente quando você entra em um campo de texto. Você vai ouvir 'modo de foco' anunciado, e o seu cursor cai na caixa de edição, pronto para digitar.",
+            "Se você está tentando digitar e as letras ficam saltando pela página em vez de aparecer em um campo, você está no modo de navegação. Pressione NVDA mais Espaço para mudar para o modo de foco e colocar o cursor na caixa de edição."
           ]
         },
         {
           "type": "info",
-          "instruction": "Try it now. Hold your NVDA key and press the Space bar. NVDA will announce either 'focus mode' or 'browse mode' to tell you which one you are switching to. In focus mode, letter keys type characters into a field instead of navigating the page. In browse mode, letter keys are navigation shortcuts. NVDA often switches automatically when you Tab into a text field, but knowing how to toggle manually with NVDA+Space gives you full control at any time. Press Enter here to continue.",
+          "instruction": "Experimente agora. Segure a sua tecla NVDA e pressione a barra de espaço. O NVDA vai anunciar 'modo de foco' ou 'modo de navegação', para dizer para qual dos dois você está mudando. No modo de foco, as teclas de letra digitam caracteres em um campo em vez de navegar pela página. No modo de navegação, as teclas de letra são atalhos de navegação. O NVDA costuma mudar automaticamente quando você chega com o Tab em um campo de texto, mas saber alternar manualmente com NVDA+Espaço te dá controle total a qualquer momento. Pressione Enter aqui para continuar.",
           "monitorGestures": [
             "kb:nvda+space"
           ],
           "hints": [
-            "Hold your NVDA key — Insert or Caps Lock — and press the Space bar. The Space bar is the long flat key at the bottom center of the keyboard.",
-            "NVDA announces 'focus mode' or 'browse mode' to confirm which mode you switched to. Toggle back and forth a few times to get the feel of it.",
-            "If letters are being typed when you expect navigation, press NVDA plus Space to switch to browse mode. If navigation is happening when you expect typing, press NVDA plus Space to switch to focus mode."
+            "Segure a sua tecla NVDA — Insert ou Caps Lock — e pressione a barra de espaço. A barra de espaço é a tecla longa e achatada embaixo, no centro do teclado.",
+            "O NVDA anuncia 'modo de foco' ou 'modo de navegação' para confirmar para qual modo você mudou. Alterne entre eles algumas vezes para pegar o jeito.",
+            "Se as letras estão sendo digitadas quando você esperava navegar, pressione NVDA mais Espaço para mudar para o modo de navegação. Se a navegação está acontecendo quando você esperava digitar, pressione NVDA mais Espaço para mudar para o modo de foco."
           ]
         },
         {
           "type": "info",
-          "instruction": "Press NVDA+Space one more time to switch back to the other mode. Hold your NVDA key and press Space, and listen for NVDA to announce the mode name. Remembering this one shortcut means you will always have control over how your keyboard behaves on any web page. Press Enter here to continue.",
+          "instruction": "Pressione NVDA+Espaço mais uma vez para voltar ao outro modo. Segure a sua tecla NVDA e pressione Espaço, e ouça o NVDA anunciar o nome do modo. Lembrar deste único atalho significa que você sempre vai ter controle sobre o comportamento do seu teclado em qualquer página web. Pressione Enter aqui para continuar.",
           "monitorGestures": [
             "kb:nvda+space"
           ],
           "hints": [
-            "Hold NVDA and press the Space bar again to toggle back. NVDA announces the mode name each time you switch.",
-            "The Space bar is the long flat key at the very bottom of the keyboard. Hold your NVDA key, then tap Space.",
-            "NVDA plus Space is one of the most important web browsing shortcuts. Once it becomes a reflex, you will never feel stuck in the wrong mode."
+            "Segure o NVDA e pressione a barra de espaço de novo para voltar. O NVDA anuncia o nome do modo a cada troca.",
+            "A barra de espaço é a tecla longa e achatada bem embaixo no teclado. Segure a sua tecla NVDA e então toque no Espaço.",
+            "NVDA mais Espaço é um dos atalhos mais importantes da navegação web. Quando ele virar reflexo, você nunca mais vai se sentir preso no modo errado."
           ]
         }
       ]
     },
     {
       "id": "landmarks_and_lists",
-      "title": "Landmarks and Lists",
+      "title": "Marcos e Listas",
       "order": 7,
       "steps": [
         {
           "type": "info",
-          "instruction": "Well-designed web pages use landmarks — named regions such as navigation, main content, and footer. Sighted users can see these sections at a glance. In browse mode, press D to jump to the next landmark and skip directly to the part of the page you need. Shift plus D goes backward. Pages also have lists of items. Press L to jump to the next list. These shortcuts help you skip to the right part of a page without reading everything. Press Enter to continue.",
+          "instruction": "As páginas web bem feitas usam marcos — regiões nomeadas como navegação, conteúdo principal e rodapé. Quem enxerga consegue ver essas seções de relance. No modo de navegação, pressione D para saltar para o próximo marco e ir direto para a parte da página que você quer. Shift mais D anda para trás. As páginas também têm listas de itens. Pressione L para saltar para a próxima lista. Esses atalhos te ajudam a pular direto para a parte certa de uma página sem ler tudo. Pressione Enter para continuar.",
           "hints": [
-            "D jumps to the next landmark region. Common landmarks include: banner (page header), navigation, main (main content), and contentinfo (footer).",
-            "L jumps to the next list on the page. Once inside a list, press I to move between individual list items.",
-            "Using D to jump to the main landmark skips past repeated navigation links at the top of a page — a major time saver on every site you visit."
+            "O D salta para a próxima região de marco. Os marcos mais comuns são: bâner (o cabeçalho da página), navegação, principal (o conteúdo principal) e conteúdo (o rodapé).",
+            "O L salta para a próxima lista da página. Já dentro de uma lista, pressione I para andar entre os itens individuais.",
+            "Usar o D para saltar até o marco principal pula os links de navegação repetidos no topo da página — uma economia enorme de tempo em todo site que você visitar."
           ]
         },
         {
           "type": "gesture",
-          "instruction": "Press D to jump to the next landmark on the page.",
-          "hint": "Press the letter D. NVDA will announce the landmark type, such as navigation, main, or contentinfo.",
+          "instruction": "Pressione D para saltar para o próximo marco da página.",
+          "hint": "Pressione a letra D. O NVDA vai anunciar o tipo do marco, como navegação, principal ou conteúdo.",
           "hints": [
-            "Press D by itself. NVDA announces the landmark type — for example 'navigation landmark' or 'main landmark'.",
-            "The main landmark contains the primary content of the page. Jumping to it with D skips past repeated headers and navigation menus.",
-            "Shift plus D goes backward to the previous landmark."
+            "Pressione D sozinho. O NVDA anuncia o tipo do marco — por exemplo, 'marco de navegação' ou 'marco principal'.",
+            "O marco principal contém o conteúdo central da página. Saltar até ele com o D pula cabeçalhos repetidos e menus de navegação.",
+            "Shift mais D volta para o marco anterior."
           ],
           "expectedGestures": [
             "kb:d"
           ],
-          "successMessage": "You jumped to a landmark. Landmarks are a quick way to get to the main content area and skip past repeated navigation links.",
+          "successMessage": "Você saltou para um marco. Os marcos são um jeito rápido de chegar à área de conteúdo principal e pular os links de navegação repetidos.",
           "allowExecution": true,
           "feedbackDelay": 1500
         },
         {
           "type": "gesture",
-          "instruction": "Press D again to move to the next landmark.",
-          "hint": "Keep pressing D to cycle through all landmarks on the page.",
+          "instruction": "Pressione D de novo para ir até o próximo marco.",
+          "hint": "Continue pressionando D para percorrer todos os marcos da página.",
           "hints": [
-            "Press D again to jump to the next landmark. Keep pressing to cycle through all landmark regions on the page.",
-            "NVDA announces each landmark type as you land on it.",
-            "If NVDA says 'no next landmark', the page either has no more landmarks or is not well structured with ARIA roles."
+            "Pressione D de novo para saltar para o próximo marco. Continue pressionando para percorrer todas as regiões de marco da página.",
+            "O NVDA anuncia o tipo de cada marco conforme você chega nele.",
+            "Se o NVDA disser 'sem marco seguinte', ou a página não tem mais marcos, ou ela não está bem estruturada com funções ARIA."
           ],
           "expectedGestures": [
             "kb:d"
           ],
-          "successMessage": "Good. You can press D repeatedly to move between all the major sections of a page.",
+          "successMessage": "Isso. Você pode pressionar D repetidamente para circular entre todas as seções principais de uma página.",
           "allowExecution": true,
           "feedbackDelay": 1500
         },
         {
           "type": "gesture",
-          "instruction": "Now press L to jump to the next list on the page.",
-          "hint": "Press the letter L. Lists contain grouped items like navigation menus, product listings, or bullet points.",
+          "instruction": "Agora pressione L para saltar para a próxima lista da página.",
+          "hint": "Pressione a letra L. As listas reúnem itens agrupados, como menus de navegação, listagens de produtos ou tópicos.",
           "hints": [
-            "Press L by itself to jump to the next list. Lists contain grouped items — navigation menus, bullet points, product listings, and more.",
-            "Once inside a list, press I to move between individual list items one at a time.",
-            "NVDA announces 'list with X items' when you land on a list, so you know how many items it contains before you start reading through it."
+            "Pressione L sozinho para saltar para a próxima lista. As listas reúnem itens agrupados — menus de navegação, tópicos, listagens de produtos e mais.",
+            "Já dentro de uma lista, pressione I para andar entre os itens individuais, um por vez.",
+            "O NVDA anuncia 'lista com X itens' quando você chega em uma lista, para você saber quantos itens ela tem antes de começar a percorrê-la."
           ],
           "expectedGestures": [
             "kb:l"
           ],
-          "successMessage": "You found a list. Once inside a list, press I to move between list items. L and D together cover most of the structural navigation you need on any page.",
+          "successMessage": "Você encontrou uma lista. Já dentro de uma lista, pressione I para andar entre os itens. L e D, juntos, cobrem a maior parte da navegação estrutural de que você precisa em qualquer página.",
           "allowExecution": true,
           "feedbackDelay": 1500
         }
@@ -441,105 +441,105 @@
     },
     {
       "id": "elements_list",
-      "title": "The Elements List",
+      "title": "A Lista de Elementos",
       "order": 8,
       "steps": [
         {
           "type": "info",
-          "instruction": "NVDA has a powerful dialog called the Elements List that shows you all the headings, links, form fields, or landmarks on the current page in one place. You can filter the list and jump directly to any item. Sighted users can visually scan a page and spot what they need; the Elements List gives you the same overview in one accessible dialog. It is like a table of contents for the whole page. Press Enter to continue.",
+          "instruction": "O NVDA tem uma caixa de diálogo poderosa chamada Lista de Elementos, que mostra todos os títulos, links, campos de formulário ou marcos da página atual em um só lugar. Você pode filtrar a lista e saltar direto para qualquer item. Quem enxerga consegue passar os olhos pela página e achar o que precisa; a Lista de Elementos te dá a mesma visão geral em uma única caixa de diálogo acessível. É como um sumário da página inteira. Pressione Enter para continuar.",
           "hints": [
-            "The Elements List opens with NVDA plus F7. It shows headings, links, form fields, or landmarks depending on which tab you are on.",
-            "Inside the Elements List, Tab moves between the category buttons at the top. Arrow keys move through the list of items. Enter jumps to the selected item on the page.",
-            "The Elements List is one of the fastest ways to find a specific link or heading on a long page without reading everything."
+            "A Lista de Elementos abre com NVDA mais F7. Ela mostra títulos, links, campos de formulário ou marcos, conforme a aba em que você estiver.",
+            "Dentro da Lista de Elementos, o Tab circula entre os botões de categoria no topo. As teclas de seta percorrem a lista de itens. O Enter salta para o item selecionado na página.",
+            "A Lista de Elementos é uma das formas mais rápidas de achar um link ou título específico em uma página longa sem ler tudo."
           ]
         },
         {
           "type": "info",
-          "instruction": "Try it now. Hold your NVDA key and press F7 at the top of your keyboard. The Elements List dialog will open and NVDA will announce it. Inside the dialog, press Tab to switch between viewing headings, links, form fields, and landmarks on the current page. Use the arrow keys to move through the list, and press Enter on any item to jump directly to it on the page. It is like an instant table of contents for the whole page — one of the most powerful tools NVDA gives you for web navigation. When you are done exploring, press Escape to close the dialog, then press Enter here to continue.",
+          "instruction": "Experimente agora. Segure a sua tecla NVDA e pressione F7, no topo do teclado. A caixa de diálogo Lista de Elementos vai abrir e o NVDA vai anunciá-la. Dentro dela, pressione Tab para alternar entre ver títulos, links, campos de formulário e marcos da página atual. Use as teclas de seta para percorrer a lista e pressione Enter em qualquer item para saltar direto até ele na página. É como um sumário instantâneo da página inteira — uma das ferramentas mais poderosas que o NVDA te dá para navegação web. Quando terminar de explorar, pressione Escape para fechar a caixa de diálogo e depois pressione Enter aqui para continuar.",
           "monitorGestures": [
             "kb:nvda+f7"
           ],
           "hints": [
-            "Hold your NVDA key and press F7 — the seventh function key in the top row. The Elements List dialog opens immediately.",
-            "Inside the dialog, Tab moves between the category buttons: headings, links, form fields, buttons, and landmarks. Arrow keys then move through the items in the selected category.",
-            "Type a few letters in the filter box to narrow the list to items containing that text. This is very useful on pages with many links."
+            "Segure a sua tecla NVDA e pressione F7 — a sétima tecla de função da fileira de cima. A caixa de diálogo Lista de Elementos abre na hora.",
+            "Dentro da caixa de diálogo, o Tab circula entre os botões de categoria: títulos, links, campos de formulário, botões e marcos. As teclas de seta então percorrem os itens da categoria selecionada.",
+            "Digite algumas letras na caixa de filtro para reduzir a lista aos itens que contêm aquele texto. Isso é muito útil em páginas com muitos links."
           ]
         },
         {
           "type": "info",
-          "instruction": "Well done. The Elements List is one of the fastest ways to get an overview of any page. Press Enter to continue to the next lesson.",
+          "instruction": "Muito bem. A Lista de Elementos é uma das formas mais rápidas de ter uma visão geral de qualquer página. Pressione Enter para ir para a próxima lição.",
           "hints": [
-            "Use the Elements List any time you land on an unfamiliar page and want to quickly understand its structure before reading.",
-            "The filter box in the Elements List lets you type a word to narrow the list — for example, type 'contact' to find a contact link on any page.",
-            "Remember: NVDA plus F7 opens the Elements List from any web page. It works in most browsers including Chrome, Firefox, and Edge."
+            "Use a Lista de Elementos sempre que cair em uma página desconhecida e quiser entender rapidamente a estrutura dela antes de ler.",
+            "A caixa de filtro da Lista de Elementos deixa você digitar uma palavra para reduzir a lista — por exemplo, digite 'contato' para achar um link de contato em qualquer página.",
+            "Lembre-se: NVDA mais F7 abre a Lista de Elementos a partir de qualquer página web. Funciona na maioria dos navegadores, incluindo Chrome, Firefox e Edge."
           ]
         }
       ]
     },
     {
       "id": "nvda_find",
-      "title": "Find Text on a Page",
+      "title": "Procure Texto em uma Página",
       "order": 9,
       "steps": [
         {
           "type": "info",
-          "instruction": "NVDA+Ctrl+F opens the NVDA Find dialog, which lets you search for any text on the current web page. Sighted users can press Ctrl+F in their browser to find text on screen. NVDA's Find dialog works the same way but announces the result through speech. It works in browse mode and in many documents. Press Enter to continue.",
+          "instruction": "NVDA+Ctrl+F abre a caixa de diálogo Procurar do NVDA, que deixa você buscar qualquer texto na página web atual. Quem enxerga pode pressionar Ctrl+F no navegador para achar um texto na tela. A caixa Procurar do NVDA funciona da mesma forma, mas anuncia o resultado pela fala. Ela funciona no modo de navegação e em muitos documentos. Pressione Enter para continuar.",
           "hints": [
-            "NVDA plus Control plus F opens NVDA's own Find dialog. Hold NVDA, hold Control, then press F.",
-            "Type the text you want to find, then press Enter. NVDA jumps to the first match and reads the surrounding text.",
-            "NVDA plus F3 finds the next match after the first. NVDA plus Shift plus F3 finds the previous match."
+            "NVDA mais Control mais F abre a caixa Procurar do próprio NVDA. Segure o NVDA, segure o Control e então pressione F.",
+            "Digite o texto que você quer encontrar e pressione Enter. O NVDA salta para a primeira ocorrência e lê o texto ao redor.",
+            "NVDA mais F3 encontra a próxima ocorrência depois da primeira. NVDA mais Shift mais F3 encontra a ocorrência anterior."
           ]
         },
         {
           "type": "info",
-          "instruction": "Try it now. Hold your NVDA key, then hold Control, then press F. The Find dialog will open. Type a word that appears on the practice page — such as 'heading' or 'link' — then press Enter to jump to the first match. NVDA will announce the text around the result. Press Escape to close the dialog without searching. When you are done, press NVDA+Shift+C to return here, then press Enter to continue.",
+          "instruction": "Experimente agora. Segure a sua tecla NVDA, depois segure o Control e então pressione F. A caixa de diálogo Procurar vai abrir. Digite uma palavra que apareça na página de prática — como 'título' ou 'link' — e então pressione Enter para saltar até a primeira ocorrência. O NVDA vai anunciar o texto em volta do resultado. Pressione Escape para fechar a caixa de diálogo sem procurar. Quando terminar, pressione NVDA+Shift+C para voltar para cá e depois pressione Enter para continuar.",
           "monitorGestures": [
             "kb:nvda+control+f"
           ],
           "hints": [
-            "Hold NVDA, hold Control, and press F — all three at the same time. The Control key is in the bottom left corner; F is in the middle row of letters.",
-            "Type a word you know is on the page, then press Enter. NVDA jumps to the first occurrence and reads the surrounding text.",
-            "If no match is found, NVDA says 'not found'. Try a different search term or check your spelling."
+            "Segure o NVDA, segure o Control e pressione F — os três ao mesmo tempo. A tecla Control fica no canto inferior esquerdo; o F fica na fileira do meio das letras.",
+            "Digite uma palavra que você sabe que está na página e então pressione Enter. O NVDA salta para a primeira ocorrência e lê o texto ao redor.",
+            "Se nenhuma ocorrência for encontrada, o NVDA diz 'não achado'. Tente outro termo de busca ou confira a grafia."
           ]
         },
         {
           "type": "info",
-          "instruction": "You can also find the next or previous occurrence without reopening the dialog. Press NVDA+F3 to find the next match, and NVDA+Shift+F3 to find the previous match. These work the same way as Find Next in other applications. Press Enter to continue.",
+          "instruction": "Você também pode encontrar a próxima ou a ocorrência anterior sem reabrir a caixa de diálogo. Pressione NVDA+F3 para encontrar a próxima ocorrência e NVDA+Shift+F3 para encontrar a anterior. Esses comandos funcionam do mesmo jeito que o Localizar Próxima de outros aplicativos. Pressione Enter para continuar.",
           "hints": [
-            "NVDA plus F3 finds the next match. NVDA plus Shift plus F3 finds the previous match. F3 is the third function key in the top row.",
-            "After opening Find and jumping to the first result, close the dialog with Escape and use NVDA plus F3 to keep moving through subsequent matches.",
-            "This shortcut works in browse mode on web pages and in many document viewers — useful any time you are searching for a specific word or phrase."
+            "NVDA mais F3 encontra a próxima ocorrência. NVDA mais Shift mais F3 encontra a anterior. O F3 é a terceira tecla de função da fileira de cima.",
+            "Depois de abrir a busca e saltar para o primeiro resultado, feche a caixa de diálogo com Escape e use NVDA mais F3 para continuar percorrendo as ocorrências seguintes.",
+            "Esse atalho funciona no modo de navegação em páginas web e em muitos visualizadores de documento — útil sempre que você estiver procurando uma palavra ou frase específica."
           ]
         }
       ]
     },
     {
       "id": "navigate_tables",
-      "title": "Navigate Tables",
+      "title": "Navegue por Tabelas",
       "order": 10,
       "chapterComplete": true,
       "steps": [
         {
           "type": "info",
-          "instruction": "Web pages often use tables to display structured information — rows and columns of data such as schedules, pricing, or comparison charts. Sighted users can see the grid layout visually. When your cursor lands on a table in browse mode, NVDA announces 'table with X rows and Y columns' so you know the size of the table. Understanding what kind of command you are using is important here: table cell navigation commands are NVDA commands — they require your NVDA key or a combination that NVDA interprets. They are not Windows commands or browser commands. Press Enter to continue.",
+          "instruction": "As páginas web costumam usar tabelas para exibir informações estruturadas — linhas e colunas de dados, como horários, preços ou quadros comparativos. Quem enxerga consegue ver a grade visualmente. Quando o seu cursor chega em uma tabela no modo de navegação, o NVDA anuncia 'tabela com X linhas e Y colunas', para você saber o tamanho dela. Entender que tipo de comando você está usando é importante aqui: os comandos de navegação entre células são comandos do NVDA — eles precisam da sua tecla NVDA ou de uma combinação que o NVDA interpreta. Não são comandos do Windows nem do navegador. Pressione Enter para continuar.",
           "hints": [
-            "NVDA announces 'table with X rows and Y columns' when you land on a table. This tells you how large it is before you start navigating inside it.",
-            "Table navigation commands in this lesson are NVDA commands — they only work when NVDA is running and you are in browse mode on a web page.",
-            "Not all tables on web pages are data tables. Some pages use tables for visual layout. NVDA will still announce them, but they may not have meaningful row and column structure."
+            "O NVDA anuncia 'tabela com X linhas e Y colunas' quando você chega em uma tabela. Isso te diz o tamanho dela antes de você começar a navegar por dentro.",
+            "Os comandos de navegação por tabela desta lição são comandos do NVDA — eles só funcionam com o NVDA em execução e com você no modo de navegação, em uma página web.",
+            "Nem toda tabela em uma página web é uma tabela de dados. Algumas páginas usam tabelas só para organizar o visual. O NVDA vai anunciá-las mesmo assim, mas elas podem não ter uma estrutura de linhas e colunas com sentido."
           ]
         },
         {
           "type": "info",
-          "instruction": "To move between cells in a table, use Ctrl+Alt+Arrow keys — these are NVDA commands for table navigation. Ctrl+Alt+Right Arrow moves to the next cell in the same row. Ctrl+Alt+Left Arrow moves to the previous cell. Ctrl+Alt+Down Arrow moves to the cell directly below in the same column. Ctrl+Alt+Up Arrow moves to the cell directly above. As you move, NVDA announces the cell content and its row and column position. This works the same way whether you are on desktop or laptop keyboard layout. Press Enter to continue.",
+          "instruction": "Para se mover entre as células de uma tabela, use Ctrl+Alt+setas — esses são comandos do NVDA para navegação em tabelas. Ctrl+Alt+Seta para Direita vai para a próxima célula da mesma linha. Ctrl+Alt+Seta para Esquerda vai para a célula anterior. Ctrl+Alt+Seta para Baixo vai para a célula logo abaixo, na mesma coluna. Ctrl+Alt+Seta para Cima vai para a célula logo acima. Conforme você se move, o NVDA anuncia o conteúdo da célula e a posição dela em linha e coluna. Isso funciona da mesma forma no layout de teclado desktop ou laptop. Pressione Enter para continuar.",
           "hints": [
-            "Hold Ctrl and Alt together, then press an Arrow key to move through table cells. Right and Left move across a row. Down and Up move through a column.",
-            "NVDA announces the cell content, plus its row and column position — for example, 'row 2, column 3, Price: 49 dollars'. This tells you exactly where you are in the table.",
-            "These are NVDA commands — Ctrl+Alt+Arrow keys are intercepted by NVDA in browse mode. They do not work the same way outside of a web page table."
+            "Segure o Ctrl e o Alt juntos e então pressione uma tecla de seta para andar pelas células da tabela. Direita e esquerda percorrem uma linha. Baixo e cima percorrem uma coluna.",
+            "O NVDA anuncia o conteúdo da célula e também a posição dela em linha e coluna — por exemplo, 'linha 2, coluna 3, Preço: 49 reais'. Isso te diz exatamente onde você está na tabela.",
+            "Esses são comandos do NVDA — as combinações Ctrl+Alt+setas são interceptadas pelo NVDA no modo de navegação. Elas não funcionam do mesmo jeito fora de uma tabela em página web."
           ]
         },
         {
           "type": "info",
-          "instruction": "Try it now on the practice page. Navigate to a table using H or Down Arrow to find the section labeled Tables. Once you are inside the table, try pressing Ctrl+Alt+Right Arrow to move to the next cell, then Ctrl+Alt+Down Arrow to move down a row. NVDA will announce the cell content and position as you move. When you are ready to continue, press NVDA+Shift+C to return here and press Enter.",
+          "instruction": "Experimente agora na página de prática. Vá até uma tabela usando o H ou a Seta para Baixo para achar a seção com o título Tabelas. Já dentro da tabela, experimente pressionar Ctrl+Alt+Seta para Direita para ir até a próxima célula e depois Ctrl+Alt+Seta para Baixo para descer uma linha. O NVDA vai anunciar o conteúdo e a posição da célula conforme você se move. Quando estiver pronto para continuar, pressione NVDA+Shift+C para voltar para cá e pressione Enter.",
           "monitorGestures": [
             "kb:control+alt+rightArrow",
             "kb:control+alt+leftArrow",
@@ -547,27 +547,27 @@
             "kb:control+alt+upArrow"
           ],
           "hints": [
-            "Hold Ctrl and Alt at the same time — both with your left hand — then press Right Arrow to move to the next cell in the row.",
-            "Hold Ctrl and Alt, then press Down Arrow to move to the cell directly below in the same column. NVDA announces the row and column number.",
-            "If the table has headers, NVDA announces the column or row header label as you move — for example 'Monday, column 1' or 'Price, row 3'."
+            "Segure o Ctrl e o Alt ao mesmo tempo — os dois com a mão esquerda — e então pressione a Seta para Direita para ir até a próxima célula da linha.",
+            "Segure o Ctrl e o Alt e então pressione a Seta para Baixo para ir até a célula logo abaixo, na mesma coluna. O NVDA anuncia o número da linha e da coluna.",
+            "Se a tabela tiver cabeçalhos, o NVDA anuncia o rótulo do cabeçalho da coluna ou da linha conforme você se move — por exemplo, 'Segunda-feira, coluna 1' ou 'Preço, linha 3'."
           ]
         },
         {
           "type": "info",
-          "instruction": "A reminder about command categories: Ctrl+Alt+Arrow for table navigation is an NVDA command. The regular Tab key and Arrow keys are Windows commands that work anywhere. H, K, D, and other single-letter shortcuts are NVDA browse mode commands that only work in browse mode on web pages. Keeping track of which commands belong to which category helps you understand why some keys work in some places but not others. Press Enter to continue.",
+          "instruction": "Um lembrete sobre as categorias de comando: Ctrl+Alt+setas para navegação em tabelas é um comando do NVDA. A tecla Tab comum e as teclas de seta são comandos do Windows, que funcionam em qualquer lugar. H, K, D e os outros atalhos de uma letra só são comandos do NVDA do modo de navegação, e só funcionam no modo de navegação, em páginas web. Ter clareza de qual comando pertence a qual categoria te ajuda a entender por que algumas teclas funcionam em certos lugares e em outros não. Pressione Enter para continuar.",
           "hints": [
-            "NVDA commands require NVDA to be running and active. Tab and Arrow keys are Windows commands — they work in any application.",
-            "Browse mode single-letter shortcuts like H and K only work when you are in browse mode. If they are not working, you may be in focus mode — press NVDA plus Space to check.",
-            "Ctrl+Alt+Arrow for tables is an NVDA command that only activates inside a table in browse mode. Outside a table, Ctrl+Alt+Arrow may do something different or nothing at all."
+            "Os comandos do NVDA precisam do NVDA em execução e ativo. Tab e as teclas de seta são comandos do Windows — funcionam em qualquer aplicativo.",
+            "Os atalhos de uma letra só do modo de navegação, como H e K, só funcionam quando você está no modo de navegação. Se não estiverem funcionando, você pode estar no modo de foco — pressione NVDA mais Espaço para conferir.",
+            "Ctrl+Alt+setas para tabelas é um comando do NVDA que só é ativado dentro de uma tabela no modo de navegação. Fora de uma tabela, Ctrl+Alt+setas pode fazer outra coisa ou não fazer nada."
           ]
         },
         {
           "type": "info",
-          "instruction": "Excellent work — you have completed the Browse Mode and Web Navigation chapter! You now know how to navigate web pages using headings, links, form fields, landmarks, lists, the Elements List, NVDA Find, focus mode, and table navigation. These skills let you navigate any web page quickly and independently. When you are ready, press NVDA+Shift+C to open the lesson picker and continue to the next chapter: Object Navigation — where you will learn to reach any control on screen, even ones that Tab cannot get to. Press Enter to finish.",
+          "instruction": "Excelente trabalho — você concluiu o capítulo Modo de Navegação e Navegação Web! Agora você sabe percorrer páginas web usando títulos, links, campos de formulário, marcos, listas, a Lista de Elementos, a busca do NVDA, o modo de foco e a navegação em tabelas. Essas habilidades deixam você navegar por qualquer página web com rapidez e independência. Quando estiver pronto, pressione NVDA+Shift+C para abrir o seletor de lições e seguir para o próximo capítulo: Navegação de Objetos — onde você vai aprender a alcançar qualquer controle da tela, até os que o Tab não consegue atingir. Pressione Enter para concluir.",
           "hints": [
-            "The next chapter is Object Navigation. It teaches you to reach any element on screen — even controls that Tab and browse mode cannot access.",
-            "Browse mode quick reference: H for headings, K for links, F for form fields, D for landmarks, L for lists, Ctrl+Alt+Arrow for table cells. Shift plus any of these goes backward.",
-            "NVDA Coach saves your progress automatically. All completed lessons are marked when you return."
+            "O próximo capítulo é Navegação de Objetos. Ele ensina você a alcançar qualquer elemento na tela — até controles que o Tab e o modo de navegação não conseguem acessar.",
+            "Referência rápida do modo de navegação: H para títulos, K para links, F para campos de formulário, D para marcos, L para listas, Ctrl+Alt+setas para células de tabela. Shift mais qualquer uma dessas anda para trás.",
+            "O NVDA Coach salva o seu progresso automaticamente. Todas as lições concluídas ficam marcadas quando você voltar."
           ]
         }
       ]

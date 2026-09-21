@@ -15,7 +15,7 @@
           "hints": [
             "Modifier keys are always held down while you press another key. Releasing them first — or pressing them in the wrong order — can prevent a command from working.",
             "Most keyboards have duplicate modifier keys on both sides: Ctrl on the left and right, Shift on the left and right, Alt on the left and right. Either side works for most commands.",
-            "The Windows key and the Menu key (if present) are usually only on the left side or only on one side of the keyboard."
+            "The Menu key, also called the Applications key, sits on the right of the bottom row next to the right Control key. Many laptops leave it out altogether."
           ]
         },
         {
@@ -56,7 +56,7 @@
         },
         {
           "type": "info",
-          "instruction": "Your NVDA key is one of two options: Insert or Caps Lock. Insert is in the cluster of keys above the arrow keys on most keyboards, near Home, Delete, Page Up, and Page Down. Caps Lock is on the far left side of the keyboard, just above the left Shift key. Both can serve as your NVDA key at the same time — NVDA accepts either. Many laptop users prefer Caps Lock because Insert may be harder to reach. You can choose your preferred NVDA key in NVDA Settings under Keyboard. Press Enter to finish this lesson.",
+          "instruction": "Your NVDA key can be Insert or Caps Lock. NVDA actually offers three choices in its Keyboard settings - Caps Lock, the Insert key in the cluster above the arrows, and the Insert on the numeric keypad - and any combination of them can be switched on. Insert is in the cluster of keys above the arrow keys on most keyboards, near Home, Delete, Page Up, and Page Down. Caps Lock is on the far left side of the keyboard, just above the left Shift key. Both can serve as your NVDA key at the same time — NVDA accepts either. Many laptop users prefer Caps Lock because Insert may be harder to reach. You can choose your preferred NVDA key in NVDA Settings under Keyboard. Press Enter to finish this lesson.",
           "hints": [
             "Insert is in the cluster above the arrow keys — near Home, Delete, End, Page Up, and Page Down. It is not a modifier by itself; it only becomes the NVDA key because NVDA assigns it that role.",
             "Caps Lock is on the far left, just above Shift. Using Caps Lock as your NVDA key means Caps Lock no longer toggles uppercase — press NVDA plus F2 and then Caps Lock to actually toggle it when needed.",
@@ -143,7 +143,7 @@
         },
         {
           "type": "info",
-          "instruction": "When commands differ between layouts, NVDA Coach always shows both. For example: 'Press NVDA+NumPad5 (desktop) or NVDA+Shift+Comma (laptop).' Use whichever matches your current layout setting. If a command is not working as expected, the most common cause is a mismatch between your NVDA layout setting and the keys you are pressing. Check your layout setting first before trying other troubleshooting steps. Press Enter to continue.",
+          "instruction": "When commands differ between layouts, NVDA Coach always shows both. For example: 'Press NVDA+NumPad5 (desktop) or NVDA+Shift+O (laptop).' Use whichever matches your current layout setting. If a command is not working as expected, the most common cause is a mismatch between your NVDA layout setting and the keys you are pressing. Check your layout setting first before trying other troubleshooting steps. Press Enter to continue.",
           "hints": [
             "Desktop layout command listed first, laptop layout in parentheses or after 'or'. Use the version that matches your NVDA layout setting.",
             "A mismatch between layout setting and keys pressed is the most common reason a command does not work. Open NVDA Settings and verify your Keyboard layout if commands seem wrong.",

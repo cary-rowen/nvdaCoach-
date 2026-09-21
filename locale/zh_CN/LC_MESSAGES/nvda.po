@@ -14,7 +14,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-
 #: globalPlugins/nvdaCoach/__init__.py:48
 msgid "Play sounds during lessons (correct/incorrect/completion chimes)"
 msgstr "在课程中播放声音（正确/错误/完成提示音）"
@@ -416,6 +415,10 @@ msgid "United States"
 msgstr "美国"
 
 #: globalPlugins/nvdaCoach/__init__.py:1334
+msgid "Japan"
+msgstr "日本"
+
+#: globalPlugins/nvdaCoach/__init__.py:1334
 msgid "Canada"
 msgstr "加拿大"
 
@@ -723,6 +726,10 @@ msgstr "找不到“NVDA 入门”章。"
 msgid "Could not save the certificate. Please check that your Downloads folder is accessible."
 msgstr "无法保存证书。请检查你的下载文件夹是否可访问。"
 
+#: globalPlugins/nvdaCoach/lessonRunner.py:79
+msgid "Lesson"
+msgstr "课程"
+
 #: globalPlugins/nvdaCoach/lessonRunner.py:87
 msgid "Hello, {name}! "
 msgstr "你好，{name}！ "
@@ -774,10 +781,6 @@ msgstr "现在就试试吧。准备好继续时，按 Enter 或点击“下一�
 #: globalPlugins/nvdaCoach/lessonRunner.py:229
 msgid "PRACTICE AREA — NAVIGATE WITH ARROW KEYS:"
 msgstr "练习区 — 请用方向键浏览："
-
-#: globalPlugins/nvdaCoach/lessonRunner.py:282
-msgid "Lesson"
-msgstr "课程"
 
 #: globalPlugins/nvdaCoach/lessonRunner.py:284
 msgid "Well done, {name}!"

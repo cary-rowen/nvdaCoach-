@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NVDAコーチ — ユーザーガイド</title>
+<style>
+body { font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 1em 2em; line-height: 1.6; }
+h1, h2, h3 { border-bottom: 1px solid #ccc; }
+code { background: #f4f4f4; padding: 0.1em 0.4em; border-radius: 3px; }
+footer { margin-top: 2em; padding-top: 1em; border-top: 1px solid #ccc; font-size: 0.9em; color: #555; }
+</style>
+</head>
+<body>
+
+<h1>NVDA Coach</h1>
+<p><strong>バージョン 1.6.0</strong></p>
+<p>作成者: <strong>Tony Gebhard</strong>, 支援技術指導者</p>
+<ul>
+  <li>メール: <a href="mailto:info@tonygebhard.me">info@tonygebhard.me</a></li>
+  <li>ウェブサイト: <a href="https://tonygebhard.me/nvdacoach/">tonygebhard.me/nvdacoach</a></li>
+</ul>
+
+<h2>NVDAコーチ について</h2>
+<p>NVDAコーチ は、短時間の実践的な練習セッションを通じてスクリーンリーダーのコマンドを教えます。マニュアルでコマンドを読むのではなく、音声を聞きながらその場で実際に試します。各レッスンでは1つのコマンドずつ案内し、あなたが試すのを待ってから次へ進みます。NVDAコーチ は自分のペースで段階的に学べるように設計されています。</p>
+<p>このプログラムは、文字、数字、矢印キー、Enter、Escape、Tab など、キーボードの基本的な感覚をすでに掴んでいる初心者を対象にしています。NVDAコーチ は、支援技術指導者の <strong>Tony Gebhard</strong> によって作成されました。</p>
+
+<h2>使い始める</h2>
+<p><strong>NVDA+Shift+C</strong> を押すと NVDAコーチ が開きます。画面には Coach ウィンドウが表示されたままになります。初めて開いたときは、紹介文とレッスン選択画面が表示されます。矢印キーでレッスンを選び、Enter キーを押して開始してください。</p>
+<p>レッスン選択画面では、右矢印キーでセクションを展開し、左矢印キーで折りたたみます。Enter キーまたは「開く / 開始」ボタンを押すと、選択したアイテムが開始されます。</p>
+<p>Coach ウィンドウは学習中ずっと開いたままなので、指示はいつでも手元にあります。練習のために別のウィンドウへ移動した場合は、レッスン中いつでも <strong>NVDA+Shift+C</strong> を押して Coach ウィンドウに戻れます。</p>
+
+<h2>レッスン中</h2>
+<p>各レッスンは、短い一連のステップで進みます。NVDA のコマンドを試すステップでは、別のウィンドウに切り替えて操作を行い、終わったら <strong>NVDA+Shift+C</strong> を押して Coach ウィンドウに戻り、<strong>Enter</strong> キーまたは「次のステップ」を押して続けてください。練習用テキストがあるステップでは、Coach ウィンドウ内のテキストエリアへ下矢印キーで移動し、そのまま練習できます。レッスン中は、次のキーがいつでも使えます:</p>
+<ul>
+  <li><strong>Enter</strong>: ステップを試したことを確認し、次へ進む。</li>
+  <li><strong>F1</strong>: 現在の指示を繰り返す。NVDA にもう一度読み上げてもらいたい時に使います。</li>
+  <li><strong>F2</strong>: ヒントを聞く。もう一度押すと追加のヒントが出ます。1つのステップにつき最大3つまで順に聞けます。</li>
+  <li><strong>F3</strong>: 現在のステップをスキップして進む。</li>
+  <li><strong>Escape</strong>: レッスンを停止する。3回押すと NVDAコーチ を閉じます。</li>
+  <li><strong>NVDA+Shift+C</strong>: 別のウィンドウから Coach ウィンドウに戻る。</li>
+</ul>
+
+<h2>レッスンのナビゲーション</h2>
+<p>レッスンを終えたら、レッスン選択画面を開き直さなくても次へ進めます:</p>
+<ul>
+  <li><strong>Ctrl+N</strong>: 現在のチャプターの次のレッスンへ進む。</li>
+  <li><strong>Ctrl+B</strong>: 前のレッスンに戻る。</li>
+  <li><strong>Ctrl+R</strong>: 現在のレッスンを最初からやり直す。</li>
+  <li><strong>NVDA+Shift+C</strong>: レッスン選択画面を開き、任意のレッスンやチャプターへ移動する。</li>
+</ul>
+
+<h2>収録レッスン</h2>
+
+<h3>1. NVDA をはじめよう</h3>
+<p>初心者にとって不可欠な NVDA コマンドを学びます。各レッスンは1分から3分程度の短い練習です。</p>
+<ol>
+  <li><strong>コマンドのカテゴリーを理解する</strong> — キーボードコマンドを制御する3つの層（Windows、使用中のアプリケーション、スクリーンリーダー）と、NVDA のコマンドが情報を読み上げるだけで内容を変更しない理由。</li>
+  <li><strong>NVDAキーについて</strong> — NVDA の修飾キー（Insert または Caps Lock）を見つけて使い、NVDA+N で NVDA メニューを開く。</li>
+  <li><strong>タイトルバーを読み上げる</strong> — NVDA+T で、いま使っているプログラムをいつでも確認する。</li>
+  <li><strong>時刻を読み上げる</strong> — NVDA+F12 で現在の時刻と日付を聞く。</li>
+  <li><strong>バッテリー残量を確認する</strong> — NVDA+Shift+B で、バッテリー残量と充電中かどうかを聞く。</li>
+  <li><strong>NVDA の読み上げを止める</strong> — Control キーで音声をすぐに停止する。</li>
+  <li><strong>現在の場所を確認する</strong> — NVDA+Tab で、フォーカスがあるコントロールを確認する。練習用ログインフォームが開きます。</li>
+  <li><strong>Tab キーでコントロール間を移動する</strong> — Tab と Shift+Tab でダイアログやフォームを移動する。練習用フォームが開きます。</li>
+  <li><strong>ボタンとコントロールを実行する</strong> — Enter キーでボタンを実行し、スペースキーでチェックボックスを切り替える。練習用のコントロールが開きます。</li>
+  <li><strong>現在の行を読み上げる</strong> — NVDA+上矢印キーで現在の行をいつでも読み直す。練習用テキストエリアが付いています。</li>
+  <li><strong>入力ヘルプでキーを確認する</strong> — NVDA+1 で、どのキーが何をするかを安全に確認する。</li>
+  <li><strong>ユーザーガイドを開く</strong> — NVDA メニューの「ヘルプ」から NVDA のユーザーガイドを開く。</li>
+  <li><strong>キーボードの理解</strong> — Control キーの位置の違い、Fn+矢印キーによる Home/End/Page Up/Page Down、マルチメディア操作と F キーの2つのモード、そして修飾キーの位置の復習。</li>
+  <li><strong>Alt+Tab によるウィンドウの切り替え</strong> — Alt+Tab を1回押して2つのウィンドウを行き来し、Alt を押したまま Tab を叩いて複数のウィンドウを順に確認する。</li>
+</ol>
+
+<h3>2. あなたのキーボード</h3>
+<p>物理的なキーボードの理解 — 修飾キーの場所、ファンクションキー、Fn キーの挙動、そして NVDA の配列設定との合わせ方を学びます。</p>
+<ol>
+  <li><strong>修飾キーとその場所</strong> — 標準キーボードとラップトップでの Control、Shift、Alt、Windows キー、そして NVDAキー（Insert と Caps Lock）の位置。日本語キーボードでの注意点も含みます。</li>
+  <li><strong>ファンクションキーと Fn キー</strong> — F1 から F12、マルチメディア操作と F キーの2つのモード、Fn+矢印キーによる Home/End/Page Up/Page Down、そして Fn Lock。</li>
+  <li><strong>デスクトップ配列対ラップトップ配列</strong> — 配列設定の意味、確認と変更の方法、そして NVDAコーチ がどのレッスンでも両方の配列の操作を併記する理由。</li>
+</ol>
+
+<h3>3. テキストの読み上げと移動</h3>
+<p>文書内を移動し、NVDA にテキストを読み上げさせる方法を学びます。各練習ステップには、Coach ウィンドウ内にテキストエリアが含まれているため、別のウィンドウを開く必要はありません。</p>
+<ol>
+  <li><strong>文字単位の移動</strong> — 右矢印キーと左矢印キーで、テキストを一文字ずつ進む。</li>
+  <li><strong>単語単位のジャンプ</strong> — Control+右矢印キーと Control+左矢印キーで、単語単位に移動する。</li>
+  <li><strong>行単位の移動</strong> — 下矢印キーと上矢印キーで、文書を一行ずつ読み進める。</li>
+  <li><strong>先頭と末尾へのジャンプ</strong> — Control+Home と Control+End で、文書の先頭と末尾へ即座に移動する。</li>
+  <li><strong>ここからすべて読み上げる</strong> — 連続読みは止まらずに読み上げます。デスクトップ配列は NVDA+下矢印キー、ラップトップ配列は NVDA+A。</li>
+  <li><strong>テキストの選択とハイライト</strong> — Shift+矢印キーで文字、単語、行を選択し、Control+C でコピーする。選択範囲の読み上げは、デスクトップ配列なら NVDA+Shift+上矢印キー、ラップトップ配列なら NVDA+Shift+S。</li>
+  <li><strong>段落とページ単位の移動</strong> — Control+上矢印キーと Control+下矢印キーで段落単位に移動し、Page Up と Page Down でさらに大きく移動する。</li>
+  <li><strong>フォントと書式を確認する</strong> — NVDA+F で、カーソル位置のフォント名、サイズ、太字、斜体、下線を聞く。</li>
+</ol>
+
+<h3>4. ブラウズモードとウェブナビゲーション</h3>
+<p>NVDA のブラウズモードを使って、ウェブページや HTML 文書を操作する方法を学びます。レッスンを開始すると、練習用のウェブページが自動的に開きます。</p>
+<ol>
+  <li><strong>ブラウズモードについて</strong> — ブラウズモードとは何か、そしてブラウザへの切り替え方。</li>
+  <li><strong>見出し単位の移動</strong> — H と Shift+H で、ページの見出し間を移動する。</li>
+  <li><strong>見出しレベルへのジャンプ</strong> — 1 から 6 の数字キーで、指定したレベルの見出しへ移動する。</li>
+  <li><strong>リンク単位の移動</strong> — K と Shift+K でリンク間を移動し、Tab キーで操作可能な要素間を移動する。</li>
+  <li><strong>フォームを操作する</strong> — F、E、B で、フォーム項目、入力欄、ボタンへ移動する。</li>
+  <li><strong>フォーカスモード対ブラウズモード</strong> — NVDA+スペースで、読み上げと文字入力を切り替える。フォーカスモードではカーソルが入力欄の中に置かれます。</li>
+  <li><strong>ランドマークとリスト</strong> — D でランドマーク間を、L でリスト間を移動する。</li>
+  <li><strong>要素リスト</strong> — NVDA+F7 で、ページ内のすべての見出し、リンク、フォーム項目、ランドマークの一覧を開く。</li>
+  <li><strong>ページ内のテキストを検索する</strong> — NVDA+Control+F でページ内を検索し、NVDA+F3 と NVDA+Shift+F3 で結果を前後に移動する。</li>
+  <li><strong>表の操作</strong> — Control+Alt+矢印キーで表のセル間を移動する。表に入ったときに NVDA が何を読み上げるか。</li>
+</ol>
+
+<h3>5. オブジェクトナビゲーション</h3>
+<p>Tab キーでは到達できないコントロールなどを、NVDA のオブジェクトナビゲーションコマンドを使って操作する方法を学びます。</p>
+<ol>
+  <li><strong>オブジェクトナビゲーションとは？</strong> — ピラミッドの階層モデル、使うべき場面、そして先にウィンドウを最大化しておくことの大切さ。</li>
+  <li><strong>次・前のオブジェクトへの移動</strong> — NVDA+NumPad6 と NVDA+NumPad4（デスクトップ配列）、NVDA+Shift+右矢印 と NVDA+Shift+左矢印（ラップトップ配列）。NVDA+Tab との違いも扱います。</li>
+  <li><strong>階層の上り下り</strong> — NVDA+NumPad8 と NVDA+NumPad2（デスクトップ配列）、NVDA+Shift+上矢印 と NVDA+Shift+下矢印（ラップトップ配列）。</li>
+  <li><strong>現在のオブジェクトを読み上げる</strong> — NVDA+NumPad5（デスクトップ配列）、NVDA+Shift+O（ラップトップ配列）。素早く2回押すと、名前を一文字ずつ読み上げます。</li>
+  <li><strong>フォーカスをオブジェクトへ移動する</strong> — NVDA+Shift+NumPadマイナス（デスクトップ配列）、NVDA+Shift+BackSpace（ラップトップ配列）で、ナビゲーターが指しているオブジェクトへフォーカスを移動する。</li>
+  <li><strong>どんなときに役立つか</strong> — オブジェクトナビゲーションが役立つ3つの場面と、練習のすすめ。</li>
+</ol>
+
+<h3>6. NVDA のカスタマイズ</h3>
+<p>NVDA のキーボード配列、読み上げ速度、声の種類などを自分の好みに合わせて調整する方法を学びます。このチャプターを完了すると、修了証を書き出せるようになります。</p>
+<ol>
+  <li><strong>キーボード配列の変更</strong> — NVDA の設定で、デスクトップ配列（テンキー）とラップトップ配列（文字キー）を切り替える。</li>
+  <li><strong>簡単音声設定</strong> — 設定ダイアログを開かずに、読み上げの速さ、高さ、音量、声の種類を変更する。項目の切り替えは、デスクトップ配列なら NVDA+Control+右矢印 と NVDA+Control+左矢印、ラップトップ配列なら NVDA+Shift+Control+右矢印 と NVDA+Shift+Control+左矢印。</li>
+  <li><strong>出力先の変更</strong> — NVDA+Control+U で「オーディオ出力デバイスの選択」を開き、ヘッドホンや外部スピーカー、HDMI に切り替える。</li>
+  <li><strong>オーディオダッキングの制御</strong> — NVDA+Shift+D で、NVDA が話している間に他の音量を下げるモードを切り替える。</li>
+</ol>
+
+<h2>練習環境</h2>
+<p>多くのレッスンには練習環境が組み込まれており、レッスンを離れずに実際のコマンドを試せます:</p>
+<ul>
+  <li><strong>練習用フォーム</strong> — Tab キーでの移動、コントロールの実行、フォーカスの確認を扱うレッスンでは、本物のボタン、チェックボックス、入力欄を備えた別のフォームウィンドウが開きます。「Tabキー移動の練習用フォーム」、「コントロールの実行の練習」、「フォーカスを探す — 練習用ログインフォーム」の3つがあります。</li>
+  <li><strong>練習用テキストエリア</strong> — 読み上げとテキスト移動のレッスンでは、Coach ウィンドウ内に練習エリアが用意されています。指示から下矢印キーでテキストへ移動すれば、文字、単語、行の移動や選択を、ウィンドウを切り替えずに練習できます。</li>
+  <li><strong>練習用ページ</strong> — ブラウズモードのレッスンでは、練習用のウェブページがブラウザで開きます。見出しの移動、リンク、フォーム、表、リストの練習のためにいつでも開くことができます。</li>
+</ul>
+
+<h2>進捗の記録</h2>
+<p>NVDAコーチ は、完了したレッスンを記憶します。完了したレッスンはレッスン選択画面に「[完了]」と表示され、チャプターごとに「14 個中 5 個完了」のように進み具合が分かります。進捗は NVDA のユーザー設定フォルダに保存され、NVDA を再起動しても残ります。</p>
+
+<h2>指導者の方へ</h2>
+<p>レッスンは、アドオンの <code>lessons</code> フォルダにプレーンな JSON ファイルとして保存されています。各 JSON ファイルが1つのレッスンカテゴリーを定義し、その中に順序付きのレッスンの一覧が入ります。そして各レッスンは、ステップの一覧になっています。ステップには、学習者が読んで Enter キーを押す説明型のもの、学習者が自分で操作してから Enter キーで確認するコマンド型のもの、そしてウィンドウ内での移動練習のためのテキストエリアを含むものがあります。新しい JSON ファイルを追加すれば、独自のレッスンカテゴリーを作成できます。同梱のファイルをひな形としてご利用ください。</p>
+<p>プログラムや組織向けのカスタムレッスンの開発、研修のご相談、学習者と NVDAコーチ を使う際のご質問については、Tony まで直接ご連絡ください（英語対応）:</p>
+<ul>
+  <li>メール: <a href="mailto:info@tonygebhard.me">info@tonygebhard.me</a></li>
+  <li>ウェブサイト: <a href="https://tonygebhard.me/nvdacoach/">tonygebhard.me/nvdacoach</a></li>
+</ul>
+
+<h2>動作環境</h2>
+<ul>
+  <li>NVDA 2024.1 以降（NVDA 2026.1.1 まで動作確認済み）</li>
+  <li>Windows 10 または Windows 11</li>
+  <li>追加のソフトウェアは必要ありません</li>
+</ul>
+
+<h2>サポートとお問い合わせ</h2>
+<p>ご質問、不具合、新しいレッスンのご提案などがありましたら、直接ご連絡ください（英語対応）:</p>
+<ul>
+  <li><strong>Tony Gebhard</strong>, 支援技術指導者</li>
+  <li>メール: <a href="mailto:info@tonygebhard.me">info@tonygebhard.me</a></li>
+  <li>ウェブサイト: <a href="https://tonygebhard.me/nvdacoach/">tonygebhard.me/nvdacoach</a></li>
+</ul>
+
+<h2>謝辞</h2>
+<p>NVDAコーチ は、使ってくださる方々によって形づくられてきました。フィードバック、訂正、励ましをお寄せくださったすべての皆さまに感謝します。</p>
+<ul>
+  <li><strong>Jessica Tegner</strong> — 初期の貴重なフィードバックと、このアドオンを根本から形づくった機能およびレッスンの提案。</li>
+  <li><strong>Nash</strong> — 機能とレッスンの提案。</li>
+  <li><strong>John Hess</strong>, 支援技術スペシャリスト — オブジェクトナビゲーションのチャプターにおけるラップトップ配列の操作について、NVDA の入力ヘルプで検証した上での詳細な訂正。</li>
+  <li><strong>Brandon Patterson</strong> — 「NVDA のカスタマイズ」チャプターにおける簡単音声設定のキー操作の訂正。</li>
+  <li><strong>Valentin Kupriyanov</strong>, ロシア語 NVDA ユーザーコミュニティ代表 — 国際化とローカライズの提案、最初の完全なロシア語ローカライズ、そして詳細なローカライズ不具合の報告。</li>
+  <li><strong>Umut KORKMAZ</strong>（トルコ） — トルコ語翻訳。</li>
+  <li><strong>Rui Fontes</strong>（NVDA ポルトガル語翻訳チーム）。</li>
+  <li><strong>Edson Miranda</strong>（ブラジル） — ブラジルポルトガル語翻訳（進行中）。</li>
+  <li><strong>Mateo Quintela</strong>（スペイン） — スペイン語ローカライズのテストと練習用テキスト。</li>
+  <li><strong>Katsutoshi Tsuji</strong>（日本） — 日本語翻訳。レッスン、ドキュメント、インターフェイスのすべての文字列。</li>
+  <li><strong>Michał Dziwisz</strong>（ポーランド） — ポーランド語翻訳。</li>
+  <li><strong>Chris、Mike、Kevin、Julie、Larry、Jim、McKayla、Skyler</strong> の皆さん — 支援技術スペシャリストとして、2026年4月の研修でお寄せいただいた実地のフィードバックが、このリリースの内容を形づくりました。</li>
+  <li>訂正や励ましをお寄せくださった、匿名の参加者やコミュニティの皆さま。</li>
+</ul>
+
+<h2>更新内容</h2>
+
+<h3>バージョン 1.6.0</h3>
+<ul>
+  <li><strong>日本語に対応しました:</strong> 6つのレッスンチャプター、3つのドキュメントページ、そしてすべてのインターフェイスの文字列が日本語で利用できるようになりました。NVDA の言語を日本語に設定すると、完全に日本語化された状態で学習できます。日本語訳は Katsutoshi Tsuji さんによるものです。</li>
+  <li><strong>ポーランド語に対応しました:</strong> Michał Dziwisz さんによるポーランド語のローカライズが追加されました。</li>
+</ul>
+
+<p>これまでのすべての変更履歴は <a href="https://github.com/tonygeb23/nvdaCoach-/blob/main/CHANGELOG.md">NVDA Coach の変更履歴 (CHANGELOG)</a> をご覧ください。</p>
+
+<footer role="contentinfo">
+  <p>NVDAコーチ は無料で、学ぶ人のために作られています。必要としている方へ自由に共有してください。</p>
+</footer>
+
+</body>
+</html>

@@ -112,24 +112,24 @@
       "steps": [
         {
           "type": "info",
-          "instruction": "When you have navigated to an object, you can have NVDA read it. Press NVDA+NumPad5 (desktop layout) or NVDA+Shift+Comma (laptop layout) to hear the full description of the current navigator object. These are NVDA commands. The comma key is in the bottom row of letters, between M and the period key. Press the command twice quickly to spell out the object name character by character. This is useful when the name is unfamiliar or abbreviated. Press Enter to continue.",
+          "instruction": "When you have navigated to an object, you can have NVDA read it. Press NVDA+NumPad5 (desktop layout) or NVDA+Shift+O (laptop layout) to hear the full description of the current navigator object. These are NVDA commands. The O key is in the top row of letters, between I and P. Press the command twice quickly to spell out the object name character by character. This is useful when the name is unfamiliar or abbreviated. Press Enter to continue.",
           "hints": [
             "Desktop layout: hold NVDA and press NumPad5 — the center key on the numpad — to read the current navigator object.",
-            "Laptop layout: hold NVDA and Shift, then press the comma key. The comma is in the bottom row of letters, between M and the period.",
+            "Laptop layout: hold NVDA and Shift, then press the letter O. It is in the top row of letters, between I and P.",
             "Press the command twice quickly to spell the object name one character at a time. Useful when the name is unfamiliar or abbreviated."
           ]
         },
         {
           "type": "info",
-          "instruction": "Try it now. Navigate to any object using NVDA+NumPad6 (desktop) or NVDA+Shift+Right Arrow (laptop). Then press NVDA+NumPad5 (desktop) or NVDA+Shift+Comma (laptop) to hear the full description of that object. Press the command twice quickly to spell the name. When you are ready, press Enter to continue.",
+          "instruction": "Try it now. Navigate to any object using NVDA+NumPad6 (desktop) or NVDA+Shift+Right Arrow (laptop). Then press NVDA+NumPad5 (desktop) or NVDA+Shift+O (laptop) to hear the full description of that object. Press the command twice quickly to spell the name. When you are ready, press Enter to continue.",
           "monitorGestures": [
             "kb:nvda+numpad5",
-            "kb:nvda+shift+,"
+            "kb:nvda+shift+o"
           ],
           "hints": [
-            "First navigate to an object using the next-object command, then read it with NVDA+NumPad5 (desktop) or NVDA+Shift+Comma (laptop).",
+            "First navigate to an object using the next-object command, then read it with NVDA+NumPad5 (desktop) or NVDA+Shift+O (laptop).",
             "Pressing the read command twice quickly spells the object name one character at a time — very useful for unfamiliar names or abbreviations.",
-            "The comma key for laptop layout is in the bottom row of the keyboard, between M and the period key."
+            "The O key for laptop layout is in the top row of letters, between I and P."
           ]
         }
       ]
@@ -197,7 +197,7 @@
           "chapterComplete": true,
           "hints": [
             "The next chapter is Customizing NVDA. It covers how to adjust speech speed, pitch, voice, and keyboard layout — all without opening settings menus if you prefer.",
-            "Object navigation quick reference — desktop: NumPad4/6 across same level, NumPad8/2 up and down levels, NumPad5 to read. Laptop: NVDA+Shift+Arrow, NVDA+Shift+Comma to read.",
+            "Object navigation quick reference — desktop: NumPad4/6 across same level, NumPad8/2 up and down levels, NumPad5 to read. Laptop: NVDA+Shift+Arrow, NVDA+Shift+O to read.",
             "NVDA Coach saves your progress automatically. All completed lessons are marked when you return."
           ]
         }

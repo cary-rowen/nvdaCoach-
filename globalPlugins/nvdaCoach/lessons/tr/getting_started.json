@@ -214,7 +214,7 @@
                     "type": "info",
                     "instruction": "Şimdi uygulama penceresinde, oturum açma formundaki herhangi bir kontrole Sekme tuşuyla gidin ve ardından NVDA+Sekme tuşlarına basın. NVDA, odaklandığınız kontrolün adını, türünü ve durumunu duyuracaktır. Örneğin 'Kullanıcı adını düzenle' veya 'Oturum aç düğmesi' diyebilir. NVDA'nın her türü nasıl tanımladığını öğrenmek için bunu birkaç farklı kontrolde (metin alanları, onay kutusu ve her düğme) deneyin. Keşfetmeyi tamamladığınızda buraya dönmek için NVDA+Shift+C tuşlarına basın, ardından devam etmek için Enter tuşuna basın.",
                     "monitorGestures": [
-                        "kb:nvda+Sekme"
+                        "kb:nvda+tab"
                     ],
                     "hints": [
                         "NVDA tuşunu basılı tutun ve Sekme tuşuna basın. Bu, tek başına Sekme tuşuna basmaktan farklıdır; Tek başına Sekme odağı hareket ettirir, ancak NVDA artı Sekme, hareket etmeden yalnızca geçerli kontrolü okur.",
@@ -258,7 +258,7 @@
                         "Sekme tuşuyla formdaki son kontrolü geçerseniz odak ilk kontrole geri döner. Bu normaldir; süresiz olarak geçiş yapmak için Sekme tuşuna basmaya devam edebilirsiniz."
                     ],
                     "expectedGestures": [
-                        "kb:sekme"
+                        "kb:tab"
                     ],
                     "successMessage": "Bir sonraki kontrole geçtiniz. NVDA neye ulaştığınızı açıkladı.",
                     "allowExecution": true,
@@ -274,7 +274,7 @@
                         "Hiçbir zaman bir formun başından başlamak zorunda kalmazsınız. Çok ileri giderseniz Shift artı Sekme sizi hemen geri getirir."
                     ],
                     "expectedGestures": [
-                        "kb:Shift+Sekme"
+                        "kb:shift+tab"
                     ],
                     "successMessage": "Geriye doğru gittiniz. Sekme ileri gider, Shift+Sekme geri gider. Bu iki tuş sizi çoğu iletişim kutusu ve formda yönlendirecektir.",
                     "allowExecution": true,
@@ -316,7 +316,7 @@
                         "Aralık ayrıca bazı düğme türlerini de etkinleştirir, ancak Enter, düğmeler için daha güvenilir seçimdir. Özellikle onay kutuları ve geçiş kontrolleri için Boşluk çubuğunu kullanın."
                     ],
                     "expectedGestures": [
-                        "kb:Aralık"
+                        "kb:space"
                     ],
                     "successMessage": "Boşluk çubuğuna basıldı. Boşluk, onay kutularını işaretlemek veya işaretlerini kaldırmak ve bazı düğmeleri etkinleştirmek için kullanılır.",
                     "allowExecution": false,
@@ -332,9 +332,9 @@
                         "Sekme, Boşluk ve Enter tuşları arasında herhangi bir Windows uygulaması veya iletişim kutusundaki hemen hemen her denetimde gezinebilir ve bunları etkinleştirebilirsiniz."
                     ],
                     "expectedGestures": [
-                        "kb:Aralık",
-                        "kb:Enter",
-                        "kb:numpadenter"
+                        "kb:space",
+                        "kb:enter",
+                        "kb:numpadEnter"
                     ],
                     "successMessage": "Enter tuşuna basıldı. Enter, düğmeleri etkinleştirir ve bağlantıları takip eder. Sekme, Boşluk ve Enter tuşları arasında hemen hemen her iletişim kutusunda gezinebilirsiniz.",
                     "allowExecution": false,
@@ -360,7 +360,7 @@
                     "type": "info",
                     "instruction": "İmlecinizi satırlar arasında hareket ettirmek için aşağıdaki alıştırma metni alanına okla gidin. Daha sonra NVDA'nın geçerli satırı yüksek sesle okuması için NVDA+Yukarı Ok tuşlarına basın. Yukarı veya Aşağı Ok ile farklı bir satıra gidin ve her birini duymak için tekrar NVDA+Yukarı Ok tuşlarına basın. Bu, herhangi bir belge, e-posta veya metin alanında çalışır. İşiniz bittiğinde devam etmek için Enter tuşuna basın.",
                     "monitorGestures": [
-                        "kb:nvda+yukarı ok"
+                        "kb:nvda+upArrow"
                     ],
                     "practiceText": "Hızlı kahverengi tilki tembel köpeğin üzerinden atlıyor.\nEkran okuyucular dijital dünyayı herkese açar.\nNVDA ücretsiz ve açık kaynaklı bir yazılımdır.\nAlıştırma, ekran okuyucuda dolaşım alışkanlığını geliştirir.\nOk tuşları metinde adım adım ilerlemenizi sağlar.\nKontrol artı oklar aynı anda tüm kelimelerin yanından atlar.\nHome ve End bir satır sınırına taşınır.\nKontrol artı Home veya End, Belgenin başına ve sonuna atlar.\nBurası alıştırma alanının son satırıdır.",
                     "hints": [
@@ -534,7 +534,7 @@
                         "Geri dönmek için Alt ve Sekme tuşlarına bir kez daha basın. Bu sizi Eğitmen penceresine geri döndürür."
                     ],
                     "expectedGestures": [
-                        "kb:alt+sekme"
+                        "kb:alt+tab"
                     ],
                     "successMessage": "Alt+Sekme ile pencereleri değiştirdiniz. Alt+Sekme, açık programlar arasında fare olmadan geçiş yapmanızı sağlar.",
                     "allowExecution": true,

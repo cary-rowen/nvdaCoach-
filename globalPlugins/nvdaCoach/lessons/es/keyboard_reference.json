@@ -143,7 +143,7 @@
         },
         {
           "type": "info",
-          "instruction": "Cuando los comandos difieren entre distribuciones, NVDA Coach siempre muestra ambos. Por ejemplo: 'Presiona NVDA+NumPad5 (escritorio) o NVDA+Shift+Coma (portátil).' Usa el que coincida con tu configuración de distribución actual. Si un comando no funciona como se esperaba, la causa más común es una discrepancia entre tu configuración de distribución de NVDA y las teclas que estás presionando. Verifica tu configuración de distribución primero antes de intentar otros pasos de solución de problemas. Presiona Enter para continuar.",
+          "instruction": "Cuando los comandos difieren entre distribuciones, NVDA Coach siempre muestra ambos. Por ejemplo: 'Presiona NVDA+NumPad5 (escritorio) o NVDA+Shift+O (portátil).' Usa el que coincida con tu configuración de distribución actual. Si un comando no funciona como se esperaba, la causa más común es una discrepancia entre tu configuración de distribución de NVDA y las teclas que estás presionando. Verifica tu configuración de distribución primero antes de intentar otros pasos de solución de problemas. Presiona Enter para continuar.",
           "hints": [
             "El comando de distribución de escritorio aparece primero, la distribución portátil entre paréntesis o después de 'o'. Usa la versión que coincida con tu configuración de distribución de NVDA.",
             "Una discrepancia entre la configuración de distribución y las teclas presionadas es la razón más común por la que un comando no funciona. Abre la Configuración de NVDA y verifica tu distribución de teclado si los comandos parecen incorrectos.",

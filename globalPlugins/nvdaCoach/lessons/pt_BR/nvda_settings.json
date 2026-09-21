@@ -1,91 +1,91 @@
 {
   "id": "nvda_settings",
-  "title": "Customizing NVDA",
-  "description": "Learn how to adjust NVDA's keyboard layout, speech rate, and voice to suit your preferences.",
+  "title": "Personalizando o NVDA",
+  "description": "Aprenda a ajustar o esquema de teclado, a velocidade da fala e a voz do NVDA do jeito que você prefere.",
   "order": 6,
   "lessons": [
     {
       "id": "keyboard_layout",
-      "title": "Changing Your Keyboard Layout",
+      "title": "Mudando o Esquema de Teclado",
       "order": 1,
       "steps": [
         {
           "type": "info",
-          "instruction": "NVDA supports two keyboard layouts: desktop and laptop. Desktop layout uses the numeric keypad on the right side of a full-size keyboard for many NVDA commands. Laptop layout uses NVDA plus letter keys instead, so you do not need a numpad. Most desktop computers use desktop layout by default. Most laptops use laptop layout. You can change this at any time in NVDA settings. Press Enter to continue.",
+          "instruction": "O NVDA oferece dois esquemas de teclado: computador de mesa e computador portátil. O esquema computador de mesa usa o teclado numérico do lado direito de um teclado de tamanho completo para muitos comandos do NVDA. Já o esquema computador portátil usa o NVDA com teclas de letra, para que você não precise de um teclado numérico. A maioria dos computadores de mesa vem com o esquema computador de mesa. A maioria dos portáteis usa o esquema computador portátil. Você pode mudar isso a qualquer momento nas configurações do NVDA. Pressione Enter para continuar.",
           "hints": [
-            "Desktop layout relies on the numeric keypad — the block of number keys on the right side of a full-size keyboard. If your keyboard does not have a numpad, use laptop layout.",
-            "Laptop layout replaces numpad commands with NVDA plus letter key combinations. Most laptop users find this more natural since they do not have a numpad.",
-            "You can switch between layouts at any time without restarting NVDA. The change takes effect immediately after you save in Settings."
+            "O esquema computador de mesa depende do teclado numérico — o bloco de teclas numéricas do lado direito de um teclado de tamanho completo. Se o seu teclado não tem teclado numérico, use o esquema computador portátil.",
+            "O esquema computador portátil troca os comandos do teclado numérico por combinações do NVDA com teclas de letra. Quem usa portátil costuma achar isso mais natural, já que não tem teclado numérico.",
+            "Você pode alternar entre os esquemas a qualquer momento, sem reiniciar o NVDA. A mudança vale imediatamente depois que você salva em Configurações."
           ]
         },
         {
           "type": "info",
-          "instruction": "To open NVDA settings, press NVDA+N (NVDA command) to open the NVDA menu. Then press P for Preferences, then S for Settings. You will hear NVDA announce the Settings dialog opening. The first category you land on may vary. Press Tab (Windows command) to move between settings categories or use the Arrow keys in the category list. Navigate to the Keyboard category to find the layout setting. Press Enter to continue.",
+          "instruction": "Para abrir as configurações do NVDA, pressione NVDA+N (comando do NVDA) e abra o menu do NVDA. Depois pressione P de Preferências e Ç de Configurações. Você vai ouvir o NVDA anunciar a abertura do diálogo Configurações. A primeira categoria em que você cai pode variar. Pressione Tab (comando do Windows) para se mover entre as categorias de configurações, ou use as teclas de seta na lista de categorias. Vá até a categoria Teclado para encontrar a opção de esquema. Pressione Enter para continuar.",
           "hints": [
-            "NVDA plus N is an NVDA command — it opens the NVDA menu. P for Preferences, then S for Settings opens the main NVDA Settings dialog.",
-            "Once the Settings dialog is open, you will be in a category list on the left. Use the Up and Down Arrow keys to move through categories, or press the first letter of a category name to jump to it.",
-            "You can also use first-letter navigation — press K to jump straight to the Keyboard category, or S to jump to Speech."
+            "NVDA mais N é um comando do NVDA — ele abre o menu do NVDA. Depois, P de Preferências e Ç de Configurações abrem o diálogo principal de Configurações do NVDA.",
+            "Com o diálogo Configurações aberto, você fica em uma lista de categorias, à esquerda. Use Seta para Cima e Seta para Baixo para percorrer as categorias, ou pressione a primeira letra do nome de uma categoria para saltar até ela.",
+            "Você também pode usar a navegação por primeira letra — pressione T para ir direto à categoria Teclado, ou F para ir à categoria Fala."
           ]
         },
         {
           "type": "info",
-          "instruction": "Inside the Keyboard settings, you will find a combo box labeled 'Keyboard layout' with two options: Desktop and Laptop. Use the Up and Down Arrow keys (Windows commands) to choose the layout that matches your keyboard. Use Tab (Windows command) to move to the OK button and press Enter to save — the same Tab navigation you practiced in the Moving Between Controls lesson in the Getting Started chapter. Your new layout takes effect immediately without restarting NVDA. Press Enter to continue.",
+          "instruction": "Dentro das configurações de Teclado, você vai encontrar uma caixa de combinação chamada 'Esquema de teclado', com duas opções: Computador de mesa e Computador portátil. Use as teclas Seta para Cima e Seta para Baixo (comandos do Windows) para escolher o esquema que combina com o seu teclado. Use o Tab (comando do Windows) para chegar ao botão OK e pressione Enter para salvar — a mesma navegação com Tab que você praticou na lição sobre mover-se entre controles, no capítulo Primeiros Passos com o NVDA. O novo esquema passa a valer imediatamente, sem reiniciar o NVDA. Pressione Enter para continuar.",
           "hints": [
-            "Once in the Keyboard category, press Tab to move to the Keyboard layout combo box. Use Up and Down Arrow to choose Desktop or Laptop.",
-            "After choosing your layout, press Tab to reach the OK button and press Enter to save. This is the same Tab navigation from the Getting Started chapter.",
-            "If you press Escape instead of OK, your changes will be discarded and the layout will remain unchanged."
+            "Já na categoria Teclado, pressione Tab para chegar à caixa de combinação Esquema de teclado. Use Seta para Cima e Seta para Baixo para escolher Computador de mesa ou Computador portátil.",
+            "Depois de escolher o esquema, pressione Tab para chegar ao botão OK e pressione Enter para salvar. É a mesma navegação com Tab do capítulo Primeiros Passos com o NVDA.",
+            "Se você pressionar Escape em vez de OK, as mudanças serão descartadas e o esquema continuará como estava."
           ]
         },
         {
           "type": "info",
-          "instruction": "A note on NVDA Coach lessons: the lesson instructions in this course mention both desktop and laptop key alternatives when they differ. If you have changed your layout to laptop, use the laptop key combinations shown. If you are unsure which layout is active, open NVDA Settings and check the Keyboard category. Press Enter to finish this lesson.",
+          "instruction": "Uma observação sobre as lições do NVDA Coach: as instruções deste curso citam as teclas dos dois esquemas sempre que elas são diferentes. Se você mudou para o esquema computador portátil, use as combinações indicadas para computador portátil. Se não souber qual esquema está ativo, abra as Configurações do NVDA e confira a categoria Teclado. Pressione Enter para concluir esta lição.",
           "hints": [
-            "Throughout NVDA Coach, desktop layout commands appear first, followed by laptop layout commands in parentheses. Use whichever matches your keyboard.",
-            "If a command does not seem to work, check your keyboard layout setting. Pressing desktop layout keys when NVDA is set to laptop layout — or vice versa — will not produce the expected result.",
-            "Not sure which layout you are using? Press NVDA plus 1 to turn on Input Help, press a numpad key, and listen to what NVDA says. Then press NVDA plus 1 again to turn Input Help off."
+            "Em todo o NVDA Coach, os comandos do esquema computador de mesa vêm primeiro, seguidos pelos do esquema computador portátil entre parênteses. Use o que combina com o seu teclado.",
+            "Se um comando parecer não funcionar, confira a opção Esquema de teclado. Pressionar teclas do esquema computador de mesa com o NVDA definido para computador portátil — ou o contrário — não dá o resultado esperado.",
+            "Não tem certeza de qual esquema está usando? Pressione NVDA mais 1 para ligar a ajuda de entrada, pressione uma tecla do teclado numérico e ouça o que o NVDA diz. Depois pressione NVDA mais 1 de novo para desligar a ajuda de entrada."
           ]
         }
       ]
     },
     {
       "id": "speech_settings",
-      "title": "The Synth Settings Ring",
+      "title": "O Anel de Configurações de Voz",
       "order": 2,
       "steps": [
         {
           "type": "info",
-          "instruction": "NVDA includes a powerful on-the-fly speech control system called the synth settings ring. It lets you adjust speech properties — such as rate, pitch, volume, voice, and variant — without ever opening a settings dialog. Think of it as a dial you can spin through different settings and then turn up or down. Press Enter to continue.",
+          "instruction": "O NVDA tem um sistema poderoso para controlar a fala na hora, chamado anel de configurações de voz. Ele permite ajustar características da fala — como velocidade, tom, volume, voz e variante — sem precisar abrir nenhum diálogo de configurações. Pense nele como um botão giratório: você gira até a configuração desejada e depois aumenta ou diminui. Pressione Enter para continuar.",
           "hints": [
-            "The synth settings ring lets you adjust speech on the fly — while you are in the middle of anything — without opening any dialog.",
-            "Available settings in the ring include: rate (speed), pitch, volume, voice, and variant. You navigate between them and then adjust each one.",
-            "Think of it as a two-step process: first pick the setting you want (like rate), then turn it up or down."
+            "O anel de configurações de voz permite ajustar a fala na hora — no meio de qualquer tarefa — sem abrir diálogo nenhum.",
+            "As configurações disponíveis no anel incluem: velocidade (a rapidez da fala), tom, volume, voz e variante. Você se move entre elas e depois ajusta cada uma.",
+            "Pense em dois passos: primeiro escolha a configuração que você quer (a velocidade, por exemplo) e depois aumente ou diminua."
           ]
         },
         {
           "type": "info",
-          "instruction": "The synth settings ring has two types of movement. First, you move between settings to choose which property you want to adjust — for example, moving from rate to pitch to volume. Second, once you are on the setting you want, you increase or decrease its value. These are two separate sets of keys. Press Enter to continue.",
+          "instruction": "O anel de configurações de voz tem dois tipos de movimento. No primeiro, você se move entre as configurações para escolher qual característica quer ajustar — por exemplo, passar da velocidade para o tom e depois para o volume. No segundo, já na configuração desejada, você aumenta ou diminui o valor dela. São dois conjuntos de teclas distintos. Pressione Enter para continuar.",
           "hints": [
-            "Step one: navigate between settings using the left and right commands. Step two: adjust the value using the up and down commands. Two separate sets of keys.",
-            "NVDA announces the setting name when you navigate to it — for example 'Rate' or 'Pitch'. Then it announces the value as you adjust — for example 'Rate 60'.",
-            "You must be on the right setting before you can adjust it. If you press the up or down command but hear the wrong setting change, navigate left or right first to get to the setting you want."
+            "Passo um: mova-se entre as configurações com os comandos de esquerda e direita. Passo dois: ajuste o valor com os comandos de cima e de baixo. Dois conjuntos de teclas distintos.",
+            "O NVDA anuncia o nome da configuração quando você chega nela — por exemplo, 'Velocidade' ou 'Tom'. Depois anuncia o valor conforme você ajusta — por exemplo, 'Velocidade 60'.",
+            "Você precisa estar na configuração certa antes de ajustá-la. Se pressionar o comando de cima ou de baixo e ouvir a configuração errada mudar, mova-se primeiro para a esquerda ou para a direita até chegar à que você quer."
           ]
         },
         {
           "type": "info",
-          "instruction": "All synth settings ring commands are NVDA commands — they require your NVDA key and only work while NVDA is running. To move to the next setting in the ring, press NVDA+Control+Right Arrow on desktop layout, or NVDA+Shift+Control+Right Arrow on laptop layout. To move to the previous setting, press NVDA+Control+Left Arrow on desktop, or NVDA+Shift+Control+Left Arrow on laptop. NVDA will announce the name of the setting you land on, such as 'Rate' or 'Pitch'. Press Enter to continue.",
+          "instruction": "Todos os comandos do anel de configurações de voz são comandos do NVDA — eles exigem a tecla NVDA e só funcionam com o NVDA em execução. Para ir à próxima configuração do anel, pressione NVDA+Control+Seta para Direita no esquema computador de mesa, ou NVDA+Shift+Control+Seta para Direita no esquema computador portátil. Para voltar à configuração anterior, pressione NVDA+Control+Seta para Esquerda (computador de mesa) ou NVDA+Shift+Control+Seta para Esquerda (computador portátil). O NVDA vai anunciar o nome da configuração em que você parar, como 'Velocidade' ou 'Tom'. Pressione Enter para continuar.",
           "monitorGestures": [
             "kb:nvda+control+rightArrow",
             "kb:nvda+shift+control+rightArrow"
           ],
           "hints": [
-            "Desktop layout: hold NVDA and Control together, then press Right Arrow to move to the next setting. Left Arrow moves to the previous setting.",
-            "Laptop layout: hold NVDA, Shift, and Control together, then press Right Arrow for the next setting or Left Arrow for the previous setting.",
-            "NVDA announces the setting name as you land on it — for example 'Rate', 'Pitch', 'Volume', 'Voice', or 'Variant'. Stop when you hear the one you want to adjust."
+            "Esquema computador de mesa: segure NVDA e Control juntos e pressione Seta para Direita para ir à próxima configuração. A Seta para Esquerda volta à configuração anterior.",
+            "Esquema computador portátil: segure NVDA, Shift e Control juntos e pressione Seta para Direita para a próxima configuração, ou Seta para Esquerda para a anterior.",
+            "O NVDA anuncia o nome da configuração quando você chega nela — por exemplo, 'Velocidade', 'Tom', 'Volume', 'Voz' ou 'Variante'. Pare quando ouvir aquela que você quer ajustar."
           ]
         },
         {
           "type": "info",
-          "instruction": "Once you are on the setting you want to change, press NVDA+Control+Up Arrow (desktop) or NVDA+Shift+Control+Up Arrow (laptop) to increase the value. Press NVDA+Control+Down Arrow (desktop) or NVDA+Shift+Control+Down Arrow (laptop) to decrease it. NVDA announces the new value as you adjust. For example, if you are on Rate and press the increase key, you will hear something like 'Rate 60'. Press Enter to continue.",
+          "instruction": "Já na configuração que você quer mudar, pressione NVDA+Control+Seta para Cima (computador de mesa) ou NVDA+Shift+Control+Seta para Cima (computador portátil) para aumentar o valor. Pressione NVDA+Control+Seta para Baixo (computador de mesa) ou NVDA+Shift+Control+Seta para Baixo (computador portátil) para diminuir. O NVDA anuncia o novo valor conforme você ajusta. Por exemplo, se você estiver em Velocidade e pressionar a tecla de aumentar, vai ouvir algo como 'Velocidade 60'. Pressione Enter para continuar.",
           "monitorGestures": [
             "kb:nvda+control+upArrow",
             "kb:nvda+shift+control+upArrow",
@@ -93,62 +93,127 @@
             "kb:nvda+shift+control+downArrow"
           ],
           "hints": [
-            "Desktop layout: hold NVDA and Control, then press Up Arrow to increase the current setting's value. Down Arrow decreases it.",
-            "Laptop layout: hold NVDA, Shift, and Control, then press Up Arrow to increase or Down Arrow to decrease.",
-            "NVDA announces the new value after each adjustment — for example 'Rate 75'. Keep pressing to continue adjusting in the same direction."
+            "Esquema computador de mesa: segure NVDA e Control e pressione Seta para Cima para aumentar o valor da configuração atual. A Seta para Baixo diminui.",
+            "Esquema computador portátil: segure NVDA, Shift e Control e pressione Seta para Cima para aumentar ou Seta para Baixo para diminuir.",
+            "O NVDA anuncia o novo valor a cada ajuste — por exemplo, 'Velocidade 75'. Continue pressionando para seguir ajustando na mesma direção."
           ]
         },
         {
           "type": "info",
-          "instruction": "If you want to make larger adjustments more quickly, use NVDA+Control+PageUp (desktop) or NVDA+Shift+Control+PageUp (laptop) to increase in bigger steps, and NVDA+Control+PageDown (desktop) or NVDA+Shift+Control+PageDown (laptop) to decrease in bigger steps. This is useful when you want to make a dramatic change without pressing the adjustment key many times in a row. Press Enter to continue.",
+          "instruction": "Se quiser fazer ajustes maiores mais rápido, use NVDA+Control+PageUp (computador de mesa) ou NVDA+Shift+Control+PageUp (computador portátil) para aumentar em intervalos maiores, e NVDA+Control+PageDown (computador de mesa) ou NVDA+Shift+Control+PageDown (computador portátil) para diminuir em intervalos maiores. Isso ajuda quando você quer uma mudança grande sem pressionar a tecla de ajuste muitas vezes seguidas. Pressione Enter para continuar.",
           "hints": [
-            "Desktop layout: NVDA plus Control plus Page Up increases in larger steps. NVDA plus Control plus Page Down decreases in larger steps.",
-            "Laptop layout: NVDA plus Shift plus Control plus Page Up for larger increase. NVDA plus Shift plus Control plus Page Down for larger decrease.",
-            "Page Up and Page Down are usually in the cluster of keys above the arrow keys, near Home and End."
+            "Esquema computador de mesa: NVDA mais Control mais Page Up aumenta em intervalos maiores. NVDA mais Control mais Page Down diminui em intervalos maiores.",
+            "Esquema computador portátil: NVDA mais Shift mais Control mais Page Up para aumentar bastante. NVDA mais Shift mais Control mais Page Down para diminuir bastante.",
+            "O Page Up e o Page Down costumam ficar no bloco de teclas acima das setas, perto do Home e do End."
           ]
         },
         {
           "type": "info",
-          "instruction": "Try it now. Press NVDA+Control+Right Arrow (desktop) or NVDA+Shift+Control+Right Arrow (laptop) a few times to cycle through the available settings — you will hear Rate, Pitch, Volume, Voice, and Variant announced as you move. Then stop on Rate, and press the increase or decrease keys to change it. Notice how NVDA speaks in real time at the new speed. Press Enter when you are ready to continue.",
+          "instruction": "Experimente agora. Pressione NVDA+Control+Seta para Direita (computador de mesa) ou NVDA+Shift+Control+Seta para Direita (computador portátil) algumas vezes para percorrer as configurações disponíveis — você vai ouvir Velocidade, Tom, Volume, Voz e Variante conforme avança. Depois pare em Velocidade e pressione as teclas de aumentar ou diminuir para mudá-la. Repare que o NVDA já passa a falar na nova velocidade. Pressione Enter quando estiver pronto para continuar.",
           "monitorGestures": [
             "kb:nvda+control+rightArrow",
             "kb:nvda+shift+control+rightArrow"
           ],
           "hints": [
-            "Press the navigate-right command a few times to cycle through all available settings. You will hear Rate, Pitch, Volume, Voice, and Variant in order.",
-            "Stop when you hear 'Rate'. Then press the increase command a few times and notice NVDA speaking faster in real time with each press.",
-            "Decrease the rate back toward a comfortable speed when you are done. NVDA announces each new value so you can dial it in precisely."
+            "Pressione o comando de mover para a direita algumas vezes para percorrer todas as configurações disponíveis. Você vai ouvir Velocidade, Tom, Volume, Voz e Variante, nessa ordem.",
+            "Pare quando ouvir 'Velocidade'. Depois pressione o comando de aumentar algumas vezes e repare no NVDA falando mais rápido a cada toque.",
+            "Quando terminar, diminua a velocidade de volta até um ritmo confortável. O NVDA anuncia cada novo valor, então dá para acertar o ponto com precisão."
           ]
         },
         {
           "type": "info",
-          "instruction": "For more precise control, you can adjust speech settings inside the NVDA Settings dialog. Press NVDA+N to open the NVDA menu, then P for Preferences, then S for Settings. The Settings dialog opens with a category list on the left. You can move through categories with the Up and Down Arrow keys, or use first-letter navigation — just press the first letter of the category name to jump to it. For example, press S to jump straight to Speech. Once you are in the Speech category, press Tab to move forward through sliders and combo boxes for rate, pitch, volume, inflection, voice, and synthesizer. Press Shift+Tab to move backward. If you need a refresher on Tab navigation, that was covered in the Moving Between Controls lesson in the Getting Started chapter. Changes made here are saved when you press OK or Apply. Press Enter to continue.",
+          "instruction": "Para um controle mais preciso, você pode ajustar as configurações de fala dentro do diálogo Configurações do NVDA. Pressione NVDA+N para abrir o menu do NVDA, depois P de Preferências e Ç de Configurações. O diálogo Configurações abre com uma lista de categorias à esquerda. Você pode percorrer as categorias com Seta para Cima e Seta para Baixo, ou usar a navegação por primeira letra — basta pressionar a primeira letra do nome da categoria para saltar até ela. Por exemplo, pressione F para ir direto à categoria Fala. Já na categoria Fala, pressione Tab para avançar pelos controles deslizantes e caixas de combinação de velocidade, tom, volume, inflexão, voz e sintetizador. Pressione Shift+Tab para voltar. Se precisar relembrar a navegação com Tab, isso foi visto na lição sobre mover-se entre controles, no capítulo Primeiros Passos com o NVDA. As mudanças feitas aqui são salvas quando você pressiona OK ou Aplicar. Pressione Enter para continuar.",
           "hints": [
-            "Open Settings with NVDA plus N, P for Preferences, S for Settings. Then press S in the category list to jump straight to the Speech category using first-letter navigation.",
-            "Inside the Speech category, Tab moves forward through controls: rate slider, pitch slider, volume slider, voice combo box, and more. Shift plus Tab moves backward.",
-            "Sliders in the Speech settings respond to Left and Right Arrow keys to adjust their values. NVDA announces the value as you move the slider."
+            "Abra as Configurações com NVDA mais N, P de Preferências e Ç de Configurações. Depois pressione F na lista de categorias para ir direto à categoria Fala pela navegação por primeira letra.",
+            "Dentro da categoria Fala, o Tab avança pelos controles: controle deslizante de velocidade, de tom, de volume, caixa de combinação de voz e outros. Shift mais Tab volta.",
+            "Os controles deslizantes das configurações de Fala respondem às teclas Seta para Esquerda e Seta para Direita para ajustar o valor. O NVDA anuncia o valor conforme você move o controle."
           ]
         },
         {
           "type": "info",
-          "instruction": "NVDA includes the eSpeak NG synthesizer by default, which supports many languages and voices. If you have installed additional synthesizers — such as Windows OneCore voices or third-party options — you can switch between them in the Speech settings under the Synthesizer combo box. Each synthesizer may offer different voice options and quality levels. Press Enter to continue.",
+          "instruction": "O NVDA já vem com o sintetizador eSpeak NG, que oferece muitos idiomas e vozes. Se você tiver instalado outros sintetizadores — como as vozes Windows OneCore ou opções de terceiros — pode alternar entre eles nas configurações de Fala, na caixa de combinação Sintetizador. Cada sintetizador pode oferecer vozes e níveis de qualidade diferentes. Pressione Enter para continuar.",
           "hints": [
-            "eSpeak NG is installed with NVDA and works offline. Windows OneCore voices use Microsoft's built-in voices and offer more natural-sounding speech.",
-            "To switch synthesizers, open NVDA Settings, go to the Speech category, and find the Synthesizer combo box. Use arrow keys to choose a different synthesizer.",
-            "After switching synthesizers, the Voice combo box will update to show the voices available for the new synthesizer. Try a few to find the one you prefer."
+            "O eSpeak NG é instalado junto com o NVDA e funciona sem internet. As vozes Windows OneCore usam as vozes nativas da Microsoft e soam mais naturais.",
+            "Para trocar de sintetizador, abra as Configurações do NVDA, vá até a categoria Fala e encontre a caixa de combinação Sintetizador. Use as teclas de seta para escolher outro sintetizador.",
+            "Depois de trocar de sintetizador, a caixa de combinação Voz é atualizada com as vozes disponíveis para o novo sintetizador. Experimente algumas até achar a sua preferida."
           ]
         },
         {
           "type": "info",
-          "instruction": "Once you have found speech settings you are happy with, NVDA saves them automatically when you close the settings dialog with OK. Your preferred rate, voice, and pitch will be active every time NVDA starts. If you ever want to experiment and return to a known state, note your settings before changing them, or use the Reset to defaults button in the Speech settings panel. Press Enter to finish this lesson.",
+          "instruction": "Depois de encontrar configurações de fala que agradem, o NVDA as salva automaticamente quando você fecha o diálogo de configurações com OK. A velocidade, a voz e o tom de sua preferência ficam ativos toda vez que o NVDA inicia. Se algum dia quiser experimentar e depois voltar a um estado conhecido, anote suas configurações antes de mudá-las, ou pressione NVDA+Control+R uma vez para voltar à configuração salva. Pressione Enter para concluir esta lição.",
           "hints": [
-            "NVDA saves all speech settings when you press OK in the Settings dialog. Your preferences are restored every time NVDA starts.",
-            "The Reset to defaults button in the Speech category restores all speech settings to their factory values. Use it if you have made changes you want to undo.",
-            "You can combine the synth settings ring for quick on-the-fly adjustments with the Settings dialog for precise fine-tuning. Both methods save your preferences."
+            "O NVDA salva todas as configurações de fala quando você pressiona OK no diálogo Configurações. Suas preferências são restauradas toda vez que o NVDA inicia.",
+            "A categoria Fala não tem botão de restaurar. Para devolver todas as configurações do NVDA ao estado original, pressione NVDA+Control+R três vezes: uma vez volta à última configuração salva e três vezes restaura os padrões originais.",
+            "Você pode combinar o anel de configurações de voz, para ajustes rápidos na hora, com o diálogo Configurações, para acertos precisos. Os dois jeitos salvam suas preferências."
           ]
         }
-      ],
-      "chapterComplete": true
+      ]
+    },
+    {
+      "id": "audio_output",
+      "title": "Mudar o Dispositivo de Saída de Áudio",
+      "order": 3,
+      "steps": [
+        {
+          "type": "info",
+          "instruction": "Quando você conecta fones de ouvido, caixas de som externas ou um monitor HDMI, o Windows pode não direcionar a fala do NVDA automaticamente para o dispositivo que você quer. O NVDA+Control+U abre a categoria Áudio do diálogo Configurações do NVDA, onde o Dispositivo de Saída é uma das opções que você pode mudar. Isso é especialmente útil quando você precisa alternar entre fones e caixas de som no meio de uma tarefa. Pressione Enter para continuar.",
+          "hints": [
+            "NVDA mais Control mais U é um comando do NVDA que abre a categoria Áudio das Configurações, onde fica a lista de todos os dispositivos de saída de áudio disponíveis.",
+            "Use Seta para Cima e Seta para Baixo para percorrer a lista de dispositivos de áudio e depois pressione Enter para confirmar aquele que você quer que o NVDA use para falar.",
+            "A mudança vale imediatamente — você vai ouvir o NVDA passar a falar pelo dispositivo escolhido na hora. Não precisa reiniciar."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Experimente agora. Pressione NVDA+Control+U. Abre-se o diálogo Configurações na categoria Áudio, com a lista de dispositivos de saída de áudio. Use Seta para Cima e Seta para Baixo para percorrer a lista e ouvir o NVDA anunciar o nome de cada dispositivo. Pressione Enter para confirmar um dispositivo, ou Escape para fechar o diálogo sem mudar nada. Pressione Enter aqui quando estiver pronto para continuar.",
+          "monitorGestures": [
+            "kb:nvda+control+u"
+          ],
+          "hints": [
+            "Segure NVDA e Control juntos e pressione U. A categoria Áudio das Configurações abre na hora.",
+            "As teclas de seta percorrem a lista de dispositivos. O NVDA anuncia o nome de cada um conforme você passa por eles. Pressione Enter para confirmar sua escolha.",
+            "Se você só tiver um dispositivo de áudio, a lista pode mostrar apenas uma entrada. Pressione Escape para fechar o diálogo se não houver nada que você queira mudar."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "audio_ducking",
+      "title": "Controlar o Áudio Prioritário",
+      "order": 4,
+      "chapterComplete": true,
+      "steps": [
+        {
+          "type": "info",
+          "instruction": "O áudio prioritário controla o que acontece com os outros sons do computador quando o NVDA fala. Com ele ativo, o NVDA reduz automaticamente o volume de músicas, vídeos ou outros áudios enquanto está falando e devolve o volume quando termina. Assim a fala do NVDA não disputa espaço com os outros sons. Pressione NVDA+Shift+D para percorrer os três modos: Não reduzir, Reduzir ao reproduzir fala e sons, e Sempre reduzir. Pressione Enter para continuar.",
+          "hints": [
+            "NVDA mais Shift mais D é um comando do NVDA. Cada toque passa para o próximo modo e o NVDA anuncia o novo modo pelo nome.",
+            "Os três modos são: Não reduzir (os outros áudios tocam no volume normal), Reduzir ao reproduzir fala e sons (o áudio baixa apenas enquanto o NVDA fala) e Sempre reduzir (o áudio fica baixo mesmo com o NVDA em silêncio).",
+            "O áudio prioritário depende de um driver de áudio compatível. Se você não notar diferença nenhuma entre os modos, seu sistema ou seu driver de áudio pode não oferecer esse recurso."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Experimente agora. Abra um reprodutor de música ou um vídeo e deixe tocando. Depois pressione NVDA+Shift+D uma vez e escute: se o recurso estiver ativo agora, você vai notar a música baixar de volume quando o NVDA falar. Pressione NVDA+Shift+D de novo para ouvir o NVDA anunciar o próximo modo. Percorra os três para achar o que funciona melhor para você. Pressione Enter aqui quando estiver pronto para continuar.",
+          "monitorGestures": [
+            "kb:nvda+shift+d"
+          ],
+          "hints": [
+            "Segure NVDA e Shift juntos e pressione D. O NVDA anuncia o novo modo na hora.",
+            "Comece com uma música ou um vídeo tocando, para ouvir com clareza se a redução está funcionando. A queda de volume deve ser perceptível quando o NVDA começa a falar.",
+            "Se nenhum dos modos mudar o comportamento dos outros áudios, seu driver de áudio pode não oferecer esse recurso. Isso é comum com alguns headsets USB e dispositivos de áudio virtuais."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "O modo de sua preferência é salvo automaticamente e fica ativo toda vez que o NVDA inicia. A maioria das pessoas prefere Reduzir ao reproduzir fala e sons — ele mantém o áudio no volume normal enquanto o NVDA está quieto e só baixa quando a fala começa, então dá para acompanhar o conteúdo e os anúncios do NVDA sem que um abafe o outro. Pressione Enter para concluir esta lição e finalizar o capítulo Personalizando o NVDA.",
+          "hints": [
+            "Reduzir ao reproduzir fala e sons é o modo mais usado — o áudio toca normalmente quando o NVDA está quieto e só baixa quando ele fala.",
+            "Sempre reduzir é útil se o áudio atrapalhar você mesmo entre os anúncios do NVDA, como ao usá-lo em um ambiente barulhento ou cheio de mídia.",
+            "Não reduzir é o padrão. Se você prefere todos os áudios no volume total o tempo todo e quer ouvir o NVDA e os outros sons ao mesmo tempo em nível pleno, esse modo deixa tudo como está."
+          ]
+        }
+      ]
     }
   ]
 }

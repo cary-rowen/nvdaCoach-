@@ -419,6 +419,10 @@ msgid "United States"
 msgstr ""
 
 #: globalPlugins/nvdaCoach/__init__.py:1334
+msgid "Japan"
+msgstr ""
+
+#: globalPlugins/nvdaCoach/__init__.py:1334
 msgid "Canada"
 msgstr ""
 
@@ -726,6 +730,10 @@ msgstr ""
 msgid "Could not save the certificate. Please check that your Downloads folder is accessible."
 msgstr ""
 
+#: globalPlugins/nvdaCoach/lessonRunner.py:79
+msgid "Lesson"
+msgstr ""
+
 #: globalPlugins/nvdaCoach/lessonRunner.py:87
 msgid "Hello, {name}! "
 msgstr ""
@@ -776,10 +784,6 @@ msgstr ""
 
 #: globalPlugins/nvdaCoach/lessonRunner.py:229
 msgid "PRACTICE AREA — NAVIGATE WITH ARROW KEYS:"
-msgstr ""
-
-#: globalPlugins/nvdaCoach/lessonRunner.py:282
-msgid "Lesson"
 msgstr ""
 
 #: globalPlugins/nvdaCoach/lessonRunner.py:284

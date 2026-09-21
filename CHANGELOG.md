@@ -1,5 +1,41 @@
 # NVDA Coach — Changelog
 
+## v1.6.0 (2026-09-20)
+
+### Localization
+- **Japanese (ja):** A complete Japanese localization — all six chapters and 45 lessons, every interface string, and the Add-on Store description. Terminology follows NVDA's own Japanese translation, including 音声エンジン for the synthesizer and 簡単音声設定 for the settings ring rather than transliterations. The user guide page (`doc/ja/readme.html`) and the store listing (`locale/ja/manifest.ini`) were assembled from the translator's own wording in the lessons and interface strings rather than translated afresh from English.
+- **Polish (pl):** A complete Polish localization — six chapters, interface strings and documentation. The store listing was expanded from a single sentence to the full description the other languages carry, built from the translator's own documentation page; his summary line and opening sentence are unchanged.
+- **Traditional Chinese (zh_TW) revised** throughout the lessons, documentation and interface.
+- **Brazilian Portuguese (pt_BR) is a real translation for the first time.** The folder has existed since 1.5.1 and shipped as an English copy: lesson content 98.9% byte-identical to English, and not one of the 204 interface strings translated. Two of its chapters were copies of an *older* English revision, and the audio output and audio ducking lessons had never been carried over at all, leaving it at 44 lessons. It is now the full 45, in Portuguese, with terminology taken from NVDA's own Brazilian Portuguese translation. The existing store listing by Edson Miranda is unchanged; the completion is machine-assisted and marked as pending his review.
+- **Every translation catalogue resynced.** All nine now carry exactly the same 204 message ids as the regenerated template, with existing translations preserved byte for byte and new strings added as empty entries.
+- **Translator worksheets** in `translators/`. When an English string is edited rather than added, gettext treats it as new and orphans the old translation, so the translator opens the file and finds an empty box with no sign they already translated nine tenths of that sentence. Each worksheet now pairs every owed string with that translator's own earlier version and marks what changed in the English.
+
+### Corrections — commands NVDA Coach taught that NVDA does not have
+Every item below was checked against NVDA's own Commands Quick Reference and user guide. All ten are corrected in English and written up for translators in `translators/FACTUAL-CORRECTIONS-1.6.0.md`; items 1 and 2 are corrected in every language.
+
+1. **The laptop command for reading the current object was a key that does not exist.** The lessons taught `NVDA+Shift+Comma`; NVDA binds `NVDA+Shift+O`. `NVDA+shift+comma` appears nowhere in NVDA and is bound to nothing. A student on a laptop pressed it, nothing happened, and nothing told them why — in the lesson whose whole purpose is teaching that laptop layout differs from desktop. Every translator had faithfully translated the error, so it was wrong in all nine languages, in the lessons and in six documentation pages. The sentences that existed only to say where the comma key was have been rewritten to describe the O key.
+2. **`NVDA+Ctrl+U` was described as an audio output device picker** that opened "without opening the Settings dialog". It opens the Audio category *of* the NVDA Settings dialog, and has since 2024.1 — the add-on's own minimum version.
+3. **A "Reset to defaults" button in the Speech settings category.** No such button exists; the dialog has OK, Cancel and Apply. Resetting is `NVDA+Ctrl+R`.
+4. **Heading quick navigation was taught as 1 to 6.** NVDA supports levels 1 to 9.
+5. **The audio ducking option was named "Duck While Speaking".** NVDA's option is Audio Ducking Mode.
+6. **A lesson 7 of 8 was announced as the last in its chapter.** The following lesson then correctly said one more remained.
+7. **A practice checkbox was named "Show practice hints"** in the lesson; the control says "Show practice hints during lessons". For a student matching what they hear against what they were told to find, a partial match is a dead end.
+8. **The Menu key was placed "on the left side".** The Applications key is on the right, next to the right Control key.
+9. **The NVDA key was described as "one of two options".** NVDA offers three: Caps Lock, Insert, and numpad Insert.
+10. **Two cross-references to a "Moving Between Controls" lesson** that does not exist. The lesson is "Move Between Controls with Tab".
+
+### Accessibility
+- **NVDA Coach no longer takes `NVDA+Shift+C` away from NVDA.** NVDA binds that key in Word and Excel to mark the row holding column headers, and scripts on a global plugin are resolved before scripts on the focused object — so installing NVDA Coach silently removed an NVDA command, inside a table, which is exactly where the add-on's own table lesson sends the student. The Coach now hands the gesture back wherever the focused object knows how to set column headers. If that hand-off fails for any reason it falls through to opening the Coach, because this gesture is the add-on's only way in.
+- **Hong Kong, Macau and European Portuguese no longer fall back to English.** NVDA supplies a full locale such as `zh_HK`; the base-language step reduced it to `zh`, no `zh` folder exists, and the reader dropped to English while a complete Traditional Chinese set sat unused in the add-on. `zh_HK` and `zh_MO` now resolve to Traditional Chinese, `pt_PT` and a bare `pt` to Brazilian Portuguese. The lesson loader and the documentation lookup now share one resolver so they cannot disagree about which language a user is getting.
+- **The untranslated lesson-title fallback** in `lessonRunner.py` is now translatable. The same fallback two hundred lines further down already was.
+
+### Internal
+- Translation template regenerated from source: 204 strings, up from 203.
+- Every `.mo` recompiled from its `.po`.
+- Version stated in the add-on manifest, the build script and seven documentation pages, all of which had drifted — the English page still said 1.5.4, Spanish and Polish 1.5.1, Russian 1.5.
+
+---
+
 ## v1.5.7 (2026-07-12)
 
 ### Localization

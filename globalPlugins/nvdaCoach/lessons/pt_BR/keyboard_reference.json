@@ -1,162 +1,162 @@
 {
   "id": "keyboard_reference",
-  "title": "Your Keyboard",
-  "description": "Understand the physical keyboard — modifier key locations, function keys, Fn key behavior, and how to match your keyboard to your NVDA layout setting.",
+  "title": "Seu Teclado",
+  "description": "Entenda o teclado físico — onde ficam as teclas modificadoras, as teclas de função, como se comporta a tecla Fn e como combinar o seu teclado com a opção Esquema de teclado do NVDA.",
   "order": 2,
   "lessons": [
     {
       "id": "modifier_keys",
-      "title": "Modifier Keys and Their Locations",
+      "title": "As Teclas Modificadoras e Onde Elas Ficam",
       "order": 1,
       "steps": [
         {
           "type": "info",
-          "instruction": "Modifier keys are keys you hold while pressing another key to change its meaning. The four main modifier keys in Windows are: Control (Ctrl), Shift, Alt, and the Windows key. None of these do anything by themselves — they modify other keys. Understanding where they are on your keyboard is as important as knowing which commands to use. This lesson covers where to find each one. Press Enter to continue.",
+          "instruction": "Teclas modificadoras são teclas que você segura enquanto pressiona outra, mudando o sentido dela. As quatro principais no Windows são: Control (Ctrl), Shift, Alt e a tecla Windows. Nenhuma delas faz nada sozinha — elas modificam outras teclas. Saber onde ficam no seu teclado é tão importante quanto saber quais comandos usar. Esta lição mostra onde encontrar cada uma. Pressione Enter para continuar.",
           "hints": [
-            "Modifier keys are always held down while you press another key. Releasing them first — or pressing them in the wrong order — can prevent a command from working.",
-            "Most keyboards have duplicate modifier keys on both sides: Ctrl on the left and right, Shift on the left and right, Alt on the left and right. Either side works for most commands.",
-            "The Windows key and the Menu key (if present) are usually only on the left side or only on one side of the keyboard."
+            "As teclas modificadoras ficam sempre pressionadas enquanto você aperta outra tecla. Soltá-las antes — ou pressioná-las na ordem errada — pode impedir o comando de funcionar.",
+            "A maioria dos teclados tem teclas modificadoras duplicadas dos dois lados: Ctrl à esquerda e à direita, Shift à esquerda e à direita, Alt à esquerda e à direita. Qualquer um dos lados serve para a maioria dos comandos.",
+            "A tecla Windows e a tecla Aplicações (quando existe) costumam ficar só de um lado do teclado."
           ]
         },
         {
           "type": "info",
-          "instruction": "The Control key (Ctrl) is usually in the bottom-left corner of the keyboard and in the bottom-right corner. However, on some laptops the Fn key sits between the left Ctrl key and the Windows key, just to the left of the space bar. Both Ctrl keys — left and right — work identically for almost all commands. Press Enter to continue.",
+          "instruction": "A tecla Control (Ctrl) fica no canto inferior esquerdo do teclado e também no canto inferior direito. Na maioria dos portáteis, a tecla Fn fica logo à direita do Ctrl esquerdo — entre o Ctrl e a tecla Windows — então a fileira de baixo, começando pela esquerda, é: Ctrl, Fn, Windows, Alt e a barra de espaço. Nos teclados de mesa padrão não há tecla Fn nessa fileira; a ordem é simplesmente Ctrl, Windows, Alt e barra de espaço. As duas teclas Ctrl — a da esquerda e a da direita — funcionam igual em quase todos os comandos. Pressione Enter para continuar.",
           "hints": [
-            "Standard placement: Ctrl is the very bottom-left key. Some laptops: Fn sits between the left Ctrl and the Windows key, just left of the space bar.",
-            "The right Ctrl key works the same as the left for all commands in this course. Use whichever is more comfortable for your hand position.",
-            "Not sure which is Ctrl? Press NVDA plus 1 to turn on Input Help, press the key you think is Ctrl, and NVDA will confirm whether it recognized it as Control. Press NVDA plus 1 again to turn off Input Help."
+            "Em portáteis: o Ctrl fica no canto inferior esquerdo, depois vem o Fn, em seguida a tecla Windows, depois o Alt e então a barra de espaço.",
+            "A tecla Ctrl da direita funciona igual à da esquerda em todos os comandos deste curso. Use a que for mais confortável para a posição da sua mão.",
+            "Não tem certeza de qual é o Ctrl? Pressione NVDA mais 1 para ligar a ajuda de entrada, pressione a tecla que você acha que é o Ctrl e o NVDA vai confirmar se a reconheceu como Control. Pressione NVDA mais 1 de novo para desligar a ajuda de entrada."
           ]
         },
         {
           "type": "info",
-          "instruction": "The Shift key is the wide key directly above Control on both sides of the keyboard. It is one of the widest keys on most keyboards, making it easy to find by feel. The left Shift is above the left Control; the right Shift is above the right Control. Either Shift key works for most commands. Shift is used constantly with NVDA: Shift+Tab moves backward through controls (Windows command), Shift+H moves backward through headings in browse mode, and NVDA+Shift+C opens the lesson picker. Press Enter to continue.",
+          "instruction": "A tecla Shift é a tecla larga logo acima do Control, nos dois lados do teclado. É uma das teclas mais largas da maioria dos teclados, o que facilita encontrá-la pelo tato. O Shift esquerdo fica acima do Control esquerdo; o Shift direito, acima do Control direito. Qualquer um dos dois serve para a maioria dos comandos. O Shift é usado o tempo todo com o NVDA: Shift+Tab volta pelos controles (comando do Windows), Shift+H volta pelos cabeçalhos no modo de navegação e NVDA+Shift+C abre o seletor de lições. Pressione Enter para continuar.",
           "hints": [
-            "Left Shift is above the left Ctrl key on the left side of the keyboard. Right Shift is above the right Ctrl key on the right side.",
-            "Shift is wider than most keys — you can usually find it by feel without looking. It is the wide key just above Ctrl on both sides.",
-            "Either Shift key works for any command. Use whichever side is closer to the other keys you need to press at the same time."
+            "O Shift esquerdo fica acima da tecla Ctrl esquerda, do lado esquerdo do teclado. O Shift direito fica acima da tecla Ctrl direita, do lado direito.",
+            "O Shift é mais largo que a maioria das teclas — normalmente dá para achá-lo pelo tato, sem olhar. É a tecla larga logo acima do Ctrl, nos dois lados.",
+            "Qualquer uma das teclas Shift serve para qualquer comando. Use o lado que estiver mais perto das outras teclas que você precisa pressionar ao mesmo tempo."
           ]
         },
         {
           "type": "info",
-          "instruction": "The Alt key is immediately to the left and right of the Space bar. The Space bar is the long flat key at the bottom center of the keyboard — the longest key on the board. Alt is the key directly adjacent to it on each side. The left Alt is used most often. Alt+Tab (Windows command) uses the left Alt. Alt+F4 (Windows command) closes a window. Some programs use the right Alt (also called AltGr on some keyboards) for special characters, but for NVDA and Windows navigation you will almost always use the left Alt. Press Enter to continue.",
+          "instruction": "A tecla Alt fica imediatamente à esquerda e à direita da barra de espaço. A barra de espaço é a tecla longa e lisa no centro da parte de baixo do teclado — a mais comprida de todas. O Alt é a tecla logo ao lado dela, de cada lado. O Alt esquerdo é o mais usado. O Alt+Tab (comando do Windows) usa o Alt esquerdo. O Alt+F4 (comando do Windows) fecha uma janela. Alguns programas usam o Alt direito (chamado de AltGr em certos teclados) para caracteres especiais, mas, para o NVDA e para a navegação no Windows, você vai usar quase sempre o Alt esquerdo. Pressione Enter para continuar.",
           "hints": [
-            "Alt is directly to the left and right of the Space bar. The Space bar is easy to find — it is the longest key on the keyboard.",
-            "Use the left Alt for Alt+Tab and other Windows navigation commands. The right Alt (AltGr) is typically used for special characters in some languages.",
-            "Alt plus Tab is a Windows command. Alt plus F4 closes the current window. Both use the left Alt key."
+            "O Alt fica logo à esquerda e à direita da barra de espaço. A barra de espaço é fácil de achar — é a tecla mais comprida do teclado.",
+            "Use o Alt esquerdo para o Alt+Tab e para os outros comandos de navegação do Windows. O Alt direito (AltGr) costuma servir para caracteres especiais de alguns idiomas.",
+            "Alt mais Tab é um comando do Windows. Alt mais F4 fecha a janela atual. Os dois usam a tecla Alt esquerda."
           ]
         },
         {
           "type": "info",
-          "instruction": "The Windows key has the Windows logo printed on it and is usually between the left Ctrl key and the left Alt key. On some laptops it may be in a slightly different position, but it is always somewhere in the bottom row. The Windows key opens the Start menu when pressed alone. Windows+Up Arrow (Windows command) maximizes a window. Windows+D (Windows command) shows the desktop. Windows+L (Windows command) locks the screen. Press Enter to continue.",
+          "instruction": "A tecla Windows tem o logotipo do Windows impresso e fica na fileira de baixo. Nos teclados de mesa padrão, ela fica entre o Ctrl esquerdo e o Alt esquerdo. Na maioria dos portáteis, a tecla Fn ocupa a posição logo ao lado do Ctrl, então a tecla Windows fica entre o Fn e o Alt. De um jeito ou de outro, ela está sempre em algum ponto da fileira de baixo. Sozinha, a tecla Windows abre o menu Iniciar. Windows+Seta para Cima (comando do Windows) maximiza uma janela. Windows+D (comando do Windows) mostra a área de trabalho. Windows+L (comando do Windows) bloqueia a tela. Pressione Enter para continuar.",
           "hints": [
-            "The Windows key is usually between the left Ctrl and left Alt keys in the bottom row. It has the Windows logo — four colored squares arranged in a grid — printed on it.",
-            "Windows plus Up Arrow maximizes the current window to full screen. This is useful before using object navigation — a maximized window shows all objects.",
-            "Windows key alone opens the Start menu. Press Escape to close it without selecting anything."
+            "Teclados de mesa: a tecla Windows fica entre o Ctrl esquerdo e o Alt esquerdo. Portáteis: o Fn fica entre o Ctrl e o Windows, então a ordem é Ctrl, Fn, Windows, Alt. A tecla Windows tem o logotipo do Windows impresso — quatro quadrados coloridos formando uma grade.",
+            "Windows mais Seta para Cima maximiza a janela atual em tela cheia. Isso é útil antes de usar a navegação de objetos — uma janela maximizada mostra todos os objetos.",
+            "A tecla Windows sozinha abre o menu Iniciar. Pressione Escape para fechá-lo sem escolher nada."
           ]
         },
         {
           "type": "info",
-          "instruction": "Your NVDA key is one of two options: Insert or Caps Lock. Insert is in the cluster of keys above the arrow keys on most keyboards, near Home, Delete, Page Up, and Page Down. Caps Lock is on the far left side of the keyboard, just above the left Shift key. Both can serve as your NVDA key at the same time — NVDA accepts either. Many laptop users prefer Caps Lock because Insert may be harder to reach. You can choose your preferred NVDA key in NVDA Settings under Keyboard. Press Enter to finish this lesson.",
+          "instruction": "A sua tecla NVDA é uma de duas opções: Insert ou Caps Lock. O Insert fica no bloco de teclas acima das setas, na maioria dos teclados, perto de Home, Delete, Page Up e Page Down. O Caps Lock fica na ponta esquerda do teclado, logo acima do Shift esquerdo. As duas podem servir como tecla NVDA ao mesmo tempo — o NVDA aceita qualquer uma. Muita gente que usa portátil prefere o Caps Lock, porque o Insert pode ser mais difícil de alcançar. Você pode escolher a sua tecla NVDA preferida nas Configurações do NVDA, na categoria Teclado. Pressione Enter para concluir esta lição.",
           "hints": [
-            "Insert is in the cluster above the arrow keys — near Home, Delete, End, Page Up, and Page Down. It is not a modifier by itself; it only becomes the NVDA key because NVDA assigns it that role.",
-            "Caps Lock is on the far left, just above Shift. Using Caps Lock as your NVDA key means Caps Lock no longer toggles uppercase — press NVDA plus F2 and then Caps Lock to actually toggle it when needed.",
-            "Both Insert and Caps Lock work as the NVDA key simultaneously. You do not have to choose — you can use either one depending on which is more convenient for each command."
+            "O Insert fica no bloco acima das teclas de seta — perto de Home, Delete, End, Page Up e Page Down. Ele não é uma tecla modificadora por si só; vira tecla NVDA apenas porque o NVDA lhe dá esse papel.",
+            "O Caps Lock fica na ponta esquerda, logo acima do Shift. Usar o Caps Lock como tecla NVDA significa que ele deixa de alternar maiúsculas — pressione NVDA mais F2 e depois o Caps Lock para realmente alterná-lo quando precisar.",
+            "Insert e Caps Lock funcionam como tecla NVDA ao mesmo tempo. Você não precisa escolher — pode usar uma ou outra, conforme a que for mais conveniente para cada comando."
           ]
         }
       ]
     },
     {
       "id": "function_keys",
-      "title": "Function Keys and the Fn Key",
+      "title": "As Teclas de Função e a Tecla Fn",
       "order": 2,
       "steps": [
         {
           "type": "info",
-          "instruction": "The top row of your keyboard has keys labeled F1 through F12 — these are function keys. Each one can be assigned a specific action by Windows, NVDA, or the application you are using. In NVDA Coach, F1 repeats the current step instruction, F2 gives a hint, and F3 skips a step. F1 also opens Help in most Windows applications (application command). F5 refreshes web pages in most browsers (application command). NVDA uses F12 to read the time (NVDA+F12). These are just a few examples — function keys serve many purposes. Press Enter to continue.",
+          "instruction": "A fileira de cima do seu teclado tem teclas de F1 a F12 — são as teclas de função. Cada uma pode receber uma ação específica do Windows, do NVDA ou do aplicativo que você está usando. No NVDA Coach, o F1 repete a instrução do passo atual, o F2 dá uma dica e o F3 pula um passo. O F1 também abre a Ajuda na maioria dos aplicativos do Windows (comando do aplicativo). O F5 atualiza páginas web na maioria dos navegadores (comando do aplicativo). O NVDA usa o F12 para dizer a hora (NVDA+F12). Esses são só alguns exemplos — as teclas de função servem para muita coisa. Pressione Enter para continuar.",
           "hints": [
-            "Function keys are in the top row, labeled F1 through F12 from left to right. F1 is on the far left; F12 is on the far right.",
-            "In NVDA Coach: F1 repeats the instruction, F2 gives a hint, F3 skips the step. These are NVDA Coach-specific commands.",
-            "In most Windows applications, F1 opens Help (application command). In most browsers, F5 refreshes the page (application command). NVDA+F12 reads the time (NVDA command)."
+            "As teclas de função ficam na fileira de cima, de F1 a F12, da esquerda para a direita. O F1 fica na ponta esquerda; o F12, na ponta direita.",
+            "No NVDA Coach: o F1 repete a instrução, o F2 dá uma dica, o F3 pula o passo. Esses comandos são específicos do NVDA Coach.",
+            "Na maioria dos aplicativos do Windows, o F1 abre a Ajuda (comando do aplicativo). Na maioria dos navegadores, o F5 atualiza a página (comando do aplicativo). O NVDA+F12 diz a hora (comando do NVDA)."
           ]
         },
         {
           "type": "info",
-          "instruction": "On many laptops, the function key row has two modes. In one mode, the keys act as F1 through F12 for software commands. In the other mode, the same keys control hardware functions — adjusting screen brightness, speaker volume, keyboard backlight, and media playback. These hardware functions are often shown as icons printed on the keys. Which mode is active by default depends on your laptop model. Press Enter to continue.",
+          "instruction": "Em muitos portáteis, a fileira das teclas de função tem dois modos. Em um deles, as teclas funcionam como F1 a F12, para comandos de software. No outro, as mesmas teclas controlam funções de hardware — brilho da tela, volume das caixas de som, luz do teclado e reprodução de mídia. Essas funções de hardware costumam aparecer como ícones impressos nas teclas. Qual modo vem ativo por padrão depende do modelo do seu portátil. Pressione Enter para continuar.",
           "hints": [
-            "Look at your F1 through F12 keys. If they have small icons printed on them — a sun for brightness, a speaker for volume, a musical note for media — those are the hardware function actions.",
-            "On some laptops, the hardware icons (multimedia) are primary and you press Fn plus the key to get F1 through F12. On others, F1 through F12 are primary and you press Fn for hardware functions.",
-            "The Fn key is not a standard Windows modifier — it is processed by the keyboard firmware before Windows sees it. This means NVDA and Windows do not know about Fn presses."
+            "Observe suas teclas de F1 a F12. Se elas tiverem ícones pequenos impressos — um sol para o brilho, um alto-falante para o volume, uma nota musical para mídia — essas são as ações de hardware.",
+            "Em alguns portáteis, os ícones de hardware (multimídia) são a função principal e você pressiona Fn mais a tecla para obter F1 a F12. Em outros, F1 a F12 são a função principal e você usa o Fn para as funções de hardware.",
+            "A tecla Fn não é uma modificadora padrão do Windows — ela é processada pelo firmware do teclado antes de o Windows enxergá-la. Ou seja, o NVDA e o Windows não ficam sabendo quando você aperta o Fn."
           ]
         },
         {
           "type": "info",
-          "instruction": "The Fn key is typically in the bottom-left corner of a laptop keyboard, or to the right of the left Ctrl key. When you hold Fn and press an arrow key, many laptops produce Home, End, Page Up, or Page Down — because compact keyboards often do not have those as dedicated keys. Fn plus Left Arrow is typically Home. Fn plus Right Arrow is End. Fn plus Up Arrow is Page Up. Fn plus Down Arrow is Page Down. Check the labels on your arrow keys for these secondary symbols. Press Enter to continue.",
+          "instruction": "A tecla Fn costuma ficar no canto inferior esquerdo do teclado de um portátil, ou à direita do Ctrl esquerdo. Quando você segura o Fn e pressiona uma tecla de seta, muitos portáteis produzem Home, End, Page Up ou Page Down — porque teclados compactos muitas vezes não têm essas teclas dedicadas. Fn mais Seta para Esquerda costuma ser Home. Fn mais Seta para Direita é End. Fn mais Seta para Cima é Page Up. Fn mais Seta para Baixo é Page Down. Veja nas suas teclas de seta se há esses símbolos secundários. Pressione Enter para continuar.",
           "hints": [
-            "Look at your arrow keys for small secondary labels — a horizontal line with arrow for Home/End, or up-arrow-with-bar for Page Up/Down.",
-            "Fn plus Left Arrow is Home on most compact laptops. Fn plus Right Arrow is End. Fn plus Up Arrow is Page Up. Fn plus Down Arrow is Page Down.",
-            "These Fn combinations are keyboard firmware functions — they are invisible to Windows and NVDA. They produce the same result as dedicated Home, End, Page Up, and Page Down keys."
+            "Procure marcações secundárias pequenas nas teclas de seta — uma linha horizontal com seta para Home e End, ou uma seta com traço para Page Up e Page Down.",
+            "Fn mais Seta para Esquerda é Home na maioria dos portáteis compactos. Fn mais Seta para Direita é End. Fn mais Seta para Cima é Page Up. Fn mais Seta para Baixo é Page Down.",
+            "Essas combinações com Fn são funções do firmware do teclado — elas são invisíveis para o Windows e para o NVDA. O resultado é o mesmo das teclas dedicadas Home, End, Page Up e Page Down."
           ]
         },
         {
           "type": "info",
-          "instruction": "Many laptop keyboards have an Fn Lock feature. When Fn Lock is active, you do not need to hold Fn — the secondary functions are active all the time. This is useful if you need F1 through F12 constantly and do not want to hold Fn each time. Fn Lock is often toggled by pressing Fn plus Escape, Fn plus Caps Lock, or a dedicated key with a padlock icon. Check your laptop's documentation to find the Fn Lock key and how to toggle it. Different manufacturers place it differently and may use different key combinations. Press Enter to continue.",
+          "instruction": "Muitos teclados de portátil têm o recurso Fn Lock. Com o Fn Lock ativo, você não precisa segurar o Fn — as funções secundárias ficam ativas o tempo todo. Isso ajuda se você precisa das teclas F1 a F12 o tempo inteiro e não quer segurar o Fn a cada vez. O Fn Lock costuma ser alternado com Fn mais Escape, Fn mais Caps Lock, ou uma tecla dedicada com ícone de cadeado. Consulte a documentação do seu portátil para descobrir a tecla de Fn Lock e como alterná-la. Cada fabricante coloca isso em um lugar e pode usar combinações diferentes. Pressione Enter para continuar.",
           "hints": [
-            "Look for a key with a padlock icon combined with Fn, or check your laptop's manual for the Fn Lock combination. Common options are Fn plus Escape or Fn plus Caps Lock.",
-            "Some laptops indicate the current Fn Lock state with a small indicator light. Others make a sound or show an on-screen display when you toggle it.",
-            "If pressing F2 in NVDA Coach gives you a hint — rather than changing screen brightness — then either Fn Lock is active or your laptop defaults to F-key mode."
+            "Procure uma tecla com ícone de cadeado combinada com o Fn, ou consulte o manual do seu portátil para achar a combinação do Fn Lock. As opções mais comuns são Fn mais Escape ou Fn mais Caps Lock.",
+            "Alguns portáteis indicam o estado do Fn Lock com uma luzinha. Outros emitem um som ou mostram um aviso na tela quando você alterna.",
+            "Se pressionar F2 no NVDA Coach lhe dá uma dica — em vez de mudar o brilho da tela — então o Fn Lock está ativo ou o seu portátil já vem no modo de teclas F."
           ]
         },
         {
           "type": "info",
-          "instruction": "A practical tip for using NVDA Coach: if pressing F2 changes your screen brightness or volume instead of giving you a hint, your keyboard is in multimedia mode. Either hold Fn and press F2, or toggle Fn Lock to make F1 through F12 primary. Once function keys work as F1 through F12, F1 repeats the lesson instruction, F2 gives you a hint, and F3 skips the step. These are NVDA Coach-specific commands. Press Enter to finish this lesson.",
+          "instruction": "Uma dica prática para usar o NVDA Coach: se pressionar F2 mudar o brilho da tela ou o volume em vez de dar uma dica, seu teclado está no modo multimídia. Ou você segura o Fn e pressiona F2, ou alterna o Fn Lock para deixar F1 a F12 como função principal. Quando as teclas de função funcionarem como F1 a F12, o F1 repete a instrução da lição, o F2 dá uma dica e o F3 pula o passo. Esses comandos são específicos do NVDA Coach. Pressione Enter para concluir esta lição.",
           "hints": [
-            "Test: press F2 while in a lesson. If you hear a hint, function keys are in software mode. If your screen brightness changes, you are in multimedia mode — hold Fn and press F2 instead.",
-            "Once you know your Fn Lock state, you can use Coach shortcut keys without frustration. F1 repeats instruction, F2 gives a hint, F3 skips — all Coach-specific commands.",
-            "Fn Lock state usually persists across restarts on most laptops. Once you set it the way you want, you should not need to change it again."
+            "Teste: pressione F2 durante uma lição. Se ouvir uma dica, as teclas de função estão no modo de software. Se o brilho da tela mudar, você está no modo multimídia — segure o Fn e pressione F2.",
+            "Sabendo o estado do seu Fn Lock, você usa os atalhos do Coach sem frustração. F1 repete a instrução, F2 dá uma dica, F3 pula — todos comandos específicos do Coach.",
+            "Na maioria dos portáteis, o estado do Fn Lock se mantém entre reinicializações. Uma vez ajustado do jeito que você quer, não deve ser preciso mexer de novo."
           ]
         }
       ]
     },
     {
       "id": "nvda_keyboard_layout",
-      "title": "Desktop vs Laptop Keyboard Layout",
+      "title": "Esquema de Teclado: Computador de Mesa ou Computador Portátil",
       "order": 3,
       "chapterComplete": true,
       "steps": [
         {
           "type": "info",
-          "instruction": "NVDA has two keyboard layout settings: desktop and laptop. This is not about your physical keyboard hardware — it is a setting inside NVDA that determines which key combinations NVDA listens for. Desktop layout uses the numeric keypad for many NVDA commands. Laptop layout uses NVDA plus letter or symbol keys instead, so that users without a numpad can reach all NVDA commands. You choose your layout in NVDA Settings. Press Enter to continue.",
+          "instruction": "O NVDA tem duas opções de esquema de teclado: computador de mesa e computador portátil. Isso não tem a ver com o seu teclado físico — é uma opção dentro do NVDA que determina quais combinações de teclas ele escuta. O esquema computador de mesa usa o teclado numérico para muitos comandos do NVDA. O esquema computador portátil usa, no lugar disso, o NVDA com teclas de letra ou de símbolo, para que quem não tem teclado numérico alcance todos os comandos. Você escolhe o esquema nas Configurações do NVDA. Pressione Enter para continuar.",
           "hints": [
-            "Desktop layout and laptop layout are NVDA software settings — they do not change how Windows or your applications behave, only how NVDA responds to key presses.",
-            "If your keyboard has a numeric keypad on the right side, desktop layout may be natural. If you are on a laptop without a numpad, laptop layout is designed for you.",
-            "You can switch between layouts at any time without restarting NVDA. The change takes effect immediately."
+            "Os esquemas computador de mesa e computador portátil são opções de software do NVDA — eles não mudam o comportamento do Windows nem dos seus aplicativos, só a forma como o NVDA responde às teclas.",
+            "Se o seu teclado tem teclado numérico do lado direito, o esquema computador de mesa pode ser o mais natural. Se você está em um portátil sem teclado numérico, o esquema computador portátil foi feito para você.",
+            "Você pode alternar entre os esquemas a qualquer momento, sem reiniciar o NVDA. A mudança vale imediatamente."
           ]
         },
         {
           "type": "info",
-          "instruction": "To check or change your layout: press NVDA+N (NVDA command) to open the NVDA menu, then P for Preferences, then S for Settings. The Settings dialog opens. In the category list on the left, press K to jump to the Keyboard category using first-letter navigation. Tab to the Keyboard layout combo box, use the Up and Down Arrow keys to choose Desktop or Laptop, then Tab to OK and press Enter to save. The Customizing NVDA chapter covers this process in detail. Press Enter to continue.",
+          "instruction": "Para conferir ou mudar o esquema: pressione NVDA+N (comando do NVDA) para abrir o menu do NVDA, depois P de Preferências e Ç de Configurações. O diálogo Configurações abre. Na lista de categorias à esquerda, pressione T para saltar até a categoria Teclado pela navegação por primeira letra. Dê Tab até a caixa de combinação Esquema de teclado, use Seta para Cima e Seta para Baixo para escolher Computador de mesa ou Computador portátil, depois Tab até OK e Enter para salvar. O capítulo Personalizando o NVDA trata desse processo em detalhes. Pressione Enter para continuar.",
           "hints": [
-            "NVDA plus N opens the NVDA menu. P for Preferences, S for Settings. Then K in the category list jumps to Keyboard using first-letter navigation.",
-            "The Keyboard layout combo box has two options: Desktop and Laptop. Use Arrow keys to choose, Tab to OK, and Enter to save.",
-            "If you are unsure which layout is currently active, press NVDA plus 1 to turn on Input Help, press a numpad key, and listen to what NVDA says. Press NVDA plus 1 again to turn off Input Help."
+            "NVDA mais N abre o menu do NVDA. P de Preferências, Ç de Configurações. Depois, T na lista de categorias salta até Teclado pela navegação por primeira letra.",
+            "A caixa de combinação Esquema de teclado tem duas opções: Computador de mesa e Computador portátil. Use as teclas de seta para escolher, Tab até OK e Enter para salvar.",
+            "Se não souber qual esquema está ativo no momento, pressione NVDA mais 1 para ligar a ajuda de entrada, pressione uma tecla do teclado numérico e ouça o que o NVDA diz. Pressione NVDA mais 1 de novo para desligar a ajuda de entrada."
           ]
         },
         {
           "type": "info",
-          "instruction": "When commands differ between layouts, NVDA Coach always shows both. For example: 'Press NVDA+NumPad5 (desktop) or NVDA+Shift+Comma (laptop).' Use whichever matches your current layout setting. If a command is not working as expected, the most common cause is a mismatch between your NVDA layout setting and the keys you are pressing. Check your layout setting first before trying other troubleshooting steps. Press Enter to continue.",
+          "instruction": "Quando os comandos mudam de um esquema para o outro, o NVDA Coach sempre mostra os dois. Por exemplo: 'Pressione NVDA+NumPad5 (computador de mesa) ou NVDA+Shift+O (computador portátil).' Use o que corresponde ao seu esquema atual. Se um comando não estiver funcionando como esperado, a causa mais comum é a diferença entre o esquema definido no NVDA e as teclas que você está pressionando. Confira o esquema antes de tentar qualquer outra coisa. Pressione Enter para continuar.",
           "hints": [
-            "Desktop layout command listed first, laptop layout in parentheses or after 'or'. Use the version that matches your NVDA layout setting.",
-            "A mismatch between layout setting and keys pressed is the most common reason a command does not work. Open NVDA Settings and verify your Keyboard layout if commands seem wrong.",
-            "Remember: layout is an NVDA setting, not a keyboard hardware feature. You can use laptop layout on a desktop keyboard or desktop layout on a laptop if you prefer."
+            "O comando do esquema computador de mesa vem primeiro; o do computador portátil vem entre parênteses ou depois de um 'ou'. Use a versão que corresponde ao seu esquema no NVDA.",
+            "A diferença entre o esquema definido e as teclas pressionadas é o motivo mais comum de um comando não funcionar. Abra as Configurações do NVDA e confira o Esquema de teclado se os comandos parecerem errados.",
+            "Lembre-se: o esquema é uma opção do NVDA, não um recurso do teclado físico. Você pode usar o esquema computador portátil em um teclado de mesa, ou o esquema computador de mesa em um portátil, se preferir."
           ]
         },
         {
           "type": "info",
-          "instruction": "You have completed the Your Keyboard chapter! You now know where modifier keys are located on standard and laptop keyboards, how function keys and Fn key behavior work, and how to choose and change your NVDA keyboard layout setting. With this foundation, all the key combinations throughout NVDA Coach will make more sense — you will know exactly where your fingers need to go. When you are ready, press NVDA+Shift+C to open the lesson picker and explore the other chapters. Press Enter to finish.",
+          "instruction": "Você concluiu o capítulo Seu Teclado! Agora você sabe onde ficam as teclas modificadoras em teclados de mesa e de portátil, como funcionam as teclas de função e a tecla Fn, e como escolher e mudar a opção Esquema de teclado do NVDA. Com essa base, todas as combinações de teclas do NVDA Coach vão fazer mais sentido — você vai saber exatamente para onde levar os dedos. Quando estiver pronto, pressione NVDA+Shift+C para abrir o seletor de lições e seguir para o próximo capítulo: Lendo e Navegando pelo Texto. Pressione Enter para finalizar.",
           "hints": [
-            "This chapter is a reference you can return to at any time. If a command is not working and you are not sure where a key is, come back here.",
-            "Modifier key locations summary: Ctrl is bottom-left (with Fn between Ctrl and the Windows key on some laptops). Shift is above Ctrl. Alt is next to Space. Windows key is between Ctrl and Alt. NVDA key is Insert or Caps Lock.",
-            "NVDA Coach saves your progress automatically. All completed lessons are marked when you return."
+            "Este capítulo é uma referência à qual você pode voltar quando quiser. Se um comando não estiver funcionando e você não tiver certeza de onde fica uma tecla, volte aqui.",
+            "Resumo de onde ficam as teclas modificadoras: o Ctrl fica no canto inferior esquerdo. Em portáteis, o Fn fica entre o Ctrl e a tecla Windows, deixando a fileira de baixo assim: Ctrl, Fn, Windows, Alt, barra de espaço. Em teclados de mesa não há Fn nessa fileira, então fica só Ctrl, Windows, Alt, barra de espaço. O Shift fica acima do Ctrl. O Alt fica ao lado da barra de espaço. A tecla NVDA é o Insert ou o Caps Lock.",
+            "O NVDA Coach salva seu progresso automaticamente. Todas as lições concluídas ficam marcadas quando você voltar."
           ]
         }
       ]

@@ -336,7 +336,7 @@
 				},
 				{
 					"type": "gesture",
-					"instruction": "Switch to the practice window with Alt+Tab. Tab to one of the checkboxes labeled 'Enable screen reader tips' or 'Show practice hints', then press the Space bar to check or uncheck it. NVDA will announce whether the box is now checked or unchecked. When you are done, press NVDA+Shift+C to return here, then press Enter to continue.",
+					"instruction": "Switch to the practice window with Alt+Tab. Tab to one of the checkboxes labeled 'Enable screen reader tips' or 'Show practice hints during lessons', then press the Space bar to check or uncheck it. NVDA will announce whether the box is now checked or unchecked. When you are done, press NVDA+Shift+C to return here, then press Enter to continue.",
 					"hint": "The Space bar is the long key at the bottom center of your keyboard. Make sure you have Tabbed to a checkbox first.",
 					"hints": [
 						"The Space bar is the long flat key at the very bottom center of the keyboard. Make sure you have Tabbed to a checkbox before pressing it.",

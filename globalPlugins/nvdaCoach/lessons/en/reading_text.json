@@ -319,7 +319,7 @@
         },
         {
           "type": "info",
-          "instruction": "Well done. You have finished the Select and Highlight Text lesson. Next up is the last lesson in this chapter: Navigate by Paragraph and Page — where you will learn to jump through long documents in bigger jumps using Ctrl+Up/Down Arrow for paragraphs and Page Up/Page Down for larger sections. Press Enter to continue.",
+          "instruction": "Well done. You have finished the Select and Highlight Text lesson. Next up is Navigate by Paragraph and Page, lesson 7 of 8 in this chapter — where you will learn to jump through long documents in bigger jumps using Ctrl+Up/Down Arrow for paragraphs and Page Up/Page Down for larger sections. Press Enter to continue.",
           "hints": [
             "The next lesson is Navigate by Paragraph and Page. Paragraph and page navigation are Windows commands — they work in most text editors and word processors.",
             "Selection commands summary: Shift+Arrow selects by amount moved; Ctrl+C copies; Ctrl+V pastes. All Windows commands. NVDA+Shift+Up or NVDA+Shift+S reports your selection — NVDA command.",

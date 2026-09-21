@@ -57,7 +57,7 @@
                     "instruction": "Şimdi deneyin. NVDA tuşunu basılı tutun ve bir sonraki nesneye geçmek için NumPad6 (masaüstü) veya Shift+Sağ Ok (dizüstü bilgisayar) tuşlarına basın. NVDA bunun ne olduğunu seslendirecek. Daha sonra NVDA tuşunu basılı tutun ve önceki nesneye gitmek için NumPad4 (masaüstü) veya Shift+Sol Ok (dizüstü bilgisayar) tuşlarına basın. Hissetmek için herhangi bir açık uygulamada birkaç nesne arasında dolaşmayı deneyin. Devam etmeye hazır olduğunuzda burada Enter tuşuna basın.",
                     "monitorGestures": [
                         "kb:nvda+numpad6",
-                        "kb:nvda+shift+sağ ok"
+                        "kb:nvda+shift+rightArrow"
                     ],
                     "hints": [
                         "Masaüstü düzeni: NumPad6 sayısal tuş takımındaki sağ ok tuşudur. NVDA'yı basılı tutun ve bir sonraki kardeş nesneye geçmek için ona basın.",
@@ -95,7 +95,7 @@
                     "instruction": "Şimdi deneyin. Geçerli nesnenin üst öğesine gitmek için NVDA tuşunu basılı tutun ve NumPad8 (masaüstü) veya Shift+Yukarı Ok (dizüstü bilgisayar) tuşlarına basın. NVDA ebeveyni açıklayacak. Daha sonra ilk alt öğeye geri dönmek için NVDA+NumPad2 (masaüstü) veya NVDA+Shift+Aşağı Ok (dizüstü bilgisayar) tuşlarına basın. Ağacın yukarısını ve aşağısını keşfetmek, panellerde veya araç çubuklarında bir arada gruplandırılmış kontrolleri bulmanıza yardımcı olur. Devam etmeye hazır olduğunuzda Enter tuşuna basın.",
                     "monitorGestures": [
                         "kb:nvda+numpad8",
-                        "kb:nvda+shift+yukarı ok"
+                        "kb:nvda+shift+upArrow"
                     ],
                     "hints": [
                         "Masaüstü düzeni: NumPad8, sayısal tuş takımındaki yukarı ok tuşudur. NVDA tuşunu basılı tutun ve ana nesneye gitmek için ona basın.",
@@ -112,24 +112,24 @@
             "steps": [
                 {
                     "type": "info",
-                    "instruction": "Bir nesneye gittiğinizde NVDA'nın onu farklı şekillerde okumasını sağlayabilirsiniz. Geçerli Dolaşım nesnesinin tam açıklamasını duymak için NVDA+NumPad5 (masaüstü) veya NVDA+Shift+ (dizüstü bilgisayar — yani NVDA, Shift ve virgül tuşu) tuşlarına basın. Nesne adını hecelemek için iki kez hızlıca basın. Bu, üzerine indiğiniz herhangi bir nesneyi incelemenin birincil yoludur. Devam etmek için Enter'a basın.",
+                    "instruction": "Bir nesneye gittiğinizde NVDA'nın onu farklı şekillerde okumasını sağlayabilirsiniz. Geçerli Dolaşım nesnesinin tam açıklamasını duymak için NVDA+NumPad5 (masaüstü) veya NVDA+Shift+O (dizüstü bilgisayar — yani NVDA, Shift ve O tuşu) tuşlarına basın. Nesne adını hecelemek için iki kez hızlıca basın. Bu, üzerine indiğiniz herhangi bir nesneyi incelemenin birincil yoludur. Devam etmek için Enter'a basın.",
                     "hints": [
                         "Masaüstü düzeni: Geçerli Dolaşım nesnesini okumak için NVDA tuşunu basılı tutun ve NumPad5'e (sayısal tuş takımındaki orta tuş) basın.",
-                        "Dizüstü bilgisayar düzeni: NVDA ve Shift tuşlarını basılı tutun, ardından virgül tuşuna basın. Virgül tuşu temel sırada, İ harfinden sonra gelen tuştur.",
+                        "Dizüstü bilgisayar düzeni: NVDA ve Shift tuşlarını basılı tutun, ardından O tuşuna basın. O tuşu en üst harf sırasında, I ile P arasında yer alan tuştur.",
                         "Nesne adını karakter karakter hecelemek için komuta iki kez hızlı bir şekilde basın. Bu, ad tanıdık olmadığında veya kısaltıldığında kullanışlıdır."
                     ]
                 },
                 {
                     "type": "info",
-                    "instruction": "Şimdi deneyin. NVDA+NumPad6 (masaüstü) veya NVDA+Shift+Sağ Ok (dizüstü bilgisayar) tuşlarını kullanarak herhangi bir nesneye gidin. Daha sonra o nesnenin tam açıklamasını duymak için NVDA+NumPad5 (masaüstü) veya NVDA+Shift+Virgül (dizüstü bilgisayar) tuşlarına basın. Adı karakter karakter hecelemek için iki kez hızlıca basın. Hazır olduğunuzda devam etmek için Enter tuşuna basın.",
+                    "instruction": "Şimdi deneyin. NVDA+NumPad6 (masaüstü) veya NVDA+Shift+Sağ Ok (dizüstü bilgisayar) tuşlarını kullanarak herhangi bir nesneye gidin. Daha sonra o nesnenin tam açıklamasını duymak için NVDA+NumPad5 (masaüstü) veya NVDA+Shift+O (dizüstü bilgisayar) tuşlarına basın. Adı karakter karakter hecelemek için iki kez hızlıca basın. Hazır olduğunuzda devam etmek için Enter tuşuna basın.",
                     "monitorGestures": [
                         "kb:nvda+numpad5",
-                        "kb:nvda+Shift+,"
+                        "kb:nvda+shift+o"
                     ],
                     "hints": [
-                        "Öncelikle NVDA artı NumPad6 veya NVDA artı Shift artı Sağ Ok kullanarak bir nesneye gidin, ardından NVDA artı NumPad5 veya NVDA artı Shift artı Virgül kullanarak okuyun.",
+                        "Öncelikle NVDA artı NumPad6 veya NVDA artı Shift artı Sağ Ok kullanarak bir nesneye gidin, ardından NVDA artı NumPad5 veya NVDA artı Shift artı O kullanarak okuyun.",
                         "Okuma komutuna iki kez basmak, nesne adını her seferinde bir karakter olmak üzere hızlı bir şekilde heceler; alışılmadık adlar veya kısaltmalar için çok kullanışlıdır.",
-                        "Dizüstü bilgisayar düzeni için virgül tuşu klavyenin temel sırasında İ harfinden sonra gelen tuştur."
+                        "Dizüstü bilgisayar düzeni için O tuşu klavyenin en üst harf sırasında, I ile P arasında yer alan tuştur."
                     ]
                 }
             ]

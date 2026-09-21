@@ -4,7 +4,9 @@ REM Packages the add-on as an .nvda-addon file (which is just a zip archive).
 REM Run this from the nvdaCoach directory.
 
 set ADDON_NAME=nvdaCoach
-set VERSION=1.5.7
+REM Read the version from manifest.ini so it cannot drift from what the
+REM add-on actually reports. Nothing is typed twice.
+for /f "tokens=3" %%v in ('findstr /b /c:"version" manifest.ini') do set VERSION=%%v
 
 echo Building %ADDON_NAME% version %VERSION%...
 
