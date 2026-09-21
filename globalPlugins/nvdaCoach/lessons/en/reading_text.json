@@ -25,7 +25,7 @@
           "hints": [
             "The Right Arrow key is in the arrow key cluster in the lower right of the keyboard. Press it once to move one character forward.",
             "NVDA announces the character your cursor lands on. For letters it speaks the letter; for spaces it says 'space'; for punctuation it speaks the name.",
-            "Click into the practice text area first, or press Tab to move focus into it, then start pressing Right Arrow."
+            "Press Tab to move focus into the practice text area first, then start pressing Right Arrow."
           ],
           "expectedGestures": [
             "kb:rightArrow"
@@ -462,7 +462,7 @@
           ],
           "hints": [
             "If you do not have a formatted document handy, open Notepad and type a few words, then open WordPad (Start > WordPad) and paste them — WordPad supports bold and italic formatting.",
-            "Position your cursor by clicking or using the arrow keys. NVDA+F always reports formatting at the cursor position, not wherever the mouse pointer is.",
+            "Move the cursor with the arrow keys. NVDA+F always reports formatting at the cursor position, not wherever the mouse pointer happens to be.",
             "Try navigating word by word with Ctrl+Right Arrow, pressing NVDA+F after each word to hear how formatting changes across a sentence."
           ]
         },

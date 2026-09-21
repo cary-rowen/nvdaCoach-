@@ -142,6 +142,72 @@ def main(strict):
                 broken.append("%s (%s)" % (c, e))
         check(not broken, "%s: every chapter file parses" % lang, "; ".join(broken))
 
+    # --- no hint tells a blind student to look at something --------------
+    # The hint is what you press F2 for when you are already stuck. Eight of
+    # them used to answer "look at the labels on your keyboard", in a course
+    # whose whole premise is that the student cannot see. Instructions that
+    # say "sighted users see X, NVDA announces Y" are fine and deliberately
+    # not matched here: they explain, they do not ask.
+    sighted = re.compile(
+        r"look at (your|the)|printed on (it|them|your)|indicator light|"
+        r"small icons|coloured squares|colored squares|click into|by clicking",
+        re.I,
+    )
+    for lang in ("en",):
+        offenders = []
+        for c in CHAPTERS:
+            p = os.path.join(LESSONS, lang, c)
+            if not os.path.isfile(p):
+                continue
+            data = json.load(io.open(p, encoding="utf-8"))
+            for les in data["lessons"]:
+                for n, st in enumerate(les.get("steps", [])):
+                    texts = [st.get("instruction", "")] + list(st.get("hints", []))
+                    for t in texts:
+                        if sighted.search(t or ""):
+                            offenders.append("%s/%s step %d" % (c.replace(".json", ""), les["id"], n))
+        check(not offenders, "%s: no lesson asks the student to look at something" % lang,
+              "; ".join(sorted(set(offenders))[:4]))
+
+    # --- lesson ids are identifiers, not text ----------------------------
+    # A bulk text pass over the Turkish files rewrote activate_controls to
+    # activate_Kontrols. The practice-window registry is keyed on the English
+    # id, so it silently never matched and Turkish students got no practice
+    # window and no explanation. Progress is stored under the id too.
+    en_ids = {}
+    for c in CHAPTERS:
+        p = os.path.join(LESSONS, "en", c)
+        if os.path.isfile(p):
+            en_ids[c] = [l["id"] for l in json.load(io.open(p, encoding="utf-8"))["lessons"]]
+    for lang in langs:
+        if lang == "en":
+            continue
+        strays = []
+        for c, ids in en_ids.items():
+            p = os.path.join(LESSONS, lang, c)
+            if not os.path.isfile(p):
+                continue
+            for l in json.load(io.open(p, encoding="utf-8"))["lessons"]:
+                if l["id"] not in ids:
+                    strays.append("%s/%s" % (c.replace(".json", ""), l["id"]))
+        check(not strays, "%s: lesson ids match English" % lang, ", ".join(strays))
+
+    # --- NVDA can reach the documentation we ship ------------------------
+    # Without docFileName the Add-on Store's Help button is disabled, so nine
+    # localised readme.html files ship and none of them is reachable.
+    doc_name = fields.get("docFileName") if "fields" in dir() else None
+    with io.open(os.path.join(ROOT, "manifest.ini"), encoding="utf-8") as fh:
+        mani = fh.read()
+    has_doc = "docFileName" in mani
+    check(has_doc, "manifest names a help file (docFileName)",
+          "without it NVDA's Add-on Help button is disabled")
+    if has_doc:
+        name = [l.split("=", 1)[1].strip() for l in mani.splitlines()
+                if l.startswith("docFileName")][0]
+        missing = [lang for lang in langs
+                   if not os.path.isfile(os.path.join(DOC, lang, name))]
+        check(not missing, "every language ships %s" % name, ", ".join(missing))
+
     # --- a locale that is secretly an English copy ----------------------
     def strings_of(o, out):
         if isinstance(o, dict):

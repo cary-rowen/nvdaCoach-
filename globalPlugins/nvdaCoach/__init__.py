@@ -6,6 +6,7 @@
 import os
 import re
 import json
+import html
 import ctypes
 import ctypes.wintypes
 import webbrowser
@@ -279,7 +280,22 @@ def _loadLessonCategories():
 			categories.append(data)
 		except Exception as e:
 			log.error(f"NVDA Coach: Error loading {filename}: {e}")
-	categories.sort(key=lambda c: c.get("order", 999))
+	# The per-file try above skips a chapter that will not parse. This sort
+	# did not have that protection: a chapter whose top level is a list, or
+	# two chapters whose "order" values are a string and an int, raised
+	# straight out of GlobalPlugin.__init__. NVDA only logs that, so the
+	# add-on silently failed to load for everybody, in every language, with
+	# nothing spoken. A translator hand-editing one JSON file is the obvious
+	# way in, and this release added two languages by hand.
+	def _order(category):
+		try:
+			return int(category.get("order", 999))
+		except (AttributeError, TypeError, ValueError):
+			log.warning("NVDA Coach: a chapter has an unusable 'order'; sorting it last")
+			return 999
+
+	categories = [c for c in categories if isinstance(c, dict) and "lessons" in c]
+	categories.sort(key=_order)
 	return categories
 
 
@@ -311,6 +327,15 @@ def _generateCertificate():
 	center = config.conf["nvdaCoach"].get("trainingCenter", "").strip()
 	date_str = datetime.date.today().strftime("%B %d, %Y")
 	lang = languageHandler.getLanguage() or "en"
+
+	# These three are typed by the student, or pre-seeded by a training centre
+	# in a distributed nvda.ini, and they go straight into an HTML file that is
+	# then handed to the browser. Unescaped, an instructor called "Smith & Jones"
+	# silently mangles the certificate and anything sharper than that runs.
+	rawName = name  # the filename is built from this, and must not carry entities
+	name = html.escape(name)
+	instructor = html.escape(instructor)
+	center = html.escape(center)
 
 	instructor_html = (
 		"<p class='instructor'><strong>{label}</strong> {instructor}</p>".format(
@@ -404,7 +429,7 @@ def _generateCertificate():
 	)
 
 	safe_name = "".join(
-		c for c in name if c.isalnum() or c in (" ", "-", "_")
+		c for c in rawName if c.isalnum() or c in (" ", "-", "_")
 	).strip() or "Student"
 	filename = "NVDA Coach - {} certification of completion.html".format(safe_name)
 	downloads = os.path.join(os.path.expanduser("~"), "Downloads")
@@ -474,7 +499,7 @@ class CoachWindow(wx.Frame):
 		self._instructionText.SetValue(_(
 			"Welcome to NVDA Coach\n"
 			"Created by Tony Gebhard, Assistive Technology Instructor\n"
-			"github.com/tonygeb23/nvdacoach\n\n"
+			"github.com/tonygeb23/nvdaCoach-\n\n"
 			"Before you begin, there is one key you should know right now. "
 			"The Control key, labeled Ctrl, is in the bottom-left corner of your keyboard. "
 			"Press it once and NVDA stops talking immediately, no matter what it is reading. "
@@ -677,7 +702,7 @@ class CoachWindow(wx.Frame):
 		introText = (
 			welcome_heading + "\n"
 			+ _("Created by Tony Gebhard, Assistive Technology Instructor") + "\n"
-			"github.com/tonygeb23/nvdacoach\n\n"
+			"github.com/tonygeb23/nvdaCoach-\n\n"
 			+ _(
 				"Before you begin, there is one key you should know right now. "
 				"The Control key, labeled Ctrl, is in the bottom-left corner of your keyboard. "
@@ -1804,7 +1829,10 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		self._showLessonPicker()
 
 	@script(
-		description=_("Show NVDA Coach window, or open the lesson picker"),
+		description=_(
+			"Show NVDA Coach window, or open the lesson picker. "
+			"In Excel this key stays with NVDA, for setting column headers"
+		),
 		gesture="kb:NVDA+shift+c",
 		category="NVDA Coach",
 	)
@@ -1823,42 +1851,50 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		self._activateCoach()
 
 	def _handOffToNVDA(self, gesture):
-		"""Give NVDA+shift+c back to NVDA where NVDA itself binds it.
+		"""Give NVDA+shift+c back to NVDA in Excel, and only in Excel.
 
-		NVDA binds NVDA+shift+c in Word and Excel to mark the row holding
-		column headers (NVDA+shift+r does the same for row headers). Scripts
-		on a global plugin are resolved before scripts on the focused object,
-		so NVDA Coach wins - and an add-on whose whole purpose is teaching
-		NVDA commands silently removes one, inside a table, which is exactly
-		where its own table lesson sends the student.
+		NVDA binds NVDA+shift+c to "set column headers". Scripts on a global
+		plugin are resolved before scripts on the focused object, so NVDA Coach
+		wins and an add-on whose whole purpose is teaching NVDA commands
+		silently removes one.
 
-		So: if whatever currently has focus knows how to set column headers,
-		that is NVDA's command and it gets it.
+		Excel is the only place giving it back helps. ExcelCell.script_setColumnHeader
+		does real work. Word's looks identical from the outside and is a stub whose
+		entire body speaks "Command not supported in this type of document" - and it
+		lives on WordDocument, not on a table cell, so it answers everywhere in every
+		Word document and every Outlook message body. Handing the key over there
+		would cost the student the only way into the Coach and give them a refusal
+		in exchange, which is worse than the conflict it was meant to fix. So the
+		check is the application, not the presence of the attribute.
 
-		Any failure here deliberately falls through to opening the Coach.
-		This gesture is the add-on's only way in, and a user left pressing a
-		key that does nothing at all would be worse off than one who has to
-		set column headers from the Word menu.
+		The script is called directly rather than through scriptHandler.executeScript
+		on purpose: Excel's script reads getLastScriptRepeatCount() to tell "set
+		header" from "forget header", and going through executeScript would reset
+		that count on every press so a double press could never reach the forget
+		branch.
+
+		Any failure falls through to opening the Coach. This gesture is the
+		add-on's only way in, and a user left pressing a key that does nothing at
+		all would be worse off than one who sets column headers from the ribbon.
 
 		Returns True when NVDA's own script ran.
 		"""
 		try:
 			focus = api.getFocusObject()
-			holders = (
-				focus,
-				getattr(focus, "treeInterceptor", None),
-				getattr(focus, "appModule", None),
-			)
-			for holder in holders:
-				if holder is None:
-					continue
-				handler = getattr(holder, "script_setColumnHeader", None)
-				if handler is not None:
-					handler(gesture)
-					return True
+			if focus is None:
+				return False
+			appModule = getattr(focus, "appModule", None)
+			appName = (getattr(appModule, "appName", "") or "").lower()
+			if appName != "excel":
+				return False
+			handler = getattr(focus, "script_setColumnHeader", None)
+			if not callable(handler):
+				return False
+			handler(gesture)
+			return True
 		except Exception:
 			log.exception(
-				"NVDA Coach: could not hand NVDA+shift+c back to NVDA; "
+				"NVDA Coach: could not hand NVDA+shift+c to Excel; "
 				"opening the Coach instead"
 			)
 		return False
@@ -2122,17 +2158,18 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		Returns True when the final chapter (nvda_settings) is fully complete,
 		so lessonRunner skips the standard idle/navigation screen for the last lesson.
 		"""
-		# Trigger final completion when the Customizing NVDA chapter is all done.
-		if categoryId == "nvda_settings":
-			for category in self._categories:
-				if category.get("id") == "nvda_settings":
-					all_done = all(
-						self._progressTracker.isLessonComplete("nvda_settings", l.get("id", ""))
-						for l in category.get("lessons", [])
-					)
-					if all_done:
-						wx.CallLater(2500, self._coachWindow.showFinalCompletion)
-						return True
+		# Only when the WHOLE course is done, not just the last chapter.
+		#
+		# This used to fire the moment Customizing NVDA was complete, because
+		# that chapter is last in the list. But several earlier lessons point
+		# students into it mid-course, so somebody following the add-on's own
+		# advice finished four lessons out of forty-five and was told "you
+		# have finished every lesson in NVDA Coach" - with a certificate
+		# saying the same thing. A student who cannot see the picker has no
+		# way to notice it disagreeing with the speech.
+		if self._allLessonsComplete():
+			wx.CallLater(2500, self._coachWindow.showFinalCompletion)
+			return True
 		return False
 
 	def _showCompletionCertificate(self):

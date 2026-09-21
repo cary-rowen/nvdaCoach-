@@ -283,7 +283,7 @@
             ]
         },
         {
-            "id": "activate_Kontrols",
+            "id": "activate_controls",
             "title": "Düğmeleri ve Kontrolleri Etkinleştirme",
             "order": 8,
             "steps": [

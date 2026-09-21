@@ -485,7 +485,7 @@
 					"type": "info",
 					"instruction": "Before going further, let's look at some keys that often cause confusion — especially on laptop keyboards. The first is the Control key. On most keyboards, the Control key sits in the bottom-left corner. But on some laptops, the Fn key occupies the bottom-left corner instead, with the Control key immediately to its right. If you are pressing what you think is Control and nothing happens, check whether your bottom-left corner key says Fn or Ctrl — it matters. Press Enter to continue.",
 					"hints": [
-						"Look at the bottom-left corner of your keyboard. If the key says Fn, the Control key is one key to the right of it. If it says Ctrl, you are already on the right key.",
+						"Press NVDA+1 to turn on Input Help, then press the key in the very bottom-left corner. NVDA will name it. If it says Fn, Control is the next key to the right. If it says Control, you are already on it. Press NVDA+1 again to turn Input Help off.",
 						"Both Fn and Control are typically in the same row, but which one is in the very corner varies by laptop model and manufacturer.",
 						"If you are not sure which key is which, press NVDA plus 1 to turn on Input Help, then press the bottom-left key. NVDA will tell you what it is. Press NVDA plus 1 again to turn off Input Help."
 					]
@@ -494,7 +494,7 @@
 					"type": "info",
 					"instruction": "Many laptops do not have dedicated Home, End, Page Up, and Page Down keys. Instead, the Fn key combines with the Arrow keys to produce them. On most keyboards with this design: Fn plus Left Arrow equals Home; Fn plus Right Arrow equals End; Fn plus Up Arrow equals Page Up; Fn plus Down Arrow equals Page Down. Your keyboard may vary — check the small labels printed on the Arrow keys for symbols like a home icon or up-arrow-page symbol. If your keyboard has dedicated Home, End, Page Up, and Page Down keys above the arrow keys, you do not need Fn at all for those functions. Press Enter to continue.",
 					"hints": [
-						"Look at your Arrow keys. If they have small secondary labels — a home icon, a page icon, or arrow-with-line symbols — those indicate Fn combinations.",
+						"You do not need to read the key caps to find out. Hold Fn and press the Up Arrow in a document: if the cursor jumps a whole screen, Fn plus Up Arrow is Page Up on your keyboard. If nothing changes, your laptop does not map them that way.",
 						"Fn plus Left Arrow is typically Home. Fn plus Right Arrow is End. Fn plus Up Arrow is Page Up. Fn plus Down Arrow is Page Down. But always check your specific keyboard.",
 						"If your keyboard has a full key cluster above the arrow keys — including dedicated Page Up, Page Down, Home, and End keys — you do not need Fn for those functions at all."
 					]
@@ -505,7 +505,7 @@
 					"hints": [
 						"If pressing F2 for a Coach hint changes your screen brightness instead, your laptop defaults to multimedia mode. Hold Fn and press F2 to get the actual F2 function.",
 						"Look for an Fn Lock key — often labeled FnLk or shown as a padlock icon combined with Fn. Pressing it toggles between multimedia-primary and F-key-primary modes.",
-						"Some laptops show whether multimedia or F-key mode is active through an indicator light. Others announce it via sound. Check your specific model if you are unsure."
+						"The indicator for this is usually a small light, which is no use to you. Test it instead: press F2 while a lesson is open. If you hear a hint, the F keys are acting as F keys. If the volume changes instead, they are in multimedia mode and you need to hold Fn to get F2."
 					]
 				},
 				{

@@ -159,20 +159,20 @@
           "instruction": "When you connect headphones, external speakers, or an HDMI monitor, Windows may not automatically route NVDA speech to the device you want. NVDA+Ctrl+U opens the Audio category of the NVDA Settings dialog, where the output device is one of the settings you can change. This is especially useful when switching between headphones and speakers while in the middle of a task. Press Enter to continue.",
           "hints": [
             "NVDA plus Control plus U is an NVDA command that opens the Audio category of the NVDA Settings dialog, where Output device is one of the settings.",
-            "Use the Up and Down Arrow keys to move through the list of audio devices, then press Enter to select the one you want NVDA to use for speech.",
+            "Tab to the Output device combo box, then use the Up and Down Arrow keys to hear each device. Tab to OK and press Enter to apply, or press Escape to leave it unchanged.",
             "The change takes effect immediately — you will hear NVDA begin speaking through the selected device right away. No restart is needed."
           ]
         },
         {
           "type": "info",
-          "instruction": "Try it now. Press NVDA+Ctrl+U. A dialog will appear with a list of audio output devices. Use the Up and Down Arrow keys to move through the list and hear NVDA announce each device name. Press Enter to select a device, or press Escape to close the dialog without making a change. Press Enter here when you are ready to continue.",
+          "instruction": "Try it now. Press NVDA+Ctrl+U. The Audio category of NVDA Settings opens, with focus on the Output device combo box. Before you change anything, listen to the device NVDA reads out and remember it, because that is the one that currently works. Arrow through the list to hear the others. Then press Escape to leave everything as it was. Only pick a different device when you are actually plugging in headphones or speakers: if you choose one that makes no sound, NVDA goes silent and you will not be able to hear your way back. If that happens, press Ctrl+Alt+N to restart NVDA. Press Enter here when you are ready to continue.",
           "monitorGestures": [
             "kb:nvda+control+u"
           ],
           "hints": [
             "Hold NVDA and Control together, then press U. The Audio category of NVDA Settings opens immediately.",
-            "Arrow keys move through the device list. NVDA announces the device name as you land on each one. Press Enter to confirm your selection.",
-            "If you only have one audio device, the list may show only one entry. Press Escape to close the dialog if there is nothing you want to change."
+            "Arrow keys move through the Output device list. NVDA announces each device name as you land on it. Escape leaves the dialog without changing anything, which is the safe way out.",
+            "If you only have one audio device, the list shows one entry. Press Escape to close NVDA Settings if there is nothing you want to change."
           ]
         }
       ]
@@ -185,11 +185,11 @@
       "steps": [
         {
           "type": "info",
-          "instruction": "Audio ducking controls what happens to other sounds on your computer when NVDA speaks. When ducking is active, NVDA automatically lowers the volume of music, videos, or other audio while it is talking, then restores the volume when it finishes. This prevents NVDA speech from competing with other sounds. Press NVDA+Shift+D to cycle through the three ducking modes: no ducking, duck while speaking, and always duck. Press Enter to continue.",
+          "instruction": "Audio ducking controls what happens to other sounds on your computer when NVDA speaks. When ducking is active, NVDA automatically lowers the volume of music, videos, or other audio while it is talking, then restores the volume when it finishes. This prevents NVDA speech from competing with other sounds. Press NVDA+Shift+D to cycle through the three ducking modes: No ducking, Duck when outputting speech and sounds, and Always duck. This command only works when NVDA has been installed on the computer: on a portable copy it does nothing, and that is expected rather than a fault with your sound card. Press Enter to continue.",
           "hints": [
             "NVDA plus Shift plus D is an NVDA command. Each press cycles to the next ducking mode and NVDA announces the new mode by name.",
-            "The three modes are: No Ducking (other audio plays at full volume), Duck While Speaking (audio lowers only while NVDA is talking), and Always Duck (audio stays lowered even when NVDA is silent).",
-            "Audio ducking requires a compatible audio driver. If you do not notice any difference between modes, your system or audio driver may not support ducking."
+            "The three modes are: No ducking (other audio plays at full volume), Duck when outputting speech and sounds (audio lowers only while NVDA is talking), and Always duck (audio stays lowered even when NVDA is silent).",
+            "Audio ducking is only available when NVDA has been installed. If you are running NVDA from a USB drive, NVDA+Shift+D does nothing at all. On an installed copy, if you hear no difference between modes, your audio driver may not support ducking."
           ]
         },
         {
@@ -201,14 +201,14 @@
           "hints": [
             "Hold NVDA and Shift together, then press D. NVDA announces the new ducking mode immediately.",
             "Start with music or a video playing so you can clearly hear whether ducking is working. The volume drop should be noticeable when NVDA begins to speak.",
-            "If no ducking mode changes the behavior of other audio, your audio driver may not support ducking. This is common with some USB headsets and virtual audio devices."
+            "If no mode changes anything, check first whether this is a portable copy of NVDA, because ducking needs an installed copy. On an installed copy it is usually the audio driver, which is common with some USB headsets and virtual audio devices."
           ]
         },
         {
           "type": "info",
-          "instruction": "Your preferred ducking mode is saved automatically and will be active every time NVDA starts. Most users prefer Duck While Speaking — it keeps audio at full volume when NVDA is quiet and only lowers it when speech begins, so you can follow both the audio content and NVDA announcements without one drowning out the other. Press Enter to finish this lesson and complete the Customizing NVDA chapter.",
+          "instruction": "Your preferred ducking mode is saved automatically and will be active every time NVDA starts. Most users prefer Duck when outputting speech and sounds — it keeps audio at full volume when NVDA is quiet and only lowers it when speech begins, so you can follow both the audio content and NVDA announcements without one drowning out the other. Press Enter to finish this lesson and complete the Customizing NVDA chapter.",
           "hints": [
-            "Duck While Speaking is the most popular mode — audio plays normally when NVDA is quiet and drops only when NVDA speaks.",
+            "Duck when outputting speech and sounds is the most popular mode — audio plays normally when NVDA is quiet and drops only when NVDA speaks.",
             "Always Duck is useful if you find audio distracting even between NVDA announcements, such as when using NVDA in a noisy or media-heavy environment.",
             "No Ducking is the default. If you prefer all audio at full volume at all times and want to hear NVDA and other sounds simultaneously at full level, this mode leaves everything unchanged."
           ]
