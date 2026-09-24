@@ -618,7 +618,7 @@ msgstr ""
 "\n"
 "你已掌握的命令：\n"
 "  H —— 在标题之间跳转\n"
-"  1 到 9 —— 跳转到对应级别的标题\n"
+"  1 到 6 —— 跳转到对应级别的标题\n"
 "  K —— 在链接之间跳转\n"
 "  F、E、B —— 在表单字段和按钮之间导航\n"
 "  D —— 在路标之间跳转\n"
@@ -1238,6 +1238,18 @@ msgstr "上一课"
 #: globalPlugins/nvdaCoach/__init__.py:2058
 msgid "Restarting lesson."
 msgstr "正在重新开始本课。"
+
+#: globalPlugins/nvdaCoach/__init__.py:1265
+msgid "NVDA Coach — Practice Area"
+msgstr "NVDA Coach —— 练习区"
+
+#: globalPlugins/nvdaCoach/__init__.py:1294
+msgid "Practice Area"
+msgstr "练习区"
+
+#: globalPlugins/nvdaCoach/__init__.py:1295
+msgid "NVDA Coach — Practice: {title}"
+msgstr "NVDA Coach —— 练习：{title}"
 
 #: globalPlugins/nvdaCoach/__init__.py:2073
 msgid "Could not find the Getting Started chapter."

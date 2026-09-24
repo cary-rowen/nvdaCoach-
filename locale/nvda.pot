@@ -354,6 +354,18 @@ msgstr ""
 msgid "Press Escape one more time to close NVDA Coach."
 msgstr ""
 
+#: globalPlugins/nvdaCoach/__init__.py:1265
+msgid "NVDA Coach — Practice Area"
+msgstr ""
+
+#: globalPlugins/nvdaCoach/__init__.py:1294
+msgid "Practice Area"
+msgstr ""
+
+#: globalPlugins/nvdaCoach/__init__.py:1295
+msgid "NVDA Coach — Practice: {title}"
+msgstr ""
+
 #: globalPlugins/nvdaCoach/__init__.py:1348
 msgid "When you are done, press NVDA+Shift+C to return to the Coach window, then press Enter or Next Step to continue."
 msgstr ""
@@ -726,7 +738,7 @@ msgstr ""
 msgid "Could not find the Getting Started chapter."
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:2181
+#: globalPlugins/nvdaCoach/__init__.py:2188
 msgid "Could not save the certificate. Please check that your Downloads folder is accessible."
 msgstr ""
 

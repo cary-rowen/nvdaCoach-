@@ -85,7 +85,7 @@
         },
         {
           "type": "info",
-          "instruction": "停在想更改的设置上之后，按 NVDA+Ctrl+上光标键（台式机）或 NVDA+Shift+Ctrl+上光标键（笔记本）增大数值；按 NVDA+Ctrl+下光标键（台式机）或 NVDA+Shift+Ctrl+下光标键（笔记本）减小数值。每次调整后，NVDA 都会读出新的数值。例如，你停在速度上并按了调高键，就会听到 NVDA 读出“速度 60”。按回车键继续。",
+          "instruction": "停在想更改的设置上之后，按 NVDA+Ctrl+上光标键（台式机布局）或 NVDA+Shift+Ctrl+上光标键（笔记本布局）增大数值；按 NVDA+Ctrl+下光标键（台式机布局）或 NVDA+Shift+Ctrl+下光标键（笔记本布局）减小数值。每次调整后，NVDA 都会读出新的数值。例如，你停在速度上并按了调高键，就会听到“速度 60”。按回车键继续。",
           "monitorGestures": [
             "kb:nvda+control+upArrow",
             "kb:nvda+shift+control+upArrow",
@@ -100,7 +100,7 @@
         },
         {
           "type": "info",
-          "instruction": "如果你想更快地做出较大幅度的调整，可以用 NVDA+Ctrl+上翻页（台式机）或 NVDA+Shift+Ctrl+上翻页（笔记本）大步增大，用 NVDA+Ctrl+下翻页（台式机）或 NVDA+Shift+Ctrl+下翻页（笔记本）大步减小。当你想做出明显的改变而又不想连按很多次调整键时，这非常有用。按回车键继续。",
+          "instruction": "如果你想更快地做出较大幅度的调整，可以用 NVDA+Ctrl+上翻页（台式机布局）或 NVDA+Shift+Ctrl+上翻页（笔记本布局）大步增大，用 NVDA+Ctrl+下翻页（台式机布局）或 NVDA+Shift+Ctrl+下翻页（笔记本布局）大步减小。当你想做出明显的改变而又不想连按很多次调整键时，这非常有用。按回车键继续。",
           "hints": [
             "台式机布局：NVDA+Ctrl+上翻页以较大步幅增大，NVDA+Ctrl+下翻页以较大步幅减小。",
             "笔记本布局：NVDA+Shift+Ctrl+上翻页大步增大，NVDA+Shift+Ctrl+下翻页大步减小。",
@@ -109,7 +109,7 @@
         },
         {
           "type": "info",
-          "instruction": "现在来试试。按几次 NVDA+Ctrl+右光标键（台式机）或 NVDA+Shift+Ctrl+右光标键（笔记本），在可用设置之间循环——你会依次听到速度、音调、音量、语音和变声。然后停在速度上，按调高或调低的键改变它。注意 NVDA 会立即以新的速度朗读。准备好后按回车键继续。",
+          "instruction": "现在来试试。按几次 NVDA+Ctrl+右光标键（台式机布局）或 NVDA+Shift+Ctrl+右光标键（笔记本布局），在可用设置之间循环——你会依次听到速度、音调、音量、语音和变声。然后停在速度上，按调高或调低的键改变它。注意 NVDA 会立即以新的速度朗读。准备好后按回车键继续。",
           "monitorGestures": [
             "kb:nvda+control+rightArrow",
             "kb:nvda+shift+control+rightArrow"
